@@ -1,0 +1,52 @@
+=== Mydombox Release Note ===
+
+[0.2.0]
+* Corrected:
+
+* Not Corrected:
+	- Graphes not implemented
+	- Thermostat: Scenarios not yet working
+	
+[0.2.1]
+* Corrected:
+	- ID: 2, Thermostats Absent of home_screen (revision 355)
+
+* Evolutions:
+	- Startup image added for IOS devices
+	
+* Not Corrected:
+	- Graphes not implemented
+	- Thermostat: Scenarios not yet working
+	
+[0.3.0]
+* Evolutions:
+	- Rewritte of the WebApp in JajaScript / Html 
+	- Adding the Scenario fonction for thermostats (daily)
+	- Adding the support of RPIDOM card (Teleinfomation port)
+	- Adding the support of wind sensors
+
+[0.4.0]
+* Evolutions:	
+	- Adding the support of RPIDOM card (1 Wire)
+	- Adding support on mydomboxcloud.com
+	
+	
+[Next Versions]	
+* Evolutions:
+	- Adding the support of RGB controllers dx.com 130913 and 67412 for RFXtrx433.
+	
+* Not Corrected:
+	- Graphes not implemented
+	- Thermostat: Scenarios weekly not yet working
+	
+[0.5.0]
+* Evolutions:	
+	- Adding the support of RTS motor
+	- Adding the support of RGB controllers dx.com 130913 and 67412 for RFXtrx433.
+	- Adding Weekly thermostat
+	- Correction TP auto display for thermostat
+	- MakeFile Written
+	
+	
+* Not Corrected:
+	- Graphes not implemented

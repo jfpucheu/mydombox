@@ -1,0 +1,22 @@
+.namestyle .ui-input-text{
+	width: 150px !important;
+}
+.idstyle .ui-input-text{
+	width: 40px !important;
+}
+	
+.input-time-text
+{
+	width: 60px !important;
+}
+
+#sc_form-popup,#sc_new-popup{
+	right: 10%;
+	left: 10%;
+	width: 80%;
+}
+
+.temperature{ 
+color : green;
+font-size: 20px 
+}

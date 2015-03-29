@@ -1,0 +1,11 @@
+Error List
+
+ERROR LI_WS001: Probleme send Webservice Request
+ERROR LI_DB001: Error Updating Light Status in DB
+ERROR LI_PST_0001: Error Posting Light Update
+
+ERROR DC_DV001: Error Updating Device Informations in DB
+ERROR DC_DV002: Error deleting Device in DB
+ERROR DC_DV003: Error Creation Device in DB
+ERROR DC_DB004: Error Updating Device confirmation in DB
+ERROR DC_DB005: Error Clearing Device autoddetected in DB

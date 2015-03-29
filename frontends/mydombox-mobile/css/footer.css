@@ -1,0 +1,58 @@
+/* Header Bar */
+.title { 
+	font-family: 'Comfortaa',Arial,sans-serif; 
+	font-weight: 400; 
+}
+
+/* Footer Bar */
+.ui-navbar li .ui-btn .ui-btn-inner, .ui-navbar li .ui-btn {
+    border: 0 solid red !important;
+	 border-color:"white";
+}
+
+/* this makes the nav bar a bit higher than default */
+.mydombox-footer .ui-btn .ui-btn-inner { 
+padding-top: 40px !important; 
+border: none;
+}
+
+/* and this makes the space for the icons a bit bigger */
+.mydombox-footer .ui-btn .ui-icon { 
+width: 60px!important; 
+height: 60px!important; 
+margin-left: -30px !important; 
+box-shadow: none!important; 
+-moz-box-shadow: none!important; 
+-webkit-box-shadow: none!important; 
+-webkit-border-radius: 0 !important; 
+border-radius: 0 !important; 
+margin-top:-3px;
+border: none;
+}
+
+
+
+.ui-icon-temp { 
+    background: url( images/toolbar/mdb_nav_temp.png) 50% 50% no-repeat;
+	background-size: 50px 50px;
+}
+
+.ui-icon-light { 
+    background: url( images/toolbar/mdb_nav_light.png) 50% 50% no-repeat;
+	background-size: 50px 50px;
+}
+
+.ui-icon-energy { 
+    background: url( images/toolbar/mdb_nav_energy.png) 50% 50% no-repeat;
+	background-size: 50px 50px;
+}
+
+.ui-icon-weather { 
+    background: url( images/toolbar/mdb_nav_meteo.png) 50% 50% no-repeat;
+	background-size: 50px 50px;
+}
+
+.ui-icon-video { 
+    background: url( images/toolbar/mdb_nav_video.png) 50% 50% no-repeat;
+	background-size: 50px 50px;
+}

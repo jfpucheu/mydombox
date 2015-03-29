@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- icon for iOS Devices -->
+	<link rel="apple-touch-icon" href="css/images/ios/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="css/images/ios/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="css/images/ios/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="css/images/ios/touch-icon-ipad-retina.png">
+
+	<!-- iPhone -->
+	<link href="css/images/ios/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!-- iPhone (Retina) -->
+	<link href="css/images/ios/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPhone 5 -->
+	<link href="css/images/ios/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPad (portrait) -->
+	<link href="css/images/ios/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!-- iPad (landscape) -->
+	<link href="css/images/ios/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, portrait) -->
+	<link href="css/images/ios/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, landscape) -->
+	<link href="css/images/ios/apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+	<!-- Letterboxed on iPhone 5 -->
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=320">
+	<!-- Not letterboxed on iPhone 5 -->
+	<meta name="viewport" content="initial-scale=1.0"> 
+	<meta name="viewport" content="width=320.1">
+	
+	<title>Mydombox (beta)</title> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes"> 	
+	<!--<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=no; width=device-width">-->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="lib/jquery/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/mydombox.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/icones.css" />
+	<link rel="stylesheet" type="text/css" href="css/forms.css" /> 	
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="lib/jqplot/jquery.jqplot.css" />
+	
+	<script src="lib/jquery/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery/jquery.mobile-1.3.2.min.js"></script>
+	
+	<script type="text/javascript" src="lib/jqplot/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="lib/jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+	<script type="text/javascript" src="lib/jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+	<script type="text/javascript" src="lib/jqplot/plugins/jqplot.dateAxisRenderer.js"></script>
+	<script type="text/javascript" src="lib/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+	<script type="text/javascript" src="lib/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+
+		
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/temperature.js"></script>
+	<script type="text/javascript" src="js/light.js"></script>
+	<script type="text/javascript" src="js/motor.js"></script>
+	<script type="text/javascript" src="js/energy.js"></script>
+	<script type="text/javascript" src="js/weather.js"></script>
+	<script type="text/javascript" src="js/device.js"></script>
+	<script type="text/javascript" src="js/scenario.js"></script>
+	
+	<script type="application/javascript" src="lib/fastclick/fastclick.js"></script>
+	<script type="text/javascript" src="lib/farbtastic/farbtastic.js"></script>
+	<link rel="stylesheet" href="lib/farbtastic/farbtastic.css" type="text/css" />
+	
+
+
+</head>
+
+<body>
+<!-- Start of first page: #home -->
+<div data-role="page" id="index" class="icones-page">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul id="home_list_th" data-role="listview" data-inset="true"> </ul>
+	</div><!-- /content -->
+
+	<div data-role="content">	
+		<ul id="home_list" data-role="listview" data-inset="true"> </ul>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page one -->
+
+<!-- Start of page: #thermostat -->
+<div data-role="page" id="thermostat" class="icones-page">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+
+	<ul data-role="listview" data-theme="c" data-dividertheme="d">
+		<li data-role="list-divider" style="text-align: center;">Thermostats</li>
+	</ul>	
+	
+		<div data-role="content">			
+			<ul id="thermostat_list" data-role="listview" data-inset="true"></ul>
+		</div>
+	
+	<ul data-role="listview" data-theme="c" data-dividertheme="d">
+		<li data-role="list-divider" style="text-align: center;">Temperature Sensor</li>
+	</ul>	
+	
+		<div data-role="content">			
+			<ul id="temperature_list" data-role="listview" data-inset="true"></ul>
+		</div>
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page two -->
+
+<!-- Start of page: #light -->
+<div data-role="page" id="light" class="icones-page">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+
+	<ul data-role="listview" data-theme="c" data-dividertheme="d">
+		<li data-role="list-divider" style="text-align: center;">Lighting</li>
+	</ul>	
+	
+	<div data-role="content">			
+		<ul id="light_list" data-role="listview" data-inset="true"></ul>
+	</div>	
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page two -->
+
+<!-- Start of page: #energy -->
+<div data-role="page" id="energy" class="icones-page">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+
+	<ul data-role="listview" data-theme="c" data-dividertheme="d">
+		<li data-role="list-divider" style="text-align: center;">Energy</li>
+	</ul>	
+	
+	<div data-role="content">			
+		<ul id="energy_list" data-role="listview" data-inset="true"></ul>
+	</div>	
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page two -->
+
+<!-- Start of page: #weather -->
+<div data-role="page" id="weather" class="icones-page">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+
+	<ul data-role="listview" data-theme="c" data-dividertheme="d">
+		<li data-role="list-divider" style="text-align: center;">Weather</li>
+	</ul>	
+	
+	<div data-role="content">			
+		<ul id="weather_list" data-role="listview" data-inset="true"></ul>
+	</div>	
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page two -->
+
+<!-- Start of page: #config -->
+<div data-role="page" id="config">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+	
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="d">
+			<li data-role="list-divider" style="text-align: center;">Configuration Menu</li>
+			<!-- <li><a href="config_soft.php">Software</a></li> -->
+			<li><a href="#config-devices">Devices</a></li>
+			<!-- <li><a href="config_notifications.php">Notifications</a></li> -->
+			<li><a href="#credits" data-rel="dialog" data-transition="pop">Credits</a></li>
+		</ul>
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page two -->
+
+<!-- Start of page: #config-devices -->
+<div data-role="page" id="config-devices">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" id="home"><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+	
+<div data-role="content">	
+	<div class="content-primary">
+	
+		<div data-role="collapsible" data-theme="d" data-content-theme="c">
+			<h2>Devices</h2>
+			<ul id="device-list" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="d"></ul>
+			<a href="#" data-role="button" id="bt-config-dialog-new" data-icon="plus" data-rel="dialog" >Add New Device Manualy</a>
+		</div>
+		
+		<div data-role="collapsible" data-theme="d" data-content-theme="c">
+			<h2>Auto Detected Devices</h2>
+			<ul id="device-list-new" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="d"></ul>
+			<a href="#" data-role="button" id="bt-config-dialog-clear" data-icon="delete" data-rel="dialog" >Clear Auto Detected Devices</a>
+		</div>
+		
+	</div>
+</div>
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false">
+		<div data-role="navbar" class="mydombox-footer">
+			<ul>
+				<li><a href="#thermostat" 	id="temp" 	data-icon="temp" data-iconshadow="false" >&nbsp;</a></li>
+				<li><a href="#light" 		id="light" 	data-icon="light" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#energy"  		id="energy" data-icon="energy" data-iconshadow="false">&nbsp;</a></li>
+				<li><a href="#weather"		id="weather" data-icon="weather" data-iconshadow="false">&nbsp;</a></li>
+				<!--<li><a href="/mydombox-mobile/video.php" 	id="video" data-icon="custom" data-iconshadow="false">&nbsp;</a></li>-->
+				<li><a href="/mydombox-mobile/pop/not_available.php" 	id="video" data-icon="video" data-iconshadow="false" data-rel="dialog">&nbsp;</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+</div><!-- /page two -->
+
+<!-- Start of page: #config-device-dialog -->
+<div data-role="page" id="config-device-dialog">
+	<div data-role="header" data-position="fixed">
+		<h1 id="device_name">Device: <span></span></h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<input type="hidden" id="dc_id">
+		
+		<!-- Display this block only for new device -->
+		<div data-role="fieldcontain" id="div_device_type">	
+			<label for="device">Device Type: </label>
+			<select name="device_type" id="device_type" data-mini="true" data-inline="true"  data-mini="true">
+				<option value=0 >-Select Device-</option>
+			</select> 
+		</div>
+	
+		<div data-role="fieldcontain" class="namestyle" id="div_dc_name">
+			<label for="dc_name">Device Name:</label>
+			<input type="text" name="dc_name" maxlength="20" id="dc_name" data-mini="true">
+		</div>
+		
+		<div data-role="fieldcontain" class="namestyle" style="display:none;" id="div_address">
+			<label for="address">Device Adress: </label>
+			<input type="text" name="address" maxlength="255" id="address" data-mini="true">
+		</div>
+		
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_id1">
+			<label for="id1">ID1 : </label>
+			<input type="text" name="id1" maxlength="2" id="id1" data-mini="true">
+		</div>
+
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_id2">
+			<label for="id2">ID2 : </label>
+			<input type="text" name="id2" maxlength="2" id="id2" data-mini="true" >
+		</div>	
+
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_id3">
+			<label for="id3">ID3 : </label>
+			<input type="text" name="id3" maxlength="2" id="id3" data-mini="true">
+		</div>	
+
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_id4">
+			<label for="id4">ID4 : </label>
+			<input type="text" name="id4" maxlength="2" id="id4" data-mini="true">
+		</div>	
+
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_groupcode">
+			<label for="groupcode">Groupcode : </label>
+			<input type="text" name="groupcode" maxlength="2" id="groupcode" data-mini="true">
+		</div>
+
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_housecode">
+			<label for="housecode">HouseCode : </label>
+			<input type="text" name="housecode" maxlength="2" id="housecode" data-mini="true">
+		</div>
+
+		<div data-role="fieldcontain" class="idstyle" style="display:none;" id="div_unitcode">
+			<label for="unitcode">UnitCode : </label>
+			<input type="text" name="unitcode" maxlength="2" id="unitcode" data-mini="true">
+		</div>
+
+		<div data-role="fieldcontain">
+			<label for="com">Receiver/Transmiter </label>
+			<select name="com" id="com" data-role="slider" data-mini="true">
+				<option value="rx">Rx</option>
+				<option value="tx">Tx</option>
+			</select>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="cloud">Cloud :</label>
+			<select name="cloud" id="cloud" data-role="slider" data-mini="true">
+				<option value=1>On</option>
+				<option value=0>Off</option>
+			</select>
+		</div>
+		
+		<div data-role="fieldcontain" class="namestyle" id="div_cloud_id">
+			<label for="cloud_id">Cloud ID:</label>
+			<input type="text" name="cloud_id" maxlength="32" id="cloud_id" data-mini="true">
+		</div>
+		
+		<a href="#" data-role="button" data-inline="true" data-mini="true" data-rel="back">Cancel</a>
+		<a href="#" data-role="button" id="confirm-device" data-inline="true" data-mini="true" style="background:#55b148; opacity: 1; display:none;" >Confirm Device</a>
+		<a href="#" data-role="button" id="init-device" data-rel="dialog" data-transition="slidedown " data-inline="true" data-mini="true" style="background:#ffcc66 opacity: 1" font-color="black" >Init</a>
+		<a href="#" data-role="button" id="delete-device" data-inline="true" data-mini="true" style="background:#db4d4d" font-color="white" opacity: 1>Delete Device</a>
+		<a href="#" data-role="button" id="submit-device-config" data-inline="true" data-mini="true" data-theme="b">Save</a>	
+	</div>
+	
+	<div data-role="popup" id="init-device-popup" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all" data-dismissible="false">
+          <p>MyDombox is Initializing ....</p>
+		  <p align="center"><img src="css/images/loading.gif" /></p>
+		  <p></p>
+	</div>
+</div><!-- /page two -->
+
+<!-- Start of page: #Thermostat Edit -->
+<div data-role="page" id="thermostat-edit">
+
+	<div data-role="header" data-position="fixed" >
+		<div class="ui-btn-left">
+			<a href="#index" data-ajax="false" ><img src="css/images/toolbar/mdb_home.png" width= "25px"/></a>
+			</div>   
+			<h1 class="title">Mydombox (beta)</h1>		
+			<div class="ui-btn-right" data-enhance="false">
+				<a href="#config" > <img src="css/images/toolbar/mdb_config.png" width= "30px"/></a>
+		</div>	
+	</div><!-- /header -->
+
+	<div data-role="header" data-theme="c" data-dividertheme="d">
+		<h1 id="thermostat-name">Thermostat</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+			<form name="thermostat-form" id="thermostat-form" method="post" data-ajax="false" >  
+				<input type="hidden" id="th_id" />
+				<input type="hidden" id="sc_id" />
+				
+				<ul data-role="listview" data-inset="true">			
+					<li data-role="list-divider" data-theme="c" data-dividertheme="d" >Configuration</li>
+					<li><div data-role="fieldcontain">
+						<label for="th_use">On / OFF</label>
+							<select id="th_use"  data-role="slider" >
+								<option value="on">On</option>
+								<option value="off">Off</option>
+							</select>
+					</div></li>
+
+
+					<li><div data-role="fieldcontain">
+						<label for="th_mode">Mode </label>
+							<select id="th_mode" data-role="slider">
+								<option value="auto">Auto</option>
+								<option value="manual">Manual</option>
+							</select>
+					</div></li>
+				</ul>
+				
+				<div id="manual-config" style="display:none;">
+					<ul data-role="listview" data-inset="true" >	
+						<li data-role="list-divider" data-theme="c" data-dividertheme="d" >Manual Temperature</li>
+						<li>
+							<div data-role="fieldcontain">
+							   <input type="range" id="tp_set"  min="5" max="25" data-highlight="true"  />
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="auto-config" style="display:none;">
+					<ul data-role="listview" data-inset="true" >
+						<li data-role="list-divider" data-theme="c" data-dividertheme="d">Auto Configuration</li>	
+						<li>
+							<div data-role="fieldcontain" data-inline="true">
+									<label for="select-scenario">Scenario:</label>
+									<select name='select-scenario' id="select-scenario">
+										<option value='no' >-- No Scenario Selected --</option>
+									</select>
+									<a href="#" id="sc-editor" data-role="button" data-theme="b" >Scenario Editor</a>		
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<a href="#" data-role="button" data-mini="true" data-inline="true" data-rel="back">Cancel</a>
+				<a href="#" id="thermostat-setup" data-role="button" data-mini="true" data-inline="true">Setting</a>
+				<a href="#" data-role="button" id="thermostat-delete" data-inline="true" data-mini="true" style="background:#db4d4d; opacity:1" font-color="white" >Delete Thermostat</a>
+				<input type="submit" name="submit" class="button" id="submit" value="Save" data-role="button" data-mini="true" data-inline="true" /> 
+			</form>
+	</div>
+	
+	
+	<!-- popup delete scenario-->
+	<div data-role="popup" id="thermostat-delete-confirm" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all" data-dismissible="false">
+		<div data-role="header" data-theme="a" class="ui-corner-top">
+			<h1>Delete Thermostat?</h1>
+		</div>
+		<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+			<h3 class="ui-title">Are you sure you want to delete this Thermostat?</h3>
+			<p>This action cannot be undone.</p>
+			<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>    
+			<a href="#" id="th_del_confirm" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Delete</a>  
+		</div>
+	</div>
+	<!-- End Of Popup delete scenario-->
+	
+	<!-- popup thermostat edition-->
+	<div data-role="popup" id="th_setup" data-overlay-theme="a" data-theme="c" data-dismissible="false">
+		<div data-role="header" data-theme="a" class="ui-corner-top">
+			<h1>Edit Thermostat Settings </h1>
+		</div>
+		<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+		
+		<div data-role="content">  
+			<form name="thermostat-setup" id="thermostat-setup" method="post" data-ajax="false" > 
+			<input type="hidden" name="th_id" value="">
+
+			<div data-role="fieldcontain" class="ui-hide-label">
+				<label for="th_name">Thermostat Name</label>
+				<input type="text" name="th_name" id="th_name" maxlength="20" id="limit" value="">
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label for="device">Sensor: </label>
+				<select name="sensor_list" id="sensor_list" data-mini="true" data-inline="true"></select> 
+			</div>	
+
+			<div data-role="fieldcontain">
+				<label for="device">Receiver: </label>
+				<select name="recept_list" id="recept_list" data-mini="true" data-inline="true"></select> 
+			</div>
+
+			<a href="#" data-role="button" data-inline="true" data-mini="true" data-rel="back">Cancel</a>
+			<input type="submit" name="submit" class="button" id="submit" value="Save" data-role="button" data-mini="true" data-inline="true" /> 
+		</form>
+		</div>
+	</div>
+	<!-- popup thermostat edition-->
+
+</div>
+
+<!-- Start of page: #scenario -->
+<div data-role="page"  id="scenario" >		
+	<div data-role="header" data-theme="d" data-position="inline">
+		<h1>Scenarios</h1>
+	</div>
+	
+	<div data-role="content">	
+		<select name='select-scenario-edit' id="select-scenario-edit">
+			<option value='no' >-- No Scenario Selected --</option>
+		</select>
+
+		<ul data-role="listview" id="actionList" data-autodividers="true" data-inset="true"></ul>
+		
+		
+		<div id="del_scenario" style="display:none;">
+			<input id="copy_day_button" type="submit" value="Dupliquer Jour" />
+			<input id="del_scenario_button" type="submit" value="Delete Scenario" style="background:#db4d4d; opacity:.50" font-color="white"/>
+		</div>
+		
+		<div id="new_scenario">
+			<input id="open_popup_scenario" type="submit" data-theme="b" value="New Scenario">
+		</div>
+	</div>
+		
+		<!-- popup add new scenario-->
+		<div data-role="popup" id="sc_new" data-overlay-theme="a" data-theme="c" data-dismissible="false">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>Add New Scenario</h1>
+			</div>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			
+			<form name="myform" method="post" action="">		
+				<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="d">
+					<li data-role="fieldcontain" >
+						<label for="sc_name">Name:</label>
+						<input name="sc_name" id="sc_name" value="" type="text">
+					</li>
+					<li data-role="fieldcontain" >
+						<label for="sc_type" class="select">Scenario type</label>
+						<select name="sc_type" id="sc_type">
+							<option value="daily">Daily (24h)</option>
+							<option value="weekly">Weekly (7 days)</option>
+						</select>
+					</li>
+
+				</ul>
+				<a href="#" id="add_scenario" data-role="button" data-inline="true" data-rel="back">Add</a>  	
+			</form>
+		</div>
+		<!-- End Of Popup add new scenario-->
+		
+		<!-- popup delete scenario-->
+		<div data-role="popup" id="sc_del" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all" data-dismissible="false">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>Delete Scenario?</h1>
+			</div>
+			<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+				<h3 class="ui-title">Are you sure you want to delete this scenario?</h3>
+				<p>This action cannot be undone.</p>
+				<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>    
+				<a href="#" id="sc_del_confirm" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">Delete</a>  
+			</div>
+		</div>
+		<!-- End Of Popup delete scenario-->
+		
+		<!-- popup day duplication scenario-->
+		<div data-role="popup" id="sc_dup" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all" data-dismissible="false">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>Dupliquer un jour</h1>
+			</div>
+			<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+					<select name="sc_day_ori" id="sc_day_ori">
+						<option value="1">Lundi</option>
+						<option value="2">Mardi</option>
+						<option value="3">Mercredi</option>
+						<option value="4">Jeudi</option>
+						<option value="5">Vendredi</option>
+						<option value="6">Samedi</option>
+						<option value="7">Dimanche</option>
+					</select>
+					
+					<select name="sc_day_dest" id="sc_day_dest">
+						<option value="1">Lundi</option>
+						<option value="2">Mardi</option>
+						<option value="3">Mercredi</option>
+						<option value="4">Jeudi</option>
+						<option value="5">Vendredi</option>
+						<option value="6">Samedi</option>
+						<option value="7">Dimanche</option>
+					</select>
+				<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>
+				<a href="#" id="sc_copy" data-role="button" data-inline="true" data-rel="back" data-theme="c">Copier</a>     
+			</div>
+		</div>
+		<!-- End Of Popup delete scenario-->
+					
+		<!-- popup scenario edition-->
+		<div data-role="popup" id="sc_form" data-overlay-theme="a" data-theme="c" data-dismissible="false">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>Edit Periode </h1>
+			</div>
+			<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			
+			<div data-role="content">
+				<input type="hidden" id="pg_id">
+				
+				<div id="day_select" style="display:none">
+					<select name="sc_day" id="sc_day" >
+						<option value="1">Lundi</option>
+						<option value="2">Mardi</option>
+						<option value="3">Mercredi</option>
+						<option value="4">Jeudi</option>
+						<option value="5">Vendredi</option>
+						<option value="6">Samedi</option>
+						<option value="7">Dimanche</option>
+					</select>
+				</div>
+				
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="input-time-text" data-inline="true">
+							<label for="start_time">Start</label>
+							<input type="time" id="start_time" data-inline="true" />
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="input-time-text" data-inline="true">
+							<label for="stop_time">Stop</label>
+							<input type="time" id="stop_time" data-inline="true" /> 
+						</div>
+					</div>
+				</div>
+				<label for="tp_set">Temperature</label>
+				<input type="range" name="tp_prog" id="tp_prog" value="20" min="5" max="25" data-inline="false" data-highlight="true" />
+
+				<a href="#" id="delete_periode" data-role="button" data-inline="true" data-rel="back">Delete</a>  
+				<a href="#" id="update_periode" data-role="button" data-inline="true" data-rel="back">Submit</a>  
+			</div>
+		</div>
+		<!-- End Of Popup scenario edition-->
+</div>
+
+
+<!--
+***************************************************************************************************
+		#########	Dialog Pages	#########
+***************************************************************************************************
+-->
+
+<!-- Start of page: #light-dialog -->
+<div data-role="page" id="light-dialog">
+
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1 id="device_light_name"><span></span></h1>
+	</div>
+
+	<div data-role="content">
+
+		<input type="hidden" id="dc_id" value="">
+		
+		<div id="light_swich" data-role="fieldcontain" style="display:none;">
+
+			<label for="">Light On/OFF </label>
+			<select id="light_mode" data-role="slider">
+				<option value="on">On</option>
+				<option value="off">Off</option>
+			</select>
+		</div>
+
+		<div id="light_mode" data-role="controlgroup" data-type="horizontal" align="center" style="display:none;">
+			<a href="#" id="lighting5_On" data-role="button">On</a>
+			<a href="#" id="lighting5_Mode" data-role="button">Mode</a>
+			<a href="#" id="lighting5_Off" data-role="button">Off</a>
+		</div>	
+
+		<div id="light_speed" data-role="controlgroup" data-type="horizontal" align="center" style="display:none;">
+			<a href="#" id="lighting5_Speed_down" data-role="button">Speed -</a>
+			<a href="#" id="lighting5_Speed_up" data-role="button">Speed +</a>
+		</div>
+		
+		<div id="light_dim" data-role="controlgroup" data-type="horizontal" align="center" style="display:none;">
+			<a href="#" id="lighting5_Light_down" data-role="button">Light -</a>
+			<a href="#" id="lighting5_Light_up" data-role="button">Light +</a>
+		</div>
+		
+				<div id="colorpicker" align="center"></div>
+				 <!-- <input type="text" id="color" name="color" value="#123456" />-->
+			
+	</div>
+</div>
+
+<!-- Start of page: #motor-dialog -->
+<div data-role="page" id="motor-dialog">
+
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1 id="device_motor_name"><span></span></h1>
+	</div>
+
+	<div data-role="content">
+	
+		<input type="hidden" id="dc_id" value="">
+		
+		<div id="command" data-role="controlgroup" data-type="horizontal" align="center">
+			<a href="#" id="RFY_up" data-role="button" data-icon="arrow-u">Up</a>
+			<a href="#" id="RFY_stop" data-role="button" data-icon="delete">Stop</a>
+			<a href="#" id="RFY_down" data-role="button"data-icon="arrow-d">Down</a>
+		</div>	
+				
+	</div>
+</div>
+<!-- Start of page: #temperature-dialog -->
+<div data-role="page" id="temperature-dialog">
+
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1 id="device_tp_name"><span></span></h1>
+	</div>
+
+	<div data-role="content" style="align:center;">
+		<div id="last_update">Last Update: <span></span></div>
+		<p>
+		<div id="last_temperature">Temperature: <span></span> &ordm; C </div> 
+		
+		 <!--Graph Section-->
+		 <p align="center">
+		 <img id="temperature_spinner" src="css/images/loading3.gif" style="display:none;"/>
+		 <div id="temperature_chartdiv"></div>
+		 </p>
+	</div>
+	
+</div>
+
+<!-- Start of page: #weather-dialog -->
+<div data-role="page" id="weather-dialog">
+
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1 id="device_weather_name"><span></span></h1>
+	</div>
+
+	<div data-role="content">
+
+		<div id="weather_update">Last Update: <span></span></div>
+		<p>
+		<div id="weather_temperature" style="display:none;">Temperature: <span></span> &ordm; C </div>
+		<p>
+		<div id="weather_humidity" style="display:none;">Humidity: <span></span> % </div> 
+		<p>
+		<div id="weather_rainrate" style="display:none;">Rainrate: <span></span>mm</div> 
+		<p>
+		<div id="weather_raintotal" style="display:none;">Raintotal: <span></span>mm</div> 
+		<p>
+		<div id="weather_winddirection" style="display:none;">Wind Direction: <span></span> &ordm;</div> 
+		<p>
+		<div id="weather_av_speed" style="display:none;">Wind Average Speed: <span></span>m/s</div>
+
+		 <!--Graph Section-->
+		 <p align="center">
+		 <img id="weather_spinner" src="css/images/loading3.gif" style="display:none;"/>
+		 <div id="weather_chartdiv"></div>
+		 </p>
+	</div>
+</div>
+
+<!-- Start of page: #energy-dialog -->
+<div data-role="page" id="energy-dialog">
+
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1 id="device_energy_name"><span></span></h1>
+	</div>
+
+	<div data-role="content">
+
+		<div id="energy_update">Last Update: <span></span></div>
+		<p>
+		<div id="energy_instant">Instant: <span></span> Watts </div>
+		<p>
+		<div id="energy_total">Total: <span></span> </div> 
+		
+		 <!--Graph Section-->
+		 <p align="center">
+		 <img id="energy_spinner" src="css/images/loading3.gif" style="display:none;"/>
+		 <div id="energy_chartdiv"></div>
+		 </p>
+	</div>
+</div>
+
+<!-- Start of page: #energy-edf-dialog -->
+<div data-role="page" id="energy-edf-dialog">
+
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1 id="device_energy_edf_name"><span></span></h1>
+	</div>
+
+	<div data-role="content">
+
+		<div id="energy_edf_update">Last Update: <span></span></div>
+		<p>
+		<div id="energy_edf_optarif">Tariff Option: <span></span> </div>
+		<p>
+		<div id="energy_edf_isousc">Intensité souscrite: <span></span> A </div>
+		<p>
+		<div id="energy_edf_hchp">Index Heure Pleines: <span></span> Wh </div>
+		<div id="energy_edf_hchc">Index Heure Creuses: <span></span> Wh </div>
+		<p>
+		<div id="energy_edf_ptec">Période Tarifaire en cours: <span></span> </div>
+		<p>
+		<div id="energy_edf_iinst">Intensité Instantanée: <span></span> A </div> 
+		<p>
+		<div id="energy_edf_iinst1">Intensité Instantanée Phase 1: <span></span> A </div>
+		<div id="energy_edf_iinst2">Intensité Instantanée Phase 2: <span></span> A </div> 
+		<div id="energy_edf_iinst3">Intensité Instantanée Phase 3: <span></span> A </div>
+		<p>
+		<div id="energy_edf_imax">Intensité maximale : <span></span> A </div>
+		<p>
+		<div id="energy_edf_imax1">Intensité maximale Phase 1: <span></span> A </div>
+		<div id="energy_edf_imax2">Intensité maximale Phase 2: <span></span> A </div>
+		<div id="energy_edf_imax3">Intensité maximale Phase 3: <span></span> A </div>
+		<p>
+		<div id="energy_edf_pmax">Puissance maximale triphasée atteinte: <span></span> W </div>
+		<p>
+		<div id="energy_edf_papp">Puissance apparente triphasée: <span></span> VA </div>
+		<p>
+		<div id="energy_edf_hphc">Horaire Heures Pleines Heures Creuses: <span></span> </div>
+		<p>
+		<div id="energy_edf_motdetat">Mot d'Etat du compteur: <span></span></div>
+		<p>
+		<div id="energy_edf_ppot">Présence des potentiels: <span></span></div>
+		<p>
+		<div id="energy_edf_adps">Avertissement de Dépassement De Puissance Souscrite: <span></span> A </div>
+		<p>
+		<p>Avertissement de Dépassement d'intensité de réglage<p>
+		<div id="energy_edf_adir1">Phase 1: <span></span> A </div>
+		<div id="energy_edf_adir2">Phase 2: <span></span> A </div>
+		<div id="energy_edf_adir3">Phase 3: <span></span> A </div>		
+		
+		<!--<a href="energy_graph.php" data-role="button" data-inline="true">Graph</a>-->
+	</div>
+</div>
+
+</body>
+</html>
