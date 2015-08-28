@@ -26,12 +26,14 @@ int post_stream_value(const char *stream,const char * data, ...){
 
 	CURL *curl;
 	CURLcode res;
+	
+	long http_code = 0;
 
 	char h_xisskey [64] = "";
 	char h_xoapikey [64] = "";
 	
 	sprintf(h_xisskey,"X-ISS-Key: %s",MDB_X_ISS_Key);
-	sprintf(h_xoapikey,"X-OAPI-Key : %s",MDB_X_OAPI_Key);
+	sprintf(h_xoapikey,"X-OAPI-Key: %s",MDB_X_OAPI_Key);
 	
 	/* Preparation de l'URL*/
 	char url[1024]="";
@@ -47,7 +49,7 @@ int post_stream_value(const char *stream,const char * data, ...){
 	struct curl_slist *headers = NULL;
 	headers = curl_slist_append(headers, "Accept: application/json");
 	headers = curl_slist_append(headers, "Content-Type: application/json");
-	headers = curl_slist_append(headers, "charsets: utf-8");
+	headers = curl_slist_append(headers, "Accept-Charset: utf-8");
 	headers = curl_slist_append(headers, h_xisskey);
 	headers = curl_slist_append(headers, h_xoapikey);
 	
@@ -57,19 +59,26 @@ int post_stream_value(const char *stream,const char * data, ...){
 	}
 	
 	
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
+	curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
+	curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
 	curl_easy_setopt(curl, CURLOPT_HTTPHEADER,headers);
 
 	curl_easy_setopt(curl, CURLOPT_URL, url);
 	curl_easy_setopt(curl, CURLOPT_POSTFIELDS, buffer);
     	
 	res = curl_easy_perform(curl);
+	
 	        /* Check for errors */
-                if(res != CURLE_OK)
-					log_DEBUG ("curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+                if(res != CURLE_OK) {
+			log_DEBUG ("curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+		}
+		else {
+			curl_easy_getinfo (curl, CURLINFO_RESPONSE_CODE, &http_code);
+			log_DEBUG ("HTTP Code Return : %ld",http_code);
+		}
                 /* always cleanup */
-                curl_easy_cleanup(curl);
+	curl_easy_cleanup(curl);
+    return 1;
 }
 
 

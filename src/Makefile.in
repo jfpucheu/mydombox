@@ -68,11 +68,14 @@ am_mydombox_OBJECTS = mydombox-mydombox.$(OBJEXT) \
 	mydombox-mdb_config_reader.$(OBJEXT) \
 	mydombox-mdb_soapserver.$(OBJEXT) mydombox-mdb_tools.$(OBJEXT) \
 	mydombox-mdb_rfxtrx433.$(OBJEXT) \
+	mydombox-mdb_enocean_usb300.$(OBJEXT) \
 	mydombox-mdb_thermostat.$(OBJEXT) \
-	mydombox-mdb_decode_messages.$(OBJEXT) \
+	mydombox-mdb_decode_rfxcom_messages.$(OBJEXT) \
 	mydombox-mdb_encode_messages.$(OBJEXT) \
+	mydombox-mdb_decode_enocean_messages.$(OBJEXT) \
 	mydombox-mdb_log.$(OBJEXT) mydombox-mdb_mysql.$(OBJEXT) \
-	mydombox-mdb_dvn.$(OBJEXT) mydombox-mdb_rpidom.$(OBJEXT)
+	mydombox-mdb_dvn.$(OBJEXT) mydombox-mdb_rpidom.$(OBJEXT) \
+	mydombox-mdb_scheduler.$(OBJEXT)
 mydombox_OBJECTS = $(am_mydombox_OBJECTS)
 am__DEPENDENCIES_1 =
 mydombox_DEPENDENCIES = $(am__DEPENDENCIES_1) $(GSOAP_CFLAGS)
@@ -203,13 +206,16 @@ mydombox_SOURCES = \
 	mdb_soapserver.c mdb_soapserver.h \
 	mdb_tools.c mdb_tools.h \
 	mdb_rfxtrx433.c mdb_rfxtrx433.h \
+	mdb_enocean_usb300.c mdb_enocean_usb300.h \
 	mdb_thermostat.c mdb_thermostat.h \
-	mdb_decode_messages.c mdb_decode_messages.h \
+	mdb_decode_rfxcom_messages.c mdb_decode_rfxcom_messages.h \
 	mdb_encode_messages.c mdb_encode_messages.h \
+	mdb_decode_enocean_messages.c mdb_decode_enocean_messages.h \
 	mdb_log.c mdb_log.h \
 	mdb_mysql.c mdb_mysql.h \
 	mdb_dvn.c mdb_dvn.h \
-	mdb_rpidom.c mdb_rpidom.h
+	mdb_rpidom.c mdb_rpidom.h \
+	mdb_scheduler.c mdb_scheduler.h 
 
 all: all-am
 
@@ -296,13 +302,16 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_config_reader.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_decode_messages.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_decode_enocean_messages.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_dvn.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_encode_messages.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_enocean_usb300.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_log.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_mysql.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_rfxtrx433.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_rpidom.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_scheduler.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_soapserver.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_thermostat.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mydombox-mdb_tools.Po@am__quote@
@@ -392,6 +401,20 @@ mydombox-mdb_rfxtrx433.obj: mdb_rfxtrx433.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_rfxtrx433.obj `if test -f 'mdb_rfxtrx433.c'; then $(CYGPATH_W) 'mdb_rfxtrx433.c'; else $(CYGPATH_W) '$(srcdir)/mdb_rfxtrx433.c'; fi`
 
+mydombox-mdb_enocean_usb300.o: mdb_enocean_usb300.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_enocean_usb300.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_enocean_usb300.Tpo -c -o mydombox-mdb_enocean_usb300.o `test -f 'mdb_enocean_usb300.c' || echo '$(srcdir)/'`mdb_enocean_usb300.c
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_enocean_usb300.Tpo $(DEPDIR)/mydombox-mdb_enocean_usb300.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_enocean_usb300.c' object='mydombox-mdb_enocean_usb300.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_enocean_usb300.o `test -f 'mdb_enocean_usb300.c' || echo '$(srcdir)/'`mdb_enocean_usb300.c
+
+mydombox-mdb_enocean_usb300.obj: mdb_enocean_usb300.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_enocean_usb300.obj -MD -MP -MF $(DEPDIR)/mydombox-mdb_enocean_usb300.Tpo -c -o mydombox-mdb_enocean_usb300.obj `if test -f 'mdb_enocean_usb300.c'; then $(CYGPATH_W) 'mdb_enocean_usb300.c'; else $(CYGPATH_W) '$(srcdir)/mdb_enocean_usb300.c'; fi`
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_enocean_usb300.Tpo $(DEPDIR)/mydombox-mdb_enocean_usb300.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_enocean_usb300.c' object='mydombox-mdb_enocean_usb300.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_enocean_usb300.obj `if test -f 'mdb_enocean_usb300.c'; then $(CYGPATH_W) 'mdb_enocean_usb300.c'; else $(CYGPATH_W) '$(srcdir)/mdb_enocean_usb300.c'; fi`
+
 mydombox-mdb_thermostat.o: mdb_thermostat.c
 @am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_thermostat.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_thermostat.Tpo -c -o mydombox-mdb_thermostat.o `test -f 'mdb_thermostat.c' || echo '$(srcdir)/'`mdb_thermostat.c
 @am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_thermostat.Tpo $(DEPDIR)/mydombox-mdb_thermostat.Po
@@ -406,19 +429,19 @@ mydombox-mdb_thermostat.obj: mdb_thermostat.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_thermostat.obj `if test -f 'mdb_thermostat.c'; then $(CYGPATH_W) 'mdb_thermostat.c'; else $(CYGPATH_W) '$(srcdir)/mdb_thermostat.c'; fi`
 
-mydombox-mdb_decode_messages.o: mdb_decode_messages.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_decode_messages.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_decode_messages.Tpo -c -o mydombox-mdb_decode_messages.o `test -f 'mdb_decode_messages.c' || echo '$(srcdir)/'`mdb_decode_messages.c
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_decode_messages.Tpo $(DEPDIR)/mydombox-mdb_decode_messages.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_decode_messages.c' object='mydombox-mdb_decode_messages.o' libtool=no @AMDEPBACKSLASH@
+mydombox-mdb_decode_rfxcom_messages.o: mdb_decode_rfxcom_messages.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_decode_rfxcom_messages.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Tpo -c -o mydombox-mdb_decode_rfxcom_messages.o `test -f 'mdb_decode_rfxcom_messages.c' || echo '$(srcdir)/'`mdb_decode_rfxcom_messages.c
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Tpo $(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_decode_rfxcom_messages.c' object='mydombox-mdb_decode_rfxcom_messages.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_decode_messages.o `test -f 'mdb_decode_messages.c' || echo '$(srcdir)/'`mdb_decode_messages.c
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_decode_rfxcom_messages.o `test -f 'mdb_decode_rfxcom_messages.c' || echo '$(srcdir)/'`mdb_decode_rfxcom_messages.c
 
-mydombox-mdb_decode_messages.obj: mdb_decode_messages.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_decode_messages.obj -MD -MP -MF $(DEPDIR)/mydombox-mdb_decode_messages.Tpo -c -o mydombox-mdb_decode_messages.obj `if test -f 'mdb_decode_messages.c'; then $(CYGPATH_W) 'mdb_decode_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_decode_messages.c'; fi`
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_decode_messages.Tpo $(DEPDIR)/mydombox-mdb_decode_messages.Po
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_decode_messages.c' object='mydombox-mdb_decode_messages.obj' libtool=no @AMDEPBACKSLASH@
+mydombox-mdb_decode_rfxcom_messages.obj: mdb_decode_rfxcom_messages.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_decode_rfxcom_messages.obj -MD -MP -MF $(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Tpo -c -o mydombox-mdb_decode_rfxcom_messages.obj `if test -f 'mdb_decode_rfxcom_messages.c'; then $(CYGPATH_W) 'mdb_decode_rfxcom_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_decode_rfxcom_messages.c'; fi`
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Tpo $(DEPDIR)/mydombox-mdb_decode_rfxcom_messages.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_decode_rfxcom_messages.c' object='mydombox-mdb_decode_rfxcom_messages.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_decode_messages.obj `if test -f 'mdb_decode_messages.c'; then $(CYGPATH_W) 'mdb_decode_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_decode_messages.c'; fi`
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_decode_rfxcom_messages.obj `if test -f 'mdb_decode_rfxcom_messages.c'; then $(CYGPATH_W) 'mdb_decode_rfxcom_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_decode_rfxcom_messages.c'; fi`
 
 mydombox-mdb_encode_messages.o: mdb_encode_messages.c
 @am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_encode_messages.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_encode_messages.Tpo -c -o mydombox-mdb_encode_messages.o `test -f 'mdb_encode_messages.c' || echo '$(srcdir)/'`mdb_encode_messages.c
@@ -433,6 +456,20 @@ mydombox-mdb_encode_messages.obj: mdb_encode_messages.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_encode_messages.c' object='mydombox-mdb_encode_messages.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_encode_messages.obj `if test -f 'mdb_encode_messages.c'; then $(CYGPATH_W) 'mdb_encode_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_encode_messages.c'; fi`
+
+mydombox-mdb_decode_enocean_messages.o: mdb_decode_enocean_messages.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_decode_enocean_messages.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_decode_enocean_messages.Tpo -c -o mydombox-mdb_decode_enocean_messages.o `test -f 'mdb_decode_enocean_messages.c' || echo '$(srcdir)/'`mdb_decode_enocean_messages.c
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_decode_enocean_messages.Tpo $(DEPDIR)/mydombox-mdb_decode_enocean_messages.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_decode_enocean_messages.c' object='mydombox-mdb_decode_enocean_messages.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_decode_enocean_messages.o `test -f 'mdb_decode_enocean_messages.c' || echo '$(srcdir)/'`mdb_decode_enocean_messages.c
+
+mydombox-mdb_decode_enocean_messages.obj: mdb_decode_enocean_messages.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_decode_enocean_messages.obj -MD -MP -MF $(DEPDIR)/mydombox-mdb_decode_enocean_messages.Tpo -c -o mydombox-mdb_decode_enocean_messages.obj `if test -f 'mdb_decode_enocean_messages.c'; then $(CYGPATH_W) 'mdb_decode_enocean_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_decode_enocean_messages.c'; fi`
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_decode_enocean_messages.Tpo $(DEPDIR)/mydombox-mdb_decode_enocean_messages.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_decode_enocean_messages.c' object='mydombox-mdb_decode_enocean_messages.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_decode_enocean_messages.obj `if test -f 'mdb_decode_enocean_messages.c'; then $(CYGPATH_W) 'mdb_decode_enocean_messages.c'; else $(CYGPATH_W) '$(srcdir)/mdb_decode_enocean_messages.c'; fi`
 
 mydombox-mdb_log.o: mdb_log.c
 @am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_log.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_log.Tpo -c -o mydombox-mdb_log.o `test -f 'mdb_log.c' || echo '$(srcdir)/'`mdb_log.c
@@ -489,6 +526,20 @@ mydombox-mdb_rpidom.obj: mdb_rpidom.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_rpidom.c' object='mydombox-mdb_rpidom.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_rpidom.obj `if test -f 'mdb_rpidom.c'; then $(CYGPATH_W) 'mdb_rpidom.c'; else $(CYGPATH_W) '$(srcdir)/mdb_rpidom.c'; fi`
+
+mydombox-mdb_scheduler.o: mdb_scheduler.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_scheduler.o -MD -MP -MF $(DEPDIR)/mydombox-mdb_scheduler.Tpo -c -o mydombox-mdb_scheduler.o `test -f 'mdb_scheduler.c' || echo '$(srcdir)/'`mdb_scheduler.c
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_scheduler.Tpo $(DEPDIR)/mydombox-mdb_scheduler.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_scheduler.c' object='mydombox-mdb_scheduler.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_scheduler.o `test -f 'mdb_scheduler.c' || echo '$(srcdir)/'`mdb_scheduler.c
+
+mydombox-mdb_scheduler.obj: mdb_scheduler.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -MT mydombox-mdb_scheduler.obj -MD -MP -MF $(DEPDIR)/mydombox-mdb_scheduler.Tpo -c -o mydombox-mdb_scheduler.obj `if test -f 'mdb_scheduler.c'; then $(CYGPATH_W) 'mdb_scheduler.c'; else $(CYGPATH_W) '$(srcdir)/mdb_scheduler.c'; fi`
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/mydombox-mdb_scheduler.Tpo $(DEPDIR)/mydombox-mdb_scheduler.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='mdb_scheduler.c' object='mydombox-mdb_scheduler.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(mydombox_CFLAGS) $(CFLAGS) -c -o mydombox-mdb_scheduler.obj `if test -f 'mdb_scheduler.c'; then $(CYGPATH_W) 'mdb_scheduler.c'; else $(CYGPATH_W) '$(srcdir)/mdb_scheduler.c'; fi`
 
 ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
 	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \

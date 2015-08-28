@@ -13,6 +13,22 @@
 #include "mdb_mysql.h"
 #include "mdb_structures.h"
 
+// identification du jour de la semaine en fonction de la date
+int whichday()
+{
+    time_t timestamp;
+    struct tm * t;
+    timestamp = time(NULL);
+    t = localtime(&timestamp);
+    
+    int day = t->tm_wday;
+    
+    if (day == 0){
+        day = 7;
+    }
+    return day;
+}
+
 unsigned char stringtohex(char *hexstr)
 {
   char *pos = hexstr;

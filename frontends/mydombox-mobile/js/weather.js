@@ -62,6 +62,7 @@ function weather_graph(dc_id,packettype){
 
 	var action="graph";
 	var dataString = 'action='+ action+'&dc_id='+ dc_id;
+
 	$('#weather_chartdiv').empty();
 	$("#weather_spinner").show();
 	$.ajax({

@@ -17,8 +17,10 @@ char 	LOGIN[16]= "";
 char 	PASSWORD[16] = "";
 char 	DATABASE[16] = "";
 int 	MODULE_RFXTRX433;
+int 	MODULE_ENOUSB300;
 int 	MODULE_SOAP;
 char 	PORT_RFXTRX433[32]="";
+char 	PORT_ENOUSB300[32]="";
 int 	PORT_SOAP;
 int 	MODULE_RPIDOM;
 char 	PORT_RPIDOM[32]="";
@@ -31,6 +33,7 @@ char 	MDB_ID[64] = "";
 char 	MDB_X_ISS_Key[33] = "";
 char 	MDB_X_OAPI_Key[33] = "";
 char 	MDB_DATASOURCE[33] = "";
+
 
 // Add new variables here if necessary
 
@@ -72,25 +75,31 @@ i++;
 	}
 	else if (!strcmp(name,"PORT")){
                 PORT = atoi(value);
-        }
+    }
 	else if (!strcmp(name,"LOGIN")){
                 strcpy(LOGIN,value);
 	}
 	else if (!strcmp(name,"PASSWORD")){
                 strcpy(PASSWORD,value);
-        }
-        else if (!strcmp(name,"DATABASE")){
+    }
+    else if (!strcmp(name,"DATABASE")){
                 strcpy(DATABASE,value);
-        }
+    }
 	else if (!strcmp(name,"MODULE_RFXTRX433")){
                 MODULE_RFXTRX433 = atoi(value);
-        }
+    }
+    else if (!strcmp(name,"PORT_RFXTRX433")){
+                strcpy(PORT_RFXTRX433,value);
+    }
+    else if (!strcmp(name,"MODULE_ENOUSB300")){
+        MODULE_ENOUSB300 = atoi(value);
+    }
+    else if (!strcmp(name,"PORT_ENOUSB300")){
+        strcpy(PORT_ENOUSB300,value);
+    }
 	else if (!strcmp(name,"MODULE_SOAP")){
                 MODULE_SOAP = atoi(value);
-        }
-	else if (!strcmp(name,"PORT_RFXTRX433")){
-                strcpy(PORT_RFXTRX433,value);
-	}
+    }
 	else if (!strcmp(name,"PORT_SOAP")){
                 PORT_SOAP = atoi(value);
 	}
@@ -111,22 +120,22 @@ i++;
 	}
 	else if (!strcmp(name,"MDB_CLOUD")){
                 MDB_CLOUD = atoi(value);
-        }
+    }
 	else if (!strcmp(name,"MDB_KEY")){
                 strcpy(MDB_KEY,value);
-		}
+    }
 	else if (!strcmp(name,"MDB_ID")){
                 strcpy(MDB_ID,value);
-		}
+    }
 	else if (!strcmp(name,"MDB_X_ISS_Key")){
                 strcpy(MDB_X_ISS_Key,value);
-		}
+    }
 	else if (!strcmp(name,"MDB_X_OAPI_Key")){
                 strcpy(MDB_X_OAPI_Key,value);
-		}
+    }
 	else if (!strcmp(name,"MDB_DATASOURCE")){
                 strcpy(MDB_DATASOURCE,value);
-		}
+    }
 	else{
 		log_ERROR("Parameter : \"%s\" not yet supported by mydombox",name);
 	}
@@ -186,8 +195,10 @@ nb_lignes++;
         log_DEBUG("PASSWORD = %s",      PASSWORD);
         log_DEBUG("DATABASE = %s", 		DATABASE);
         log_DEBUG("MODULE_RFXTRX433 = %d",MODULE_RFXTRX433);
-        log_DEBUG("MODULE_SOAP = %d",   MODULE_SOAP);
         log_DEBUG("PORT_RFXTRX433 = %s",PORT_RFXTRX433);
+        log_DEBUG("MODULE_ENOUSB300 = %d",MODULE_ENOUSB300);
+        log_DEBUG("PORT_ENOUSB300 = %s",PORT_ENOUSB300);
+        log_DEBUG("MODULE_SOAP = %d",   MODULE_SOAP);
 		log_DEBUG("PORT_SOAP = %d",		PORT_SOAP);
         log_DEBUG("MODULE_RPIDOM = %d",   MODULE_RPIDOM);
         log_DEBUG("PORT_RPIDOM = %s",	PORT_RPIDOM);

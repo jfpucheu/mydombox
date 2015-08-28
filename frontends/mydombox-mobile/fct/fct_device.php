@@ -3,6 +3,10 @@ include"../inc/db.php";
 
 if(isset($_POST["action"]))      $action=$_POST["action"];
 else      $action="";
+if(isset($_POST["mode"]))      $mode=$_POST["mode"];
+else      $mode="";
+if(isset($_POST["int_id"]))      $int_id=$_POST["int_id"];
+else      $int_id="";
 if(isset($_POST["dc_id"]))      $dc_id=$_POST["dc_id"];
 else      $dc_id="";
 if(isset($_POST["dc_name"]))      $dc_name=$_POST["dc_name"];
@@ -44,6 +48,9 @@ switch($action)
     case 'init';
 		DC_INIT();
 		break;
+    case 'record';
+		DC_RECORD();
+		break;
     case 'update';
 		DC_UPDATE();
 		break;	
@@ -53,6 +60,9 @@ switch($action)
     case 'confirm';
 		DC_CONFIRM();
 		break;
+    case 'list-int';
+		DC_LIST_INT();
+		break;	
     case 'list-type';
 		DC_LIST_TYPE();
 		break;	
@@ -72,7 +82,8 @@ switch($action)
  */
 function DC_LIST(){
 
-	$order = "SELECT * FROM devices INNER JOIN type USING (packettype,subtype) WHERE devices.deleted=0;"; 
+	$order = "SELECT * FROM devices LEFT JOIN type USING (packettype,subtype,type) WHERE devices.deleted=0;"; 
+	//$order = "SELECT * FROM devices WHERE devices.deleted=0;";
 
 
 	$result = mysql_query($order);
@@ -95,7 +106,7 @@ function DC_DISPLAY(){
 
 	global $dc_id;
 
-	$order = "SELECT * FROM devices INNER JOIN type USING (packettype,subtype) where dc_id='$dc_id';";
+	$order = "SELECT * FROM devices LEFT JOIN type USING (int_id,packettype,subtype,type) where dc_id='$dc_id';";
 
 
 	$result = mysql_query($order);
@@ -149,6 +160,36 @@ function DC_INIT(){
 }
 
 /*
+ * Funstion: DC_RECORD
+ * variables: dc_id, action
+ * comment: Send record action (learn_on/ learn_off / learn_state)
+ * End:
+ */
+function DC_RECORD(){
+
+    global $mode;
+	//sending init
+	
+	require_once '../inc/mydombox.php';
+	$client = new mydombox();
+
+	$input = new initDevice();
+	$input->DeviceID = 0;
+	$input->Order = $mode;
+
+	try{
+	   $response=$client->initDevice($input);
+		//echo $response->DeviceID;
+		//echo $response->Order;
+	}
+	catch (Exception $e){
+	   echo $e->getMessage();
+	}
+
+	echo $response->Order;
+}
+
+/*
  * Funstion: DC_UPDATE
  * variables: dc_name id1 id2 id3 id4 unitcode groupcode housecode com dc_id
  * comment: Update Devices informations
@@ -158,6 +199,7 @@ function DC_UPDATE(){
 
 	
 	global $dc_name;
+	global $type_id;
 	global $address;
 	global $id1;
 	global $id2;
@@ -171,9 +213,29 @@ function DC_UPDATE(){
 	global $cloud_id;
 	global $dc_id;
 	
+/*
+	$order = "UPDATE devices SET
+		dc_name='$dc_name',
+		address='$address',
+		id1='$id1',
+		id2='$id2',
+		id3='$id3',
+		id4='$id4',
+		unitcode='$unitcode',
+		groupcode='$groupcode',
+		housecode='$housecode',
+		com='$com',
+		iss_status='$cloud',
+		iss_stream='$cloud_id'
+		WHERE
+		dc_id='$dc_id'";
+*/
 
 	$order = "UPDATE devices SET
 		dc_name='$dc_name',
+		packettype = (select packettype FROM type WHERE type_id = '$type_id'),
+		subtype = (select subtype FROM type WHERE type_id = '$type_id'),
+		type = (select type FROM type WHERE type_id = '$type_id'),
 		address='$address',
 		id1='$id1',
 		id2='$id2',
@@ -206,6 +268,7 @@ function DC_UPDATE(){
 function DC_NEW(){
 
 	global $dc_name;
+	global $int_id;
 	global $type_id;	
 	global $address;
 	global $id1;
@@ -217,9 +280,27 @@ function DC_NEW(){
 	global $housecode;
 	global $type_id;
 	
-	$order = "INSERT INTO devices (dc_id,packettype,subtype,int_id,dc_name,address,id1,id2,id3,id4,unitcode,groupcode,housecode,new) SELECT (SELECT MAX(dc_id)+1 FROM devices)as dc_id,packettype,subtype,int_id,'$dc_name','$address','$id1','$id2','$id3','$id4','$unitcode','$groupcode','$housecode',0  FROM type WHERE type_id='$type_id';";
+	$order = "INSERT INTO devices (dc_id,packettype,subtype,type,int_id,dc_name,last_update,address,id1,id2,id3,id4,unitcode,groupcode,housecode,new) 
+	SELECT (SELECT MAX(dc_id)+1 FROM devices)as dc_id,
+	(SELECT packettype FROM type WHERE type_id = '$type_id'),
+	(SELECT subtype FROM type WHERE type_id = '$type_id'),
+	(SELECT type FROM type WHERE type_id = '$type_id'),
+	(SELECT int_id FROM type WHERE type_id = '$type_id'),
+	'$dc_name',
+	NOW(),
+	'$address',
+	'$id1',
+	'$id2',
+	'$id3',
+	'$id4',
+	'$unitcode',
+	'$groupcode',
+	'$housecode',0;";
+	
+	//echo $order;
 	
 	$result = mysql_query($order);
+	
 	
 	if($result) {
 		echo 0;
@@ -249,6 +330,25 @@ function DC_CONFIRM(){
 	}
 }
 
+/*
+ * Funstion: DC_LIST_INT
+ * variables: nothing
+ * comment: Display Interfaces List type as Json
+ * End:
+ */
+
+function DC_LIST_INT(){
+
+	$order = "SELECT DISTINCT int_id,int_name FROM interfaces;"; 
+
+	$result = mysql_query($order);
+	$jsonData = array();
+
+	while ($array = mysql_fetch_assoc($result)) {
+		$jsonData[] = $array;
+	}
+	echo json_encode($jsonData);
+}
 
 /*
  * Funstion: DC_LIST_TYPE
@@ -258,7 +358,9 @@ function DC_CONFIRM(){
  */
 function DC_LIST_TYPE(){
 
-	$order = "SELECT DISTINCT type_id,packettype,subdescription FROM type;"; 
+	global $int_id;
+
+	$order = "SELECT DISTINCT type_id,packettype,subtype,type,subdescription FROM type WHERE int_id='$int_id';"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();
@@ -279,7 +381,7 @@ function DC_DELETE(){
 
 	global $dc_id;
 	
-	$order = "UPDATE devices SET deleted=1 WHERE dc_id='$dc_id';";
+	$order = "DELETE FROM devices WHERE dc_id='$dc_id';";
 	$result = mysql_query($order);
 	
 	$order = "DELETE FROM energy where dc_id='$dc_id';";

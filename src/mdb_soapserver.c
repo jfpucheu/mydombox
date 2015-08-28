@@ -24,6 +24,7 @@
 #include "mdb_encode_messages.h"
 
 extern int PORT_SOAP;
+extern int RECORD;
 
 int __ns1__getLightingStatus(
 	struct soap *soap,
@@ -171,57 +172,94 @@ int __ns1__initDevice(
 		int dc_id=initDevice->DeviceID;
 		char order[16];
 		strcpy(order,initDevice->Order);
-
-		//transformation de la requette et envoi
-		if (encode_init_message(dc_id, order) == 0)
-		{
-			//sleep(1);
-			//Traitement reponse
-		
-			log_DEBUG("Set Init informations for device: dc_id: %d \n", dc_id);
-	
-			MYSQL *conn;
-			MYSQL_RES *result;
-			MYSQL_ROW row;
-
-			int res_dc_id=0;
-		
-			/*Recherche du type de device*/	
-			conn = mysql_connection();	
-			result = mysql_select(conn,"SELECT dc_id from devices WHERE dc_id=%d LIMIT 1;", dc_id);
-	
-			int num_fields = mysql_num_fields(result);
+    
+        if ( strcmp(order,"learn_on") == 0 ) {
+            log_DEBUG("Starting learn mode");
+            RECORD = 1;
+            
+            /* allocate response */
+            initDeviceResponse->Order = (char*)soap_malloc(soap,16);
+            initDeviceResponse->DeviceID = 0;
+            sprintf( initDeviceResponse->Order,"learn_on");
+            return SOAP_OK;
+        }
+        else if ( strcmp(order,"learn_off") == 0 ) {
+            log_DEBUG("Stoping learn mode");
+            RECORD = 0;
         
-			while ((row = mysql_fetch_row(result))){
-				res_dc_id = atoi(row[0]);
-			};
+            /* allocate response */
+            initDeviceResponse->Order = (char*)soap_malloc(soap,16);
+            initDeviceResponse->DeviceID = 0;
+            sprintf( initDeviceResponse->Order,"learn_off");
+            return SOAP_OK;
+        }
+        else if ( strcmp(order,"learn_state") == 0 ) {
+            log_DEBUG("Consulting learn mode");
+        
+            /* allocate response */
+            initDeviceResponse->Order = (char*)soap_malloc(soap,16);
+            initDeviceResponse->DeviceID = 0;
+            if (RECORD == 1){
+                sprintf( initDeviceResponse->Order,"learn_on");
+            }
+            else {
+                sprintf( initDeviceResponse->Order,"learn_off");
+            }
+            return SOAP_OK;
+        }
+        else
+        {
+		//transformation de la requette et envoi
+            if (encode_init_message(dc_id, order) == 0)
+            {
+                //sleep(1);
+                //Traitement reponse
 		
-			mysql_free_result(result);
-			mysql_close(conn);
+                log_DEBUG("Set Init informations for device: dc_id: %d \n", dc_id);
+	
+                MYSQL *conn;
+                MYSQL_RES *result;
+                MYSQL_ROW row;
+
+                int res_dc_id=0;
 		
-			/* allocate response */
-			initDeviceResponse->Order = (char*)soap_malloc(soap,16);
+                /*Recherche du type de device*/
+                conn = mysql_connection();
+                result = mysql_select(conn,"SELECT dc_id from devices WHERE dc_id=%d LIMIT 1;", dc_id);
+	
+                int num_fields = mysql_num_fields(result);
+        
+                while ((row = mysql_fetch_row(result))){
+                    res_dc_id = atoi(row[0]);
+                };
+		
+                mysql_free_result(result);
+                mysql_close(conn);
+		
+                /* allocate response */
+                initDeviceResponse->Order = (char*)soap_malloc(soap,16);
 
-			if ( res_dc_id != 0)
-			{
-                initDeviceResponse->DeviceID = res_dc_id;
-                sprintf( initDeviceResponse->Order,order);
-			}
+                if ( res_dc_id != 0)
+                {
+                    initDeviceResponse->DeviceID = res_dc_id;
+                    sprintf( initDeviceResponse->Order,order);
+                }
 
-			else
-			{
+                else
+                {
+                    char *s = (char*)soap_malloc(soap, 1024);
+                    sprintf(s, "<error> Oups ! Unexpected error </error>");
+                    return soap_sender_fault(soap, "ER003 : Error trying to find device informations", s);
+                }
+                return SOAP_OK;
+            }
+            else
+            {
                 char *s = (char*)soap_malloc(soap, 1024);
                 sprintf(s, "<error> Oups ! Unexpected error </error>");
-                return soap_sender_fault(soap, "ER003 : Error trying to find device informations", s);
-			}			
-		return SOAP_OK;
-		}
-		else
-		{
-		char *s = (char*)soap_malloc(soap, 1024);
-        sprintf(s, "<error> Oups ! Unexpected error </error>");
-        return soap_sender_fault(soap, "ER002 : Error trying to set init device informations", s);
-		}
+                return soap_sender_fault(soap, "ER002 : Error trying to set init device informations", s);
+            }
+        }
 }
 
 /* TO BE IMPLEMENTED

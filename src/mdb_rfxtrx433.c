@@ -31,7 +31,7 @@
 
 #include "mdb_log.h"
 #include "mdb_mysql.h"
-#include "mdb_decode_messages.h"
+#include "mdb_decode_rfxcom_messages.h"
 
 #define BAUDRATE B38400
 #define MAX_COMMAND_LENGTH 1
@@ -40,7 +40,7 @@ extern 	char 	PORT_RFXTRX433[32];
 
 char rfx_reset[14]={0X0D,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00};
 char rfx_status[14]={0X0D,0X00,0X00,0X01,0X02,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00};
-char set_mode[14]={0X0D,0X00,0X00,0X00,0X03,0X53,0X00,0X00,0X0A,0X2D,0X00,0X00,0X00,0X00};
+char set_mode[14]={0X0D,0X00,0X00,0X00,0X03,0X53,0X00,0X40,0X0A,0X2D,0X00,0X00,0X00,0X00};
 //char set_mode[14]={0X0D,0X00,0X00,0X00,0X03,0X53,0X00,0X00,0X02,0X00,0X00,0X00,0X00,0X00};
 
 
@@ -57,17 +57,17 @@ char read_buffer[256] = {0};
 */
 int serial_port_open(void)
 {
-	log_INFO("Starting Listening on %s", PORT_RFXTRX433);
+	log_INFO("[rfxtrx433] Starting Listening on %s", PORT_RFXTRX433);
 	
-	fdrfxtrx = open(PORT_RFXTRX433, O_RDWR | O_APPEND | O_NOCTTY | O_RSYNC | O_SYNC );
+	fdrfxtrx = open(PORT_RFXTRX433, O_RDWR | O_APPEND | O_NOCTTY | O_SYNC );
 
 	if (fdrfxtrx == -1)
 	{
 	/*
 	* Could not open the port.
 	*/
-		perror("open_port: Unable to open Serial Port - ");
-		log_ERROR("open_port: Unable to open Serial Port");
+		perror("[rfxtrx433] open_port: Unable to open Serial Port - ");
+		log_ERROR("[rfxtrx433] open_port: Unable to open Serial Port");
 		exit(1);
 
 	}
@@ -138,13 +138,13 @@ int read_rfxtrx(void)
 					message_0X01(buffer);
 					if((buffer[5] != set_mode[5]) || (buffer[7] != set_mode[7]) || (buffer[8] != set_mode[8]) || (buffer[9] != set_mode[9]))
 					{
-                        log_DEBUG("RFXTRX433 not Correctly set ,Sending config ...");
+                        log_DEBUG("[rfxtrx433] RFXTRX433 not Correctly set ,Sending config ...");
 						send_message(set_mode);
-						log_DEBUG("Set message sent to RFXTRX433");
+						log_DEBUG("[rfxtrx433] Set message sent to RFXTRX433");
 					}
 					else
 					{
-						log_DEBUG("RFXTRX433 Correctly set");
+						log_DEBUG("[rfxtrx433] RFXTRX433 Correctly set");
 					}
 					break;
 				case 0x02:
@@ -216,20 +216,20 @@ int send_message(unsigned char *message)
 */
 
 void* rfxtrx433(){
-    log_INFO("Starting Rfxtrx433 Module");
+    log_INFO("[rfxtrx433] Starting Rfxtrx433 Module");
     //printf(" openning \n");
     serial_port_open();
-		log_DEBUG("Rfxtrx Port Open");
+		log_DEBUG("[rfxtrx433] Rfxtrx Port Open");
 	tcflush(fdrfxtrx, TCIOFLUSH);
-		log_DEBUG("Rfxtrx Port IO flush");
+		log_DEBUG("[rfxtrx433] Rfxtrx Port IO flush");
 
-        log_DEBUG("Rfxtrx Reset Message Sent:");
+        log_DEBUG("[rfxtrx433] Rfxtrx Reset Message Sent:");
     send_message(rfx_reset);
-        log_DEBUG("Sleeping 1 sec");
+        log_DEBUG("[rfxtrx433] Sleeping 1 sec");
         sleep (1);
     tcflush(fdrfxtrx, TCIOFLUSH);
-		log_DEBUG("Rfxtrx Port IO flush");
-		log_DEBUG("Rfxtrx Get Status Sent :");
+		log_DEBUG("[rfxtrx433] Rfxtrx Port IO flush");
+		log_DEBUG("[rfxtrx433] Rfxtrx Get Status Sent :");
     send_message(rfx_status);
 
 		

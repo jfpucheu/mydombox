@@ -17,7 +17,7 @@
 
 #include "mdb_log.h"
 #include "mdb_mysql.h"
-#include "mdb_decode_messages.h"
+#include "mdb_decode_rfxcom_messages.h"
 #include "mdb_encode_messages.h"
 #include "mdb_tools.h"
 
@@ -84,19 +84,8 @@ float last_tp( int th_id )
 
 float scenario( sc_id )
 {	
-	float consigne;
-
-	// identification du jour de la semaine en fonction de la date
-	time_t timestamp;
-    struct tm * t;
-	timestamp = time(NULL);
-    t = localtime(&timestamp);
-	
-	int day = t->tm_wday;
-    
-    if (day == 0){
-        day = 7;
-    }
+	float consigne;	
+    int day = whichday();
 	
 	log_DEBUG("Scenario : day number in the week : %d",day);
 		

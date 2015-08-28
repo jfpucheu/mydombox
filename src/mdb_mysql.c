@@ -26,10 +26,11 @@ MYSQL* mysql_connection(void){
     
 	if (conn == NULL) {
 		log_ERROR("Error %u: %s\n", mysql_errno(conn), mysql_error(conn));
+        exit(0);
 	}
 	if (mysql_real_connect(conn, HOSTNAME, LOGIN, PASSWORD, DATABASE, PORT, NULL, CLIENT_MULTI_STATEMENTS) == NULL) {
 		log_ERROR("Error %u: %s\n", mysql_errno(conn), mysql_error(conn));
-		return NULL;
+        exit(0);
 	}
 	else {
 		return conn;

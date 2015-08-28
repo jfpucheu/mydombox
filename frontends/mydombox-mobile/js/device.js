@@ -10,22 +10,26 @@ function device_list(){
 			data: dataString, 
 			dataType: 'json',
 				success: function(data){
+					var devicelist = "";
+					var devicelistnew = "";
 					$.each(data, function(index, value) {
 						if ( value.new==1){
-							selector ='#device-list-new';
-						}else{
-							selector ='#device-list';
-						}
-						$(selector).append('	<li> \
+							devicelistnew +='	<li> \
 												<a data-role="button" id="bt-config-dialog"  dc_id='+ value.dc_id+'> \
 												<h2>'+ value.dc_name +'</h2> \
 												<p class="ui-li-aside">'+ value.packetdescription +'</p>\
-												</a></li> '); 		
+												</a></li> ';
+						}else{
+							devicelist +='	<li> \
+												<a data-role="button" id="bt-config-dialog"  dc_id='+ value.dc_id+'> \
+												<h2>'+ value.dc_name +'</h2> \
+												<p class="ui-li-aside">'+ value.packetdescription +'</p>\
+												</a></li> ';
+						}	
 						
 					});
-				
-					$('#device-list-new').listview('refresh');
-					$('#device-list').listview('refresh');
+					$('#device-list-new').html(devicelistnew).listview('refresh');
+					$('#device-list').html(devicelist).listview('refresh');
 				}
 		});
 		
@@ -57,6 +61,22 @@ function device_init(){
 		});	
 };
 
+//Fonction requette init device
+function device_record(mode){
+
+	var action="record";
+	var dataString = 'action='+ action+'&mode='+ mode;
+	
+		$.ajax({
+		type: "POST",
+		url: "fct/fct_device.php",
+			data: dataString, 
+				success: function(data){  
+					$('#record_mode').val(data).slider('refresh');
+				},
+		});	
+};
+
 //Fonction requette clear device
 function device_clear(){
 
@@ -84,7 +104,22 @@ function device_clear(){
 };
 
 // Device Display champs
-function affichage_champs(packettype){
+function affichage_champs(int_id,packettype){
+
+if (int_id == 4 ){
+
+	$("div#div_address").hide();
+    $("div#div_id1").show();
+	$("div#div_id2").show();
+	$("div#div_id3").show();
+	$("div#div_id4").show();
+	$("div#div_groupcode").hide();
+	$("div#div_housecode").hide();
+	$("div#div_unitcode").hide();
+
+}
+else
+{
     if(packettype == 10)
     {
 		$("div#div_address").hide();
@@ -174,6 +209,59 @@ function affichage_champs(packettype){
 	}	
 }
 
+}
+
+//Fonction listage interfaces disponibles
+function device_int(){
+	
+	var action = "list-int";
+	var dataString =  'action='+ action;
+
+	$('#device_int option').remove();
+	$('#device_int').append($("<option></option>").val(0).text("-- No Interface Selected --"));
+
+		$.ajax({
+			type: "POST",
+			url: "fct/fct_device.php", 
+			data: dataString, 
+			dataType: 'json',
+				success: function(data){
+					$.each(data, function(index, value) {
+						$('#device_int').append($("<option></option>").val(value.int_id).text(value.int_name)); 
+					});
+				}
+			});
+};
+
+//Fonction listage device type disponibles
+function device_type(int_id,selected){
+
+	var action = "list-type";
+	var dataString =  'action='+ action +'&int_id='+ int_id;
+
+	$('#device_type option').remove();
+	$('#device_type').append($("<option></option>").val(0).text("-- No Device Selected --"));
+
+		$.ajax({
+			type: "POST",
+			url: "fct/fct_device.php", 
+			data: dataString, 
+			dataType: 'json',
+				success: function(data){
+					$.each(data, function(index, value) {	
+						if (selected == value.type_id){
+							$('#device_type').append($("<option></option>").prop('selected', true).val(value.type_id).text(value.subdescription)); 
+						}
+						else {
+							$('#device_type').append($("<option></option>").val(value.type_id).text(value.subdescription));
+    					}
+    					$('#device_type').selectmenu('refresh', true);	
+					});
+				}
+			});
+		
+};
+
 //Fonction affichage devices
 function device_display(dc_id){
 	
@@ -189,6 +277,10 @@ function device_display(dc_id){
 					$.each(data, function(index, value) {
 						$("#device_name span").html(value.dc_name);
 						$("#dc_id").val(value.dc_id);
+						$("#device_int option[value="+value.int_id+"]").prop('selected', true);
+						$("#device_int").selectmenu('disable', true);
+						$("#device_int").selectmenu('refresh', true);
+						device_type(value.int_id,value.type_id);
 						$("#dc_name").val(value.dc_name);
 						$("#address").val(value.address);
 						$("#id1").val(value.id1);
@@ -206,7 +298,7 @@ function device_display(dc_id){
 							//}else{
 							//	$("#div_cloud_name").hide();  
 							//}			
-						affichage_champs(value.packettype);
+						affichage_champs(value.int_id,value.packettype);
 						if(value.new == 1){
 							$("#confirm-device").show();
 						}else{
@@ -217,33 +309,11 @@ function device_display(dc_id){
 		});	
 };
 
-//Fonction listage device type disponibles
-function device_type(){
-	
-	var action = "list-type";
-	var dataString =  'action='+ action;
-
-	$('#device_type option').remove();
-	$('#device_type').append($("<option></option>").attr("type_id","no").text("-- No Device Selected --"));
-
-		$.ajax({
-			type: "POST",
-			url: "fct/fct_device.php", 
-			data: dataString, 
-			dataType: 'json',
-				success: function(data){
-					$.each(data, function(index, value) {
-						$('#device_type').append($("<option></option>").val(value.type_id).attr("packettype",value.packettype).text(value.subdescription)); 
-						//$('#device_type').append('<option value ="'+value.type_id+'" packettype="'+value.packettype+'">'+value.subdescription+'</option>');
-					});
-				}
-			});
-};
-
 //Fonction updade des devices
 function device_update(){
 	var action="update";
 	var dc_id = $("#dc_id").val();
+	var type_id= $("#device_type option:selected").val();
 	var dc_name = $("#dc_name").val();
 	var address = $("#address").val();
 	var id1 = $("#id1").val();
@@ -259,7 +329,7 @@ function device_update(){
 	var cloud = $("#cloud").val();
 	var cloud_id = $("#cloud_id").val();
 	
-	var dataString = 'action='+ action+'&dc_id='+ dc_id +'&dc_name='+ dc_name +'&address='+ address+ '&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com+'&cloud='+ cloud+'&cloud_id='+ cloud_id;
+	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_id='+ dc_id +'&dc_name='+ dc_name +'&address='+ address+ '&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com+'&cloud='+ cloud+'&cloud_id='+ cloud_id;
 
 	$.ajax({
 		type: "POST",
@@ -360,9 +430,13 @@ function device_confirm(){
 		});		
 };
 
+var auto_refresh_device_list;
 //Affichage de la liste des devices sur ouverture de la page config-devices
 $(document).on('pageinit', '#config-devices',  function(){
-	device_list();
+	device_record("learn_state");
+	auto_refresh_device_list = setInterval(function () {
+    	device_list();
+  }, 3000);	
 });       
 
 //Passage du parametre dc_id au popup config device
@@ -400,6 +474,11 @@ $(document).on('pagebeforeshow', '#config-device-dialog', function(){
 	//clear cache
 	$("#dc_id").val('');
 	$("#dc_name").val('');
+	$("#device_int option[value=0]").prop('selected', true);
+	$("#device_int").selectmenu('enable', true);
+	$("#device_int").selectmenu('refresh', true);	
+	$('#device_type option').remove();
+	$('#device_type').selectmenu('refresh', true);
 	$("#address").val('');
 	$("#id1").val('');
 	$("#id2").val('');
@@ -411,21 +490,24 @@ $(document).on('pagebeforeshow', '#config-device-dialog', function(){
 	$("#cloud").val('');
 	$("#cloud_id").val('');
 
-	if (localStorage.dc_id=="new"){
-		$("#div_device_type").show()
-		device_type();
-		affichage_champs();
-	}else{
-		$("#div_device_type").hide()
+	device_int();
+	if (localStorage.dc_id!="new"){
+		// verouiller modiff $("#div_device_type").hide()
 		device_display(localStorage.dc_id);   
 	}
 });
 
 //affichages des champs sur le type de device.
 $(document).ready(function(){
+	$('#device_int').change(function(){
+		var int_id= $("#device_int option:selected").val();
+		device_type(int_id);
+	});
 	$('#device_type').change(function(){
-		//alert($("#device_type option:selected").attr('packettype'));
-		affichage_champs( $("#device_type option:selected").attr('packettype') );
+		affichage_champs( $("#device_int option:selected").val(),$("#device_type option:selected").attr('packettype'));
+	});
+	$('#record_mode').change(function(){
+		device_record($('#record_mode').val());
 	});
  });
 

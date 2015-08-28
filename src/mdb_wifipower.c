@@ -9,6 +9,7 @@
 #include <termios.h> /* POSIX terminal control definitions */
 
 #include "mdb_log.h"
+#include <curl/curl.h>
 #include "mdb_mysql.h"
 #include "mdb_decode_messages.h"
 

@@ -14,17 +14,24 @@
 #include "mdb_log.h"
 #include "mdb_mysql.h"
 #include "mdb_rfxtrx433.h"
+#include "mdb_enocean_usb300.h"
+#include "mdb_decode_enocean_messages.h"
 #include "mdb_rpidom.h"
 #include "mdb_thermostat.h"
 #include "mdb_soapserver.h"
+#include "mdb_scheduler.h"
+
 
 MYSQL *conn;
 MYSQL_RES *result;
 
 extern 	int 	MODULE_RFXTRX433;
+extern 	int 	MODULE_ENOUSB300;
 extern 	int 	MODULE_RPIDOM;
 extern 	int 	MODULE_SOAP;
 extern	char 	LOG_LEVEL[16];
+
+int 	RECORD = 0;
 
 int main(int argc, char *argv[])
 {
@@ -45,6 +52,7 @@ if(read_config_file(argv[1]))
 log_INFO("--------- Starting Mydombox Server ---------");
 log_INFO("MySQL client version: %s", mysql_get_client_info());
 log_INFO("Loglevel: %s",LOG_LEVEL);
+log_INFO("Learn Mode: %d",RECORD);
 
 	conn = mysql_connection();
 	result = mysql_select(conn,"SELECT * FROM devices;");
@@ -55,17 +63,28 @@ log_INFO("Loglevel: %s",LOG_LEVEL);
 if ( MODULE_RFXTRX433 == 1){
     // On crée un thread
     pthread_t thread_rfxtrx433;
-    // Permet d'exécuter le fonction maFonction en parallèle
+    // Permet d'exécuter le fonction thread_rfxtrx433 en parallèle
     pthread_create(&thread_rfxtrx433, NULL, rfxtrx433, NULL);
 	log_INFO("Module RFXTRX433 Started");
 }
 
+sleep(5);
+
+if ( MODULE_ENOUSB300 == 1){
+    // On crée un thread
+    pthread_t thread_enusb300;
+    // Permet d'exécuter le fonction thread_enusb300 en parallèle
+    pthread_create(&thread_enusb300, NULL, enusb300, NULL);
+    log_INFO("Module USB300 Started");
+}
+    
+    
 sleep(10);
 
 if ( MODULE_SOAP == 1){
     // On crée un thread
     pthread_t thread_soapserver;
-    // Permet d'exécuter le fonction maFonction en parallèle
+    // Permet d'exécuter le fonction thread_soapserver en parallèle
     pthread_create(&thread_soapserver, NULL, soapserver, NULL);
 	log_INFO("Module SOAP Started");
 }
@@ -74,13 +93,14 @@ sleep(5);
 if ( MODULE_RPIDOM == 1){
     // On crée un thread
     pthread_t thread_rpidom;
-    // Permet d'exécuter le fonction maFonction en parallèle
+    // Permet d'exécuter le fonction thread_rpidom en parallèle
     pthread_create(&thread_rpidom, NULL, rpidom, NULL);
 	log_INFO("Module RPIDOM Started");
 }
 
 while(1){
 	read_config_file(argv[1]);
+    scheduler();
 	thermostat();
 	sleep (60);
 }

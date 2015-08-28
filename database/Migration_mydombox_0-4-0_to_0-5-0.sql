@@ -105,4 +105,21 @@ ALTER TABLE `devices` CHANGE `home_data3` `home_data3` DOUBLE( 8, 2 ) NULL DEFAU
 
 ALTER TABLE `devices` CHANGE `m2x_status` `iss_status` TINYINT( 4 ) NOT NULL DEFAULT '0',CHANGE `m2x_name` `iss_stream` CHAR( 32 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;
 
+CREATE TABLE `scheduler` (
+`sch_id` int(11) NOT NULL,
+  `dc_id` int(11) NOT NULL,
+  `sch_day` tinyint(4) NOT NULL,
+  `sch_time` time NOT NULL,
+  `sch_action` varchar(8) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `scheduler` ADD PRIMARY KEY (`sch_id`);
+ALTER TABLE `scheduler` MODIFY `sch_id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `devices` ADD `type` VARCHAR( 2 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `subtype` ;
+ALTER TABLE `type` ADD `type` VARCHAR( 2 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `subtype` ;
+
+ALTER TABLE `mydombox`.`type` DROP INDEX `packettype` , ADD UNIQUE `type` (`int_id`,`packettype`,`subtype`, `type`) COMMENT '';
+ALTER TABLE `devices` MODIFY COLUMN iss_stream char(32)  NOT NULL DEFAULT '';
+
 INSERT INTO database_version VALUES ('0.5.0',now(), 'Migation_mydombox_0-4-0_to_0-5-0.sql');

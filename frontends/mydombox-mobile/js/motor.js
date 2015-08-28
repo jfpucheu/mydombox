@@ -24,8 +24,63 @@ function motor_display(dc_id){
 		
 };
 
+//Fonction d'affichage des scenario
+function program_display(dc_id){
+	$("#program_list").empty();
+	
+	var action = "program";
+	var dataString = 'action='+ action +'&dc_id='+ dc_id;
+
+		$.ajax({
+			type: "POST",
+			url: "fct/fct_light.php", 
+			data: dataString, 
+			dataType: 'json',
+				success: function(data){
+					$.each(data, function(index, value) {				
+						switch (value.sch_day) { // Swich Case pour Afficher le jour de la semaine en fonction du sc_day
+						    case "1":
+						        day = "Lundi";
+						        break;
+						    case "2":
+						        day = "Mardi";
+						        break;
+						    case "3":
+						        day = "Mercredi";
+						        break;
+						    case "4":
+						        day = "Jeudi";
+						        break;
+						    case "5":
+						        day = "Vendredi";
+						        break;
+						    case "6":
+						        day = "Samedi"
+						        break;
+						    case "7":
+						        day = "Dimanche";
+						        break;
+						    default:
+						    	day = "Journee";
+						}
+						$('#program_list').append('<li day='+ day +' data-icon="gear" sch_id='+ value.sch_id + ' sc_day='+ value.sch_day +' time='+ value.sch_time +' action='+ value.sch_action +'><a href="#">Time: '+ value.sch_time +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action: '+value.sch_action+'</a></li>');
+
+					});
+					$('#program_list').append('<li data-icon="plus" sch_id="new" time="12:00" action="" ><a href="#" style="text-align: left;">New Program</a></li>');
+					$("#program_list").listview({
+						autodividers: true,
+						autodividersSelector: function (li) {
+							var out = li.attr("day");
+							return out;
+						}
+						}).listview('refresh');
+				}
+			});
+}
+
 $(document).on('pagebeforeshow', '#motor-dialog', function(){ 
 	motor_display(localStorage.dc_id);
+	program_display(localStorage.dc_id);
 });
 
 $(document).on('pageinit', '#index', function(){      

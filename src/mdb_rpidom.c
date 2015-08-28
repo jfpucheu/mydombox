@@ -12,7 +12,7 @@
 #include <sys/types.h>
  
 #include "mdb_log.h"
-#include "mdb_decode_messages.h"
+#include "mdb_decode_rfxcom_messages.h"
  
  
 // Define port serie speed
@@ -276,6 +276,7 @@ int read_rpidom_teleport(int port){
         {
                 log_ERROR("Rpidom: Problem to get Rpidom teleinfo counter type (mono or tri)") ;
         }
+    return 1;
 }
 
 

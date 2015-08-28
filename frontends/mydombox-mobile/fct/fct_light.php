@@ -15,7 +15,10 @@ switch($action)
 		break;
     case 'update';
 		LI_UPDATE();
-		break;			
+		break;	
+    case 'program';
+		LI_PROGRAM();
+		break;				
 }
 
 
@@ -87,5 +90,27 @@ function LI_UPDATE(){
 	}
 	
 
+}
+
+/*
+ * Funstion: LI_Program
+ * variables: dc_id
+ * comment: Display Light Program as json
+ * End:
+ */
+function LI_PROGRAM(){
+	
+	global $dc_id;
+
+	$order = "SELECT sch_id,sch_day,sch_time,sch_action FROM scheduler WHERE dc_id='$dc_id' ORDER BY sch_time;";
+
+	$result = mysql_query($order);
+
+	$jsonData = array();
+
+	while ($array = mysql_fetch_array($result)) {
+		$jsonData[] = $array;
+	}
+	echo json_encode($jsonData);
 }
 ?>

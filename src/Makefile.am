@@ -10,10 +10,13 @@ mydombox_SOURCES= \
 	mdb_soapserver.c mdb_soapserver.h \
 	mdb_tools.c mdb_tools.h \
 	mdb_rfxtrx433.c mdb_rfxtrx433.h \
+	mdb_enocean_usb300.c mdb_enocean_usb300.h \
 	mdb_thermostat.c mdb_thermostat.h \
-	mdb_decode_messages.c mdb_decode_messages.h \
+	mdb_decode_rfxcom_messages.c mdb_decode_rfxcom_messages.h \
 	mdb_encode_messages.c mdb_encode_messages.h \
+	mdb_decode_enocean_messages.c mdb_decode_enocean_messages.h \
 	mdb_log.c mdb_log.h \
 	mdb_mysql.c mdb_mysql.h \
 	mdb_dvn.c mdb_dvn.h \
-	mdb_rpidom.c mdb_rpidom.h
+	mdb_rpidom.c mdb_rpidom.h \
+	mdb_scheduler.c mdb_scheduler.h 

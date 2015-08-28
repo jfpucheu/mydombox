@@ -1,56 +1,57 @@
--- phpMyAdmin SQL Dump
--- version 4.0.4
--- http://www.phpmyadmin.net
+-- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (armv7l)
 --
--- Client: localhost
--- Généré le: Mer 04 Mars 2015 à 14:29
--- Version du serveur: 5.6.12-log
--- Version de PHP: 5.4.12
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
+-- Host: localhost    Database: mydombox
+-- ------------------------------------------------------
+-- Server version	5.5.43-0+deb7u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
 -- Base de données: `mydombox`
 --
-CREATE DATABASE IF NOT EXISTS `mydombox` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `mydombox` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `mydombox`;
 
--- --------------------------------------------------------
-
 --
--- Structure de la table `database_version`
+-- Table structure for table `database_version`
 --
 
 DROP TABLE IF EXISTS `database_version`;
-CREATE TABLE IF NOT EXISTS `database_version` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `database_version` (
   `db_version` varchar(20) NOT NULL,
   `db_info_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `db_info_desc` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`db_version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `devices`
+-- Table structure for table `devices`
 --
 
 DROP TABLE IF EXISTS `devices`;
-CREATE TABLE IF NOT EXISTS `devices` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `devices` (
   `dc_id` int(4) NOT NULL,
   `dc_name` char(24) DEFAULT NULL,
   `last_update` datetime NOT NULL,
   `packettype` varchar(4) NOT NULL,
   `subtype` varchar(2) NOT NULL,
+  `type` varchar(2) NOT NULL,
   `int_id` tinyint(3) unsigned NOT NULL,
-  `address` varchar(128) NOT NULL,
+  `address` varchar(127) NOT NULL,
   `id1` varchar(2) NOT NULL,
   `id2` varchar(2) NOT NULL,
   `id3` varchar(2) NOT NULL,
@@ -65,21 +66,22 @@ CREATE TABLE IF NOT EXISTS `devices` (
   `home_screen` tinyint(1) NOT NULL DEFAULT '1',
   `home_data1` double(8,2) DEFAULT NULL,
   `home_data2` double(8,2) DEFAULT NULL,
-  `home_data3` float(5,2) DEFAULT NULL,
+  `home_data3` double(8,2) DEFAULT NULL,
   `iss_status` tinyint(4) NOT NULL DEFAULT '0',
-  `iss_stream` char(32) NOT NULL,
+  `iss_stream` char(32) NOT NULL DEFAULT '',
   PRIMARY KEY (`dc_id`),
   UNIQUE KEY `device` (`int_id`,`address`,`id1`,`id2`,`id3`,`id4`,`unitcode`,`groupcode`,`housecode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `energy`
+-- Table structure for table `energy`
 --
 
 DROP TABLE IF EXISTS `energy`;
-CREATE TABLE IF NOT EXISTS `energy` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `energy` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `dc_id` int(4) NOT NULL,
   `datetime` datetime DEFAULT NULL,
@@ -94,16 +96,17 @@ CREATE TABLE IF NOT EXISTS `energy` (
   `processed` int(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `dc_id` (`dc_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=137060 ;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=137060 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `energy_edf`
+-- Table structure for table `energy_edf`
 --
 
 DROP TABLE IF EXISTS `energy_edf`;
-CREATE TABLE IF NOT EXISTS `energy_edf` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `energy_edf` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `dc_id` smallint(5) unsigned NOT NULL,
   `datetime` datetime NOT NULL,
@@ -131,52 +134,56 @@ CREATE TABLE IF NOT EXISTS `energy_edf` (
   `adir3` smallint(5) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `dc_id` (`dc_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9260 ;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=9260 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `interfaces`
+-- Table structure for table `interfaces`
 --
 
 DROP TABLE IF EXISTS `interfaces`;
-CREATE TABLE IF NOT EXISTS `interfaces` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `interfaces` (
   `int_id` tinyint(3) unsigned NOT NULL,
   `int_name` varchar(16) NOT NULL,
   UNIQUE KEY `int_id` (`int_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `network`
+-- Table structure for table `network`
 --
 
 DROP TABLE IF EXISTS `network`;
-CREATE TABLE IF NOT EXISTS `network` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `network` (
   `hostname` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `parameters`
+-- Table structure for table `parameters`
 --
 
 DROP TABLE IF EXISTS `parameters`;
-CREATE TABLE IF NOT EXISTS `parameters` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `parameters` (
   `name` text CHARACTER SET utf8 NOT NULL,
   `value` text CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `scenario`
+-- Table structure for table `scenario`
 --
 
 DROP TABLE IF EXISTS `scenario`;
-CREATE TABLE IF NOT EXISTS `scenario` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `scenario` (
   `pg_id` int(11) NOT NULL AUTO_INCREMENT,
   `sc_id` int(11) NOT NULL,
   `sc_day` int(11) NOT NULL,
@@ -184,31 +191,50 @@ CREATE TABLE IF NOT EXISTS `scenario` (
   `sc_periode_stop` time NOT NULL,
   `tp_prog` int(11) NOT NULL,
   PRIMARY KEY (`pg_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `scenario_info`
+-- Table structure for table `scenario_info`
 --
 
 DROP TABLE IF EXISTS `scenario_info`;
-CREATE TABLE IF NOT EXISTS `scenario_info` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `scenario_info` (
   `sc_id` int(11) NOT NULL AUTO_INCREMENT,
   `th_id` int(11) NOT NULL,
   `sc_type` enum('daily','weekly') NOT NULL DEFAULT 'daily',
   `sc_name` varchar(32) NOT NULL,
   UNIQUE KEY `sc_id` (`sc_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `state`
+-- Table structure for table `scheduler`
+--
+
+DROP TABLE IF EXISTS `scheduler`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `scheduler` (
+  `sch_id` int(11) NOT NULL AUTO_INCREMENT,
+  `dc_id` int(11) NOT NULL,
+  `sch_day` tinyint(4) NOT NULL,
+  `sch_time` time NOT NULL,
+  `sch_action` varchar(8) CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`sch_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `state`
 --
 
 DROP TABLE IF EXISTS `state`;
-CREATE TABLE IF NOT EXISTS `state` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `state` (
   `dc_id` int(4) NOT NULL,
   `datetime` datetime NOT NULL,
   `device_mode` varchar(32) NOT NULL,
@@ -217,15 +243,16 @@ CREATE TABLE IF NOT EXISTS `state` (
   `processed` int(1) NOT NULL DEFAULT '0',
   UNIQUE KEY `dc_id` (`dc_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `temperature`
+-- Table structure for table `temperature`
 --
 
 DROP TABLE IF EXISTS `temperature`;
-CREATE TABLE IF NOT EXISTS `temperature` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `temperature` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `dc_id` int(4) NOT NULL,
   `datetime` datetime DEFAULT NULL,
@@ -238,16 +265,17 @@ CREATE TABLE IF NOT EXISTS `temperature` (
   `processed` int(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `dc_id` (`dc_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22914 ;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=22914 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `thermostat`
+-- Table structure for table `thermostat`
 --
 
 DROP TABLE IF EXISTS `thermostat`;
-CREATE TABLE IF NOT EXISTS `thermostat` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `thermostat` (
   `th_id` int(4) NOT NULL,
   `sensor_id` int(4) NOT NULL,
   `recept_id` int(4) NOT NULL,
@@ -260,33 +288,36 @@ CREATE TABLE IF NOT EXISTS `thermostat` (
   PRIMARY KEY (`th_id`),
   UNIQUE KEY `sensor_id` (`sensor_id`,`recept_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `type`
+-- Table structure for table `type`
 --
 
 DROP TABLE IF EXISTS `type`;
-CREATE TABLE IF NOT EXISTS `type` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `type` (
   `type_id` smallint(5) unsigned NOT NULL,
   `int_id` tinyint(4) unsigned NOT NULL,
   `packettype` varchar(4) NOT NULL,
   `packetdescription` varchar(100) NOT NULL,
   `subtype` varchar(2) NOT NULL,
+  `type` varchar(2) NOT NULL,
   `subdescription` varchar(100) NOT NULL,
   PRIMARY KEY (`type_id`),
-  UNIQUE KEY `packettype` (`packettype`,`subtype`)
+  UNIQUE KEY `type` (`int_id`,`packettype`,`subtype`,`type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Structure de la table `weather`
+-- Table structure for table `weather`
 --
 
 DROP TABLE IF EXISTS `weather`;
-CREATE TABLE IF NOT EXISTS `weather` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `weather` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `dc_id` int(4) NOT NULL,
   `datetime` datetime DEFAULT NULL,
@@ -308,10 +339,18 @@ CREATE TABLE IF NOT EXISTS `weather` (
   `processed` int(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `dc_id` (`dc_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 INSERT INTO database_version VALUES ('0.5.0',now(), 'Creation_mydombox_0-5-0.sql');
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-07-16 19:52:21

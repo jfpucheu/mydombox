@@ -52,6 +52,13 @@ function TP_DISPLAY(){
 		INNER JOIN devices USING (dc_id) 
 		WHERE packettype=52 AND dc_id=$dc_id ORDER BY id DESC limit 1 ;";
 	} 
+	// Packet Type A5 :
+	elseif( $row['packettype']== 'A5' ) { 
+		$order2 = "SELECT devices.dc_id, weather.datetime AS datetime, devices.dc_name AS name, weather.temperature AS temperature
+		FROM weather  
+		INNER JOIN devices USING (dc_id) 
+		WHERE packettype='A5' AND dc_id=$dc_id ORDER BY id DESC limit 1 ;";
+	}
 	else {
 	}
 
@@ -87,6 +94,12 @@ function TP_GRAPH(){
 	}
 	//packet Type 52
 	elseif( $row['packettype']== 52) {
+		$order2 = " SELECT  datetime,temperature
+		FROM weather 
+		WHERE dc_id=$dc_id AND datetime > DATE_SUB(NOW(), INTERVAL 24 HOUR);";
+	}
+		//packet Type A5
+	elseif( $row['packettype']== 'A5') {
 		$order2 = " SELECT  datetime,temperature
 		FROM weather 
 		WHERE dc_id=$dc_id AND datetime > DATE_SUB(NOW(), INTERVAL 24 HOUR);";
