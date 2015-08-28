@@ -1,0 +1,2476 @@
+[2015-05-19 15:58:58][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 15:58:58][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 15:58:58][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 15:58:58][DEBUG]: MYSQL = 1
+[2015-05-19 15:58:58][DEBUG]: HOSTNAME = localhost
+[2015-05-19 15:58:58][DEBUG]: PORT = 3306
+[2015-05-19 15:58:58][DEBUG]: LOGIN = mydombox
+[2015-05-19 15:58:58][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 15:58:58][DEBUG]: DATABASE = mydombox
+[2015-05-19 15:58:58][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 15:58:58][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 15:58:58][DEBUG]: MODULE_ENOUSB300 = 1
+[2015-05-19 15:58:58][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 15:58:58][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 15:58:58][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 15:58:58][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 15:58:58][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 15:58:58][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 15:58:58][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 15:58:58][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 15:58:58][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 15:58:58][DEBUG]: MDB_KEY = 
+[2015-05-19 15:58:58][DEBUG]: MDB_ID = 
+[2015-05-19 15:58:58][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 15:58:58][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 15:58:58][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 15:58:58][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 15:58:58][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 15:58:58][INFO]: MySQL client version: 5.6.24
+[2015-05-19 15:58:58][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 15:58:58][INFO]: Learn Mode: 0
+[2015-05-19 15:58:58][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 15:59:03][INFO]: Module USB300 Started
+[2015-05-19 15:59:03][INFO]: [EnOcean] Starting EnOcean USB300 Module
+[2015-05-19 15:59:03][INFO]: [EnOcean] Starting Listening on /dev/tty.usbserial-FTXGRVK8 
+
+[2015-05-19 15:59:03][ERROR]: [EnOcean] open_port: Unable to open Serial Port 
+
+[2015-05-19 15:59:36][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 15:59:36][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 15:59:36][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 15:59:36][DEBUG]: MYSQL = 1
+[2015-05-19 15:59:36][DEBUG]: HOSTNAME = localhost
+[2015-05-19 15:59:36][DEBUG]: PORT = 3306
+[2015-05-19 15:59:36][DEBUG]: LOGIN = mydombox
+[2015-05-19 15:59:36][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 15:59:36][DEBUG]: DATABASE = mydombox
+[2015-05-19 15:59:36][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 15:59:36][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 15:59:36][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 15:59:36][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 15:59:36][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 15:59:36][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 15:59:36][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 15:59:36][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 15:59:36][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 15:59:36][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 15:59:36][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 15:59:36][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 15:59:36][DEBUG]: MDB_KEY = 
+[2015-05-19 15:59:36][DEBUG]: MDB_ID = 
+[2015-05-19 15:59:36][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 15:59:36][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 15:59:36][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 15:59:36][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 15:59:36][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 15:59:36][INFO]: MySQL client version: 5.6.24
+[2015-05-19 15:59:36][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 15:59:36][INFO]: Learn Mode: 0
+[2015-05-19 15:59:36][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 15:59:51][INFO]: Module SOAP Started
+[2015-05-19 15:59:51][INFO]: Socket connection successful
+[2015-05-19 15:59:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 15:59:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 15:59:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 15:59:56][DEBUG]: MYSQL = 1
+[2015-05-19 15:59:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 15:59:56][DEBUG]: PORT = 3306
+[2015-05-19 15:59:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 15:59:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 15:59:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 15:59:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 15:59:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 15:59:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 15:59:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 15:59:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 15:59:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 15:59:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 15:59:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 15:59:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 15:59:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 15:59:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 15:59:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 15:59:56][DEBUG]: MDB_KEY = 
+[2015-05-19 15:59:56][DEBUG]: MDB_ID = 
+[2015-05-19 15:59:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 15:59:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 15:59:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 15:59:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 15:59:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 15:59:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 15:59:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 15:59:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 15:59:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 15:59:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 15:59:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 15:59:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 15:59:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 15:59:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 15:59:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:00:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:00:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:00:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:00:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:00:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:00:56][DEBUG]: PORT = 3306
+[2015-05-19 16:00:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:00:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:00:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:00:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:00:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:00:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:00:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:00:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:00:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:00:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:00:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:00:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:00:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:00:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:00:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:00:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:00:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:00:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:00:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:00:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:00:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:00:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:00:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:00:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:00:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:00:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:00:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:00:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:00:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:00:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:00:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:00:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:01:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:01:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:01:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:01:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:01:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:01:56][DEBUG]: PORT = 3306
+[2015-05-19 16:01:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:01:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:01:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:01:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:01:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:01:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:01:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:01:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:01:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:01:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:01:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:01:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:01:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:01:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:01:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:01:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:01:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:01:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:01:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:01:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:01:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:01:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:01:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:01:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:01:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:01:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:01:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:01:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:01:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:01:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:01:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:01:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:02:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:02:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:02:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:02:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:02:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:02:56][DEBUG]: PORT = 3306
+[2015-05-19 16:02:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:02:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:02:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:02:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:02:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:02:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:02:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:02:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:02:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:02:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:02:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:02:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:02:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:02:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:02:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:02:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:02:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:02:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:02:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:02:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:02:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:02:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:02:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:02:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:02:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:02:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:02:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:02:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:02:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:02:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:02:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:02:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:03:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:03:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:03:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:03:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:03:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:03:56][DEBUG]: PORT = 3306
+[2015-05-19 16:03:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:03:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:03:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:03:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:03:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:03:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:03:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:03:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:03:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:03:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:03:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:03:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:03:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:03:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:03:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:03:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:03:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:03:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:03:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:03:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:03:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:03:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:03:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:03:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:03:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:03:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:03:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:03:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:03:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:03:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:03:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:03:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:04:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:04:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:04:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:04:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:04:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:04:56][DEBUG]: PORT = 3306
+[2015-05-19 16:04:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:04:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:04:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:04:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:04:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:04:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:04:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:04:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:04:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:04:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:04:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:04:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:04:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:04:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:04:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:04:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:04:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:04:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:04:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:04:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:04:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:04:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:04:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:04:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:04:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:04:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:04:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:04:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:04:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:04:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:04:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:04:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:05:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:05:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:05:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:05:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:05:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:05:56][DEBUG]: PORT = 3306
+[2015-05-19 16:05:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:05:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:05:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:05:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:05:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:05:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:05:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:05:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:05:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:05:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:05:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:05:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:05:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:05:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:05:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:05:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:05:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:05:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:05:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:05:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:05:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:05:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:05:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:05:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:05:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:05:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:05:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:05:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:05:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:05:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:05:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:05:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:06:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:06:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:06:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:06:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:06:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:06:56][DEBUG]: PORT = 3306
+[2015-05-19 16:06:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:06:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:06:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:06:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:06:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:06:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:06:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:06:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:06:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:06:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:06:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:06:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:06:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:06:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:06:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:06:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:06:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:06:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:06:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:06:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:06:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:06:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:06:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:06:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:06:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:06:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:06:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:06:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:06:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:06:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:06:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:06:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:07:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:07:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:07:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:07:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:07:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:07:56][DEBUG]: PORT = 3306
+[2015-05-19 16:07:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:07:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:07:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:07:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:07:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:07:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:07:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:07:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:07:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:07:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:07:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:07:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:07:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:07:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:07:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:07:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:07:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:07:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:07:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:07:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:07:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:07:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:07:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:07:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:07:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:07:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:07:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:07:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:07:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:07:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:07:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:07:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:08:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:08:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:08:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:08:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:08:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:08:56][DEBUG]: PORT = 3306
+[2015-05-19 16:08:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:08:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:08:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:08:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:08:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:08:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:08:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:08:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:08:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:08:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:08:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:08:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:08:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:08:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:08:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:08:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:08:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:08:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:08:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:08:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:08:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:08:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:08:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:08:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:08:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:08:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:08:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:08:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:08:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:08:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:08:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:08:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:09:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:09:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:09:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:09:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:09:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:09:56][DEBUG]: PORT = 3306
+[2015-05-19 16:09:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:09:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:09:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:09:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:09:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:09:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:09:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:09:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:09:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:09:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:09:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:09:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:09:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:09:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:09:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:09:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:09:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:09:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:09:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:09:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:09:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:09:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:09:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:09:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:09:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:09:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:09:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:09:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:09:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:09:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:09:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:09:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:10:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:10:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:10:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:10:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:10:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:10:56][DEBUG]: PORT = 3306
+[2015-05-19 16:10:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:10:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:10:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:10:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:10:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:10:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:10:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:10:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:10:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:10:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:10:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:10:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:10:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:10:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:10:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:10:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:10:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:10:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:10:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:10:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:10:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:10:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:10:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:10:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:10:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:10:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:10:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:10:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:10:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:10:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:10:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:10:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:11:56][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:11:56][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:11:56][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:11:56][DEBUG]: MYSQL = 1
+[2015-05-19 16:11:56][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:11:56][DEBUG]: PORT = 3306
+[2015-05-19 16:11:56][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:11:56][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:11:56][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:11:56][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:11:56][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:11:56][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:11:56][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:11:56][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:11:56][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:11:56][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:11:56][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:11:56][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:11:56][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:11:56][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:11:56][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:11:56][DEBUG]: MDB_KEY = 
+[2015-05-19 16:11:56][DEBUG]: MDB_ID = 
+[2015-05-19 16:11:56][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:11:56][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:11:56][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:11:56][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:11:56][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:11:56][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:11:56][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:11:56][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:11:56][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:11:56][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:11:56][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:11:56][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:11:56][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:11:56][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 23 05 1F
+[2015-05-19 16:11:56][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:13:15][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:13:15][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:13:15][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:13:15][DEBUG]: MYSQL = 1
+[2015-05-19 16:13:15][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:13:15][DEBUG]: PORT = 3306
+[2015-05-19 16:13:15][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:13:15][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:13:15][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:13:15][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:13:15][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:13:15][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:13:15][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:13:15][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:13:15][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:13:15][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:13:15][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:13:15][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:13:15][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:13:15][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:13:15][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:13:15][DEBUG]: MDB_KEY = 
+[2015-05-19 16:13:15][DEBUG]: MDB_ID = 
+[2015-05-19 16:13:15][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:13:15][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:13:15][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:13:15][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:13:15][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:13:15][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:13:15][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:13:15][INFO]: Learn Mode: 0
+[2015-05-19 16:13:15][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:13:30][INFO]: Module SOAP Started
+[2015-05-19 16:13:30][INFO]: Socket connection successful
+[2015-05-19 16:13:35][DEBUG]: [EnOcean] byte 1: ffffffa5
+[2015-05-19 16:13:35][DEBUG]: [EnOcean] RORG: Not Supported 
+
+[2015-05-19 16:13:35][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:13:35][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:13:35][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:13:35][DEBUG]: MYSQL = 1
+[2015-05-19 16:13:35][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:13:35][DEBUG]: PORT = 3306
+[2015-05-19 16:13:35][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:13:35][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:13:35][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:13:35][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:13:35][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:13:35][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:13:35][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:13:35][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:13:35][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:13:35][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:13:35][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:13:35][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:13:35][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:13:35][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:13:35][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:13:35][DEBUG]: MDB_KEY = 
+[2015-05-19 16:13:35][DEBUG]: MDB_ID = 
+[2015-05-19 16:13:35][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:13:35][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:13:35][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:13:35][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:13:35][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:13:35][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:13:35][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:13:35][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:13:35][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:13:35][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:13:35][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:13:35][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:13:35][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:13:35][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 F5 28 C9
+[2015-05-19 16:13:35][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:15:47][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:15:47][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:15:47][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:15:47][DEBUG]: MYSQL = 1
+[2015-05-19 16:15:47][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:15:47][DEBUG]: PORT = 3306
+[2015-05-19 16:15:47][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:15:47][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:15:47][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:15:47][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:15:47][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:15:47][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:15:47][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:15:47][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:15:47][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:15:47][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:15:47][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:15:47][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:15:47][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:15:47][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:15:47][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:15:47][DEBUG]: MDB_KEY = 
+[2015-05-19 16:15:47][DEBUG]: MDB_ID = 
+[2015-05-19 16:15:47][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:15:47][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:15:47][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:15:47][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:15:47][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:15:47][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:15:47][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:15:47][INFO]: Learn Mode: 0
+[2015-05-19 16:15:47][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:16:02][INFO]: Module SOAP Started
+[2015-05-19 16:16:02][INFO]: Socket connection successful
+[2015-05-19 16:16:07][DEBUG]: [EnOcean] byte 1: ffffffa5
+[2015-05-19 16:16:07][DEBUG]: [EnOcean] RORG: Not Supported 
+
+[2015-05-19 16:16:07][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:16:07][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:16:07][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:16:07][DEBUG]: MYSQL = 1
+[2015-05-19 16:16:07][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:16:07][DEBUG]: PORT = 3306
+[2015-05-19 16:16:07][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:16:07][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:16:07][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:16:07][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:16:07][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:16:07][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:16:07][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:16:07][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:16:07][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:16:07][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:16:07][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:16:07][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:16:07][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:16:07][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:16:07][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:16:07][DEBUG]: MDB_KEY = 
+[2015-05-19 16:16:07][DEBUG]: MDB_ID = 
+[2015-05-19 16:16:07][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:16:07][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:16:07][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:16:07][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:16:07][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:16:07][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:16:07][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:16:07][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:16:07][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:16:07][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:16:07][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:16:07][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:16:07][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:16:07][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E6 1E CF
+[2015-05-19 16:16:07][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:17:07][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:17:07][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:17:07][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:17:07][DEBUG]: MYSQL = 1
+[2015-05-19 16:17:07][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:17:07][DEBUG]: PORT = 3306
+[2015-05-19 16:17:07][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:17:07][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:17:07][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:17:07][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:17:07][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:17:07][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:17:07][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:17:07][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:17:07][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:17:07][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:17:07][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:17:07][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:17:07][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:17:07][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:17:07][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:17:07][DEBUG]: MDB_KEY = 
+[2015-05-19 16:17:07][DEBUG]: MDB_ID = 
+[2015-05-19 16:17:07][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:17:07][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:17:07][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:17:07][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:17:07][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:17:07][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:17:07][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:17:07][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:17:07][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:17:07][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:17:07][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:17:07][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:17:07][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:17:07][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E6 1E CF
+[2015-05-19 16:17:07][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:18:07][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:18:07][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:18:07][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:18:07][DEBUG]: MYSQL = 1
+[2015-05-19 16:18:07][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:18:07][DEBUG]: PORT = 3306
+[2015-05-19 16:18:07][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:18:07][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:18:07][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:18:07][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:18:07][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:18:07][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:18:07][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:18:07][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:18:07][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:18:07][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:18:07][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:18:07][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:18:07][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:18:07][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:18:07][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:18:07][DEBUG]: MDB_KEY = 
+[2015-05-19 16:18:07][DEBUG]: MDB_ID = 
+[2015-05-19 16:18:07][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:18:07][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:18:07][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:18:07][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:18:07][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:18:07][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:18:07][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:18:07][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:18:07][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:18:07][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:18:07][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:18:07][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:18:07][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:18:07][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E6 1E CF
+[2015-05-19 16:18:07][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:19:07][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:19:07][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:19:07][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:19:07][DEBUG]: MYSQL = 1
+[2015-05-19 16:19:07][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:19:07][DEBUG]: PORT = 3306
+[2015-05-19 16:19:07][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:19:07][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:19:07][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:19:07][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:19:07][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:19:07][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:19:07][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:19:07][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:19:07][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:19:07][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:19:07][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:19:07][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:19:07][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:19:07][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:19:07][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:19:07][DEBUG]: MDB_KEY = 
+[2015-05-19 16:19:07][DEBUG]: MDB_ID = 
+[2015-05-19 16:19:07][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:19:07][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:19:07][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:19:07][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:19:07][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:19:07][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:19:07][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:19:07][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:19:07][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:19:07][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:19:07][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:19:07][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:19:07][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:19:07][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E6 1E CF
+[2015-05-19 16:19:07][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:20:07][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:20:07][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:20:07][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:20:07][DEBUG]: MYSQL = 1
+[2015-05-19 16:20:07][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:20:07][DEBUG]: PORT = 3306
+[2015-05-19 16:20:07][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:20:07][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:20:07][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:20:07][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:20:07][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:20:07][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:20:07][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:20:07][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:20:07][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:20:07][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:20:07][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:20:07][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:20:07][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:20:07][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:20:07][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:20:07][DEBUG]: MDB_KEY = 
+[2015-05-19 16:20:07][DEBUG]: MDB_ID = 
+[2015-05-19 16:20:07][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:20:07][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:20:07][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:20:07][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:20:07][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:20:07][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:20:07][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:20:07][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:20:07][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:20:07][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:20:07][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:20:07][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:20:07][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:20:07][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E6 1E CF
+[2015-05-19 16:20:07][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:41:23][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:41:23][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:41:23][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:41:23][DEBUG]: MYSQL = 1
+[2015-05-19 16:41:23][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:41:23][DEBUG]: PORT = 3306
+[2015-05-19 16:41:23][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:41:23][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:41:23][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:41:23][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:41:23][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:41:23][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:41:23][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:41:23][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:41:23][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:41:23][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:41:23][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:41:23][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:41:23][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:41:23][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:41:23][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:41:23][DEBUG]: MDB_KEY = 
+[2015-05-19 16:41:23][DEBUG]: MDB_ID = 
+[2015-05-19 16:41:23][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:41:23][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:41:23][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:41:23][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:41:23][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:41:23][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:41:23][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:41:23][INFO]: Learn Mode: 0
+[2015-05-19 16:41:23][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:41:38][INFO]: Module SOAP Started
+[2015-05-19 16:41:38][INFO]: Socket connection successful
+[2015-05-19 16:41:43][DEBUG]: [EnOcean] byte 1: ffffffa5
+[2015-05-19 16:41:43][DEBUG]: [EnOcean] RORG: Not Supported 
+
+[2015-05-19 16:42:43][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:42:43][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:42:43][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:42:43][DEBUG]: MYSQL = 1
+[2015-05-19 16:42:43][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:42:43][DEBUG]: PORT = 3306
+[2015-05-19 16:42:43][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:42:43][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:42:43][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:42:43][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:42:43][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:42:43][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:42:43][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:42:43][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:42:43][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:42:43][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:42:43][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:42:43][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:42:43][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:42:43][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:42:43][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:42:43][DEBUG]: MDB_KEY = 
+[2015-05-19 16:42:43][DEBUG]: MDB_ID = 
+[2015-05-19 16:42:43][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:42:43][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:42:43][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:42:43][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:42:43][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:42:43][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:42:43][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:42:43][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:42:43][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:42:43][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:42:43][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:42:43][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:42:43][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:42:43][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 A4 60 19
+[2015-05-19 16:42:43][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:43:43][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:43:43][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:43:43][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:43:43][DEBUG]: MYSQL = 1
+[2015-05-19 16:43:43][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:43:43][DEBUG]: PORT = 3306
+[2015-05-19 16:43:43][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:43:43][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:43:43][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:43:43][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:43:43][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:43:43][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:43:43][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:43:43][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:43:43][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:43:43][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:43:43][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:43:43][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:43:43][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:43:43][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:43:43][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:43:43][DEBUG]: MDB_KEY = 
+[2015-05-19 16:43:43][DEBUG]: MDB_ID = 
+[2015-05-19 16:43:43][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:43:43][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:43:43][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:43:43][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:43:43][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:43:43][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:43:43][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:43:43][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:43:43][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:43:43][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:43:43][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:43:43][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:43:43][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:43:43][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 A4 60 19
+[2015-05-19 16:43:43][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:44:04][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:44:04][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:44:04][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:44:04][DEBUG]: MYSQL = 1
+[2015-05-19 16:44:04][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:44:04][DEBUG]: PORT = 3306
+[2015-05-19 16:44:04][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:44:04][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:44:04][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:44:04][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:44:04][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:44:04][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:44:04][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:44:04][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:44:04][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:44:04][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:44:04][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:44:04][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:44:04][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:44:04][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:44:04][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:44:04][DEBUG]: MDB_KEY = 
+[2015-05-19 16:44:04][DEBUG]: MDB_ID = 
+[2015-05-19 16:44:04][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:44:04][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:44:04][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:44:04][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:44:04][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:44:04][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:44:04][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:44:04][INFO]: Learn Mode: 0
+[2015-05-19 16:44:04][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:44:19][INFO]: Module SOAP Started
+[2015-05-19 16:44:19][INFO]: Socket connection successful
+[2015-05-19 16:44:24][DEBUG]: [EnOcean] Record Mode : 0
+[2015-05-19 16:44:24][DEBUG_SQL]: SELECT dc_id,packettype,subtype,type,id1,id2,id3,id4,enable FROM devices                           WHERE int_id=4 AND id1='00'AND id2='88'AND id3='FB'AND id4='73';
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] dc_id = 0 ,0
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] rorg = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] func = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] type = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] id1 = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] id2 = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] id3 = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] id4 = 00
+[2015-05-19 16:44:24][DEBUG]: [EnDevice] enable = 0
+[2015-05-19 16:44:24][DEBUG]: [EnOcean] device: 0
+[2015-05-19 16:44:24][DEBUG]: [EnOcean] device: 1418586608
+[2015-05-19 16:45:24][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:45:24][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:45:24][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:45:24][DEBUG]: MYSQL = 1
+[2015-05-19 16:45:24][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:45:24][DEBUG]: PORT = 3306
+[2015-05-19 16:45:24][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:45:24][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:45:24][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:45:24][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:45:24][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:45:24][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:45:24][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:45:24][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:45:24][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:45:24][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:45:24][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:45:24][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:45:24][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:45:24][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:45:24][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:45:24][DEBUG]: MDB_KEY = 
+[2015-05-19 16:45:24][DEBUG]: MDB_ID = 
+[2015-05-19 16:45:24][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:45:24][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:45:24][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:45:24][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:45:24][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:45:24][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:45:24][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:45:24][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:45:24][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:45:24][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:45:24][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:45:24][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:45:24][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:45:24][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 84 57 D9
+[2015-05-19 16:45:24][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:46:12][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:46:12][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:46:12][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:46:12][DEBUG]: MYSQL = 1
+[2015-05-19 16:46:12][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:46:12][DEBUG]: PORT = 3306
+[2015-05-19 16:46:12][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:46:12][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:46:12][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:46:12][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:46:12][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:46:12][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:46:12][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:46:12][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:46:12][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:46:12][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:46:12][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:46:12][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:46:12][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:46:12][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:46:12][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:46:12][DEBUG]: MDB_KEY = 
+[2015-05-19 16:46:12][DEBUG]: MDB_ID = 
+[2015-05-19 16:46:12][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:46:12][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:46:12][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:46:12][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:46:12][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:46:12][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:46:12][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:46:12][INFO]: Learn Mode: 0
+[2015-05-19 16:46:12][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:46:34][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:46:34][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:46:34][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:46:34][DEBUG]: MYSQL = 1
+[2015-05-19 16:46:34][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:46:34][DEBUG]: PORT = 3306
+[2015-05-19 16:46:34][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:46:34][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:46:34][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:46:34][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:46:34][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:46:34][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:46:34][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:46:34][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:46:34][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:46:34][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:46:34][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:46:34][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:46:34][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:46:34][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:46:34][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:46:34][DEBUG]: MDB_KEY = 
+[2015-05-19 16:46:34][DEBUG]: MDB_ID = 
+[2015-05-19 16:46:34][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:46:34][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:46:34][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:46:34][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:46:34][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:46:34][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:46:34][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:46:34][INFO]: Learn Mode: 1
+[2015-05-19 16:46:34][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:46:49][INFO]: Module SOAP Started
+[2015-05-19 16:46:49][INFO]: Socket connection successful
+[2015-05-19 16:46:54][DEBUG]: [EnOcean] Record Mode : 1
+[2015-05-19 16:46:54][INFO]: [EnOcean] Recording new device type : A5
+[2015-05-19 16:46:54][DEBUG_SQL]: INSERT IGNORE INTO devices (dc_id,last_update,packettype,int_id,id1,id2,id3,id4,com)                      SELECT MAX(dc_id)+1,NOW(),'A5',4,'00','88','FB','73','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();
+[2015-05-19 16:46:55][DEBUG_SQL]: SELECT dc_id,packettype,subtype,type,id1,id2,id3,id4,enable FROM devices                           WHERE int_id=4 AND id1='00'AND id2='88'AND id3='FB'AND id4='73';
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] dc_id = 26 ,26
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] rorg = A5
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] func = A5
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] type = A5
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] id1 = 00
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] id2 = 88
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] id3 = FB
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] id4 = 73
+[2015-05-19 16:46:55][DEBUG]: [EnDevice] enable = 1
+[2015-05-19 16:46:55][DEBUG]: [EnOcean] device: 26
+[2015-05-19 16:46:55][DEBUG]: [EnOcean] device: 1540229616
+[2015-05-19 16:46:55][DEBUG]: [EnOcean] RORG: Not Supported 
+
+[2015-05-19 16:47:55][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:47:55][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:47:55][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:47:55][DEBUG]: MYSQL = 1
+[2015-05-19 16:47:55][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:47:55][DEBUG]: PORT = 3306
+[2015-05-19 16:47:55][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:47:55][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:47:55][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:47:55][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:47:55][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:47:55][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:47:55][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:47:55][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:47:55][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:47:55][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:47:55][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:47:55][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:47:55][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:47:55][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:47:55][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:47:55][DEBUG]: MDB_KEY = 
+[2015-05-19 16:47:55][DEBUG]: MDB_ID = 
+[2015-05-19 16:47:55][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:47:55][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:47:55][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:47:55][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:47:55][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:47:55][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:47:55][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:47:55][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:47:55][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:47:55][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:47:55][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:47:55][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:47:55][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:47:55][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 C2 6A 25
+[2015-05-19 16:47:55][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:48:55][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:48:55][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:48:55][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:48:55][DEBUG]: MYSQL = 1
+[2015-05-19 16:48:55][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:48:55][DEBUG]: PORT = 3306
+[2015-05-19 16:48:55][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:48:55][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:48:55][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:48:55][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:48:55][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:48:55][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:48:55][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:48:55][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:48:55][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:48:55][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:48:55][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:48:55][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:48:55][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:48:55][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:48:55][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:48:55][DEBUG]: MDB_KEY = 
+[2015-05-19 16:48:55][DEBUG]: MDB_ID = 
+[2015-05-19 16:48:55][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:48:55][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:48:55][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:48:55][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:48:55][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:48:55][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:48:55][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:48:55][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:48:55][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:48:55][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:48:55][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:48:55][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:48:55][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:48:55][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 C2 6A 25
+[2015-05-19 16:48:55][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:49:55][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:49:55][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:49:55][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:49:55][DEBUG]: MYSQL = 1
+[2015-05-19 16:49:55][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:49:55][DEBUG]: PORT = 3306
+[2015-05-19 16:49:55][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:49:55][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:49:55][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:49:55][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:49:55][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:49:55][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:49:55][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:49:55][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:49:55][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:49:55][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:49:55][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:49:55][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:49:55][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:49:55][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:49:55][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:49:55][DEBUG]: MDB_KEY = 
+[2015-05-19 16:49:55][DEBUG]: MDB_ID = 
+[2015-05-19 16:49:55][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:49:55][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:49:55][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:49:55][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:49:55][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:49:55][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:49:55][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:49:55][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:49:55][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:49:55][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:49:55][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:49:55][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:49:55][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:49:55][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 C2 6A 25
+[2015-05-19 16:49:55][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:50:10][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:50:10][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:50:10][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:50:10][DEBUG]: MYSQL = 1
+[2015-05-19 16:50:10][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:50:10][DEBUG]: PORT = 3306
+[2015-05-19 16:50:10][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:50:10][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:50:10][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:50:10][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:50:10][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:50:10][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:50:10][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:50:10][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:50:10][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:50:10][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:50:10][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:50:10][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:50:10][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:50:10][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:50:10][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:50:10][DEBUG]: MDB_KEY = 
+[2015-05-19 16:50:10][DEBUG]: MDB_ID = 
+[2015-05-19 16:50:10][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:50:10][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:50:10][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:50:10][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:50:10][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:50:10][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:50:10][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:50:10][INFO]: Learn Mode: 0
+[2015-05-19 16:50:10][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:50:25][INFO]: Module SOAP Started
+[2015-05-19 16:50:25][INFO]: Socket connection successful
+[2015-05-19 16:50:30][DEBUG]: [EnOcean] Record Mode : 0
+[2015-05-19 16:50:30][DEBUG_SQL]: SELECT dc_id,packettype,subtype,type,id1,id2,id3,id4,enable FROM devices                           WHERE int_id=4 AND id1='00'AND id2='88'AND id3='FB'AND id4='73';
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] dc_id = 26 ,26
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] rorg = A5
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] func = 02
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] type = 05
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] id1 = 00
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] id2 = 88
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] id3 = FB
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] id4 = 73
+[2015-05-19 16:50:30][DEBUG]: [EnDevice] enable = 1
+[2015-05-19 16:50:30][DEBUG]: [EnOcean] device: 26
+[2015-05-19 16:50:30][DEBUG]: [EnOcean] device: 1365805552
+[2015-05-19 16:50:30][DEBUG]: [EnOcean] FUNC: 02 Temperature Sensors
+[2015-05-19 16:50:30][DEBUG]: [EnOcean] TYPE: 05 Temperature Sensor Range 0째C to +40째C
+[2015-05-19 16:50:30][DEBUG_SQL]: UPDATE devices SET last_update=NOW(),home_data1=20.08 WHERE dc_id=26;                 INSERT INTO weather (dc_id,datetime,temperature) VALUES ( 26, NOW(), 20.08);
+[2015-05-19 16:50:30][DEBUG]: 
+
+ [EnOcean] 
+ Packetype: A5 Telegram  
+ id1: 00  
+ id2: 88 
+ id3: FB  
+ id4: 73 
+ Learn Button: Teach-in telegram 
+ temperature: 20.08 
+
+[2015-05-19 16:51:30][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:51:30][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:51:30][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:51:30][DEBUG]: MYSQL = 1
+[2015-05-19 16:51:30][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:51:30][DEBUG]: PORT = 3306
+[2015-05-19 16:51:30][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:51:30][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:51:30][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:51:30][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:51:30][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:51:30][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:51:30][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:51:30][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:51:30][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:51:30][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:51:30][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:51:30][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:51:30][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:51:30][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:51:30][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:51:30][DEBUG]: MDB_KEY = 
+[2015-05-19 16:51:30][DEBUG]: MDB_ID = 
+[2015-05-19 16:51:30][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:51:30][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:51:30][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:51:30][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:51:30][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:51:30][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:51:30][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:51:30][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:51:30][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:51:30][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:51:30][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:51:30][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:51:30][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:51:30][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 46 0B D6
+[2015-05-19 16:51:30][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:51:41][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:51:41][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:51:41][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:51:41][DEBUG]: MYSQL = 1
+[2015-05-19 16:51:41][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:51:41][DEBUG]: PORT = 3306
+[2015-05-19 16:51:41][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:51:41][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:51:41][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:51:41][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:51:41][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:51:41][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:51:41][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:51:41][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:51:41][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:51:41][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:51:41][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:51:41][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:51:41][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:51:41][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:51:41][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:51:41][DEBUG]: MDB_KEY = 
+[2015-05-19 16:51:41][DEBUG]: MDB_ID = 
+[2015-05-19 16:51:41][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:51:41][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:51:41][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:51:41][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:51:41][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:51:41][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:51:41][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:51:41][INFO]: Learn Mode: 0
+[2015-05-19 16:51:41][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:51:56][INFO]: Module SOAP Started
+[2015-05-19 16:51:56][INFO]: Socket connection successful
+[2015-05-19 16:52:01][DEBUG]: [EnOcean] Record Mode : 0
+[2015-05-19 16:52:01][DEBUG_SQL]: SELECT dc_id,packettype,subtype,type,id1,id2,id3,id4,enable FROM devices                           WHERE int_id=4 AND id1='00'AND id2='88'AND id3='FB'AND id4='73';
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] dc_id = 26 ,26
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] rorg = A5
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] func = 02
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] type = 05
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] id1 = 00
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] id2 = 88
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] id3 = FB
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] id4 = 73
+[2015-05-19 16:52:01][DEBUG]: [EnDevice] enable = 1
+[2015-05-19 16:52:01][DEBUG]: [EnOcean] device: 26
+[2015-05-19 16:52:01][DEBUG]: [EnOcean] FUNC: 02 Temperature Sensors
+[2015-05-19 16:52:01][DEBUG]: [EnOcean] TYPE: 05 Temperature Sensor Range 0째C to +40째C
+[2015-05-19 16:52:01][DEBUG_SQL]: UPDATE devices SET last_update=NOW(),home_data1=20.08 WHERE dc_id=26;                 INSERT INTO weather (dc_id,datetime,temperature) VALUES ( 26, NOW(), 20.08);
+[2015-05-19 16:52:01][DEBUG]: 
+
+ [EnOcean] 
+ Packetype: A5 Telegram  
+ id1: 00  
+ id2: 88 
+ id3: FB  
+ id4: 73 
+ Learn Button: Teach-in telegram 
+ temperature: 20.08 
+
+[2015-05-19 16:53:01][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:53:01][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:53:01][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:53:01][DEBUG]: MYSQL = 1
+[2015-05-19 16:53:01][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:53:01][DEBUG]: PORT = 3306
+[2015-05-19 16:53:01][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:53:01][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:53:01][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:53:01][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:53:01][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:53:01][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:53:01][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:53:01][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:53:01][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:53:01][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:53:01][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:53:01][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:53:01][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:53:01][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:53:01][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:53:01][DEBUG]: MDB_KEY = 
+[2015-05-19 16:53:01][DEBUG]: MDB_ID = 
+[2015-05-19 16:53:01][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:53:01][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:53:01][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:53:01][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:53:01][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:53:01][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:53:01][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:53:01][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:53:01][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:53:01][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:53:01][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:53:01][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:53:01][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:53:01][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E3 A0 5D
+[2015-05-19 16:53:01][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:54:01][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:54:01][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:54:01][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:54:01][DEBUG]: MYSQL = 1
+[2015-05-19 16:54:01][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:54:01][DEBUG]: PORT = 3306
+[2015-05-19 16:54:01][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:54:01][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:54:01][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:54:01][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:54:01][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:54:01][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:54:01][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:54:01][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:54:01][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:54:01][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:54:01][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:54:01][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:54:01][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:54:01][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:54:01][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:54:01][DEBUG]: MDB_KEY = 
+[2015-05-19 16:54:01][DEBUG]: MDB_ID = 
+[2015-05-19 16:54:01][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:54:01][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:54:01][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:54:01][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:54:01][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:54:01][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:54:01][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:54:01][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:54:01][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:54:01][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:54:01][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:54:01][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:54:01][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:54:01][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E3 A0 5D
+[2015-05-19 16:54:01][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:55:01][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:55:01][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:55:01][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:55:01][DEBUG]: MYSQL = 1
+[2015-05-19 16:55:01][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:55:01][DEBUG]: PORT = 3306
+[2015-05-19 16:55:01][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:55:01][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:55:01][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:55:01][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:55:01][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:55:01][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:55:01][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:55:01][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:55:01][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:55:01][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:55:01][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:55:01][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:55:01][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:55:01][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:55:01][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:55:01][DEBUG]: MDB_KEY = 
+[2015-05-19 16:55:01][DEBUG]: MDB_ID = 
+[2015-05-19 16:55:01][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:55:01][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:55:01][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:55:01][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:55:01][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:55:01][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:55:01][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:55:01][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:55:01][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:55:01][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:55:01][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:55:01][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:55:01][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:55:01][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E3 A0 5D
+[2015-05-19 16:55:01][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:56:01][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:56:01][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:56:01][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:56:01][DEBUG]: MYSQL = 1
+[2015-05-19 16:56:01][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:56:01][DEBUG]: PORT = 3306
+[2015-05-19 16:56:01][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:56:01][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:56:01][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:56:01][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:56:01][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:56:01][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:56:01][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:56:01][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:56:01][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:56:01][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:56:01][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:56:01][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:56:01][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:56:01][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:56:01][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:56:01][DEBUG]: MDB_KEY = 
+[2015-05-19 16:56:01][DEBUG]: MDB_ID = 
+[2015-05-19 16:56:01][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:56:01][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:56:01][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:56:01][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:56:01][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:56:01][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:56:01][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:56:01][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:56:01][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:56:01][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:56:01][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:56:01][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:56:01][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:56:01][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E3 A0 5D
+[2015-05-19 16:56:01][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:57:01][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:57:01][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:57:01][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:57:01][DEBUG]: MYSQL = 1
+[2015-05-19 16:57:01][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:57:01][DEBUG]: PORT = 3306
+[2015-05-19 16:57:01][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:57:01][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:57:01][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:57:01][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:57:01][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:57:01][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:57:01][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:57:01][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:57:01][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:57:01][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:57:01][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:57:01][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:57:01][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:57:01][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:57:01][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:57:01][DEBUG]: MDB_KEY = 
+[2015-05-19 16:57:01][DEBUG]: MDB_ID = 
+[2015-05-19 16:57:01][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:57:01][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:57:01][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:57:01][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:57:01][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:57:01][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:57:01][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:57:01][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:57:01][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:57:01][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:57:01][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:57:01][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:57:01][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:57:01][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 E3 A0 5D
+[2015-05-19 16:57:01][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 16:57:54][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:57:54][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:57:54][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:57:54][DEBUG]: MYSQL = 1
+[2015-05-19 16:57:54][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:57:54][DEBUG]: PORT = 3306
+[2015-05-19 16:57:54][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:57:54][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:57:54][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:57:54][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:57:54][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:57:54][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:57:54][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:57:54][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:57:54][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:57:54][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:57:54][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:57:54][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:57:54][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:57:54][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:57:54][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:57:54][DEBUG]: MDB_KEY = 
+[2015-05-19 16:57:54][DEBUG]: MDB_ID = 
+[2015-05-19 16:57:54][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:57:54][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:57:54][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:57:54][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:57:54][INFO]: --------- Starting Mydombox Server ---------
+[2015-05-19 16:57:54][INFO]: MySQL client version: 5.6.24
+[2015-05-19 16:57:54][INFO]: Loglevel: DEBUG_SQL
+[2015-05-19 16:57:54][INFO]: Learn Mode: 0
+[2015-05-19 16:57:54][DEBUG_SQL]: SELECT * FROM devices;
+[2015-05-19 16:58:09][INFO]: Module SOAP Started
+[2015-05-19 16:58:09][INFO]: Socket connection successful
+[2015-05-19 16:58:14][DEBUG]: [EnOcean] Record Mode : 0
+[2015-05-19 16:58:14][DEBUG_SQL]: SELECT dc_id,packettype,subtype,type,id1,id2,id3,id4,enable FROM devices                           WHERE int_id=4 AND id1='00'AND id2='88'AND id3='FB'AND id4='73';
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] dc_id = 26 ,26
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] rorg = A5
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] func = 02
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] type = 05
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] id1 = 00
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] id2 = 88
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] id3 = FB
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] id4 = 73
+[2015-05-19 16:58:14][DEBUG]: [EnDevice] enable = 1
+[2015-05-19 16:58:14][DEBUG]: [EnOcean] device: 26
+[2015-05-19 16:58:14][DEBUG]: [EnOcean] FUNC: 02 Temperature Sensors
+[2015-05-19 16:58:14][DEBUG]: [EnOcean] TYPE: 05 Temperature Sensor Range 0째C to +40째C
+[2015-05-19 16:58:14][DEBUG_SQL]: UPDATE devices SET last_update=NOW(),home_data1=20.08 WHERE dc_id=26;                 INSERT INTO weather (dc_id,datetime,temperature) VALUES ( 26, NOW(), 20.08);
+[2015-05-19 16:58:14][DEBUG]: 
+
+ [EnOcean] 
+ Packetype: A5 Telegram  
+ id1: 00  
+ id2: 88 
+ id3: FB  
+ id4: 73 
+ Learn Button: Teach-in telegram 
+ temperature: 20.08 
+
+[2015-05-19 16:59:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 16:59:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 16:59:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 16:59:14][DEBUG]: MYSQL = 1
+[2015-05-19 16:59:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 16:59:14][DEBUG]: PORT = 3306
+[2015-05-19 16:59:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 16:59:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 16:59:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 16:59:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 16:59:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 16:59:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 16:59:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 16:59:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 16:59:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 16:59:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 16:59:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 16:59:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 16:59:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 16:59:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 16:59:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 16:59:14][DEBUG]: MDB_KEY = 
+[2015-05-19 16:59:14][DEBUG]: MDB_ID = 
+[2015-05-19 16:59:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 16:59:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 16:59:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 16:59:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 16:59:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 16:59:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 16:59:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 16:59:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 16:59:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 16:59:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 16:59:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 16:59:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 16:59:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 16:59:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 16:59:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:00:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:00:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:00:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:00:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:00:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:00:14][DEBUG]: PORT = 3306
+[2015-05-19 17:00:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:00:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:00:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:00:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:00:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:00:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:00:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:00:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:00:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:00:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:00:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:00:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:00:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:00:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:00:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:00:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:00:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:00:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:00:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:00:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:00:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:00:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:00:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:00:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:00:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:00:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:00:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:00:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:00:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:00:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:00:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:00:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:01:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:01:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:01:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:01:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:01:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:01:14][DEBUG]: PORT = 3306
+[2015-05-19 17:01:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:01:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:01:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:01:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:01:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:01:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:01:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:01:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:01:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:01:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:01:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:01:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:01:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:01:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:01:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:01:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:01:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:01:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:01:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:01:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:01:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:01:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:01:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:01:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:01:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:01:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:01:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:01:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:01:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:01:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:01:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:01:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:02:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:02:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:02:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:02:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:02:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:02:14][DEBUG]: PORT = 3306
+[2015-05-19 17:02:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:02:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:02:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:02:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:02:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:02:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:02:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:02:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:02:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:02:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:02:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:02:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:02:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:02:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:02:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:02:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:02:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:02:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:02:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:02:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:02:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:02:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:02:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:02:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:02:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:02:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:02:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:02:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:02:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:02:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:02:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:02:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:03:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:03:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:03:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:03:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:03:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:03:14][DEBUG]: PORT = 3306
+[2015-05-19 17:03:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:03:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:03:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:03:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:03:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:03:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:03:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:03:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:03:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:03:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:03:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:03:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:03:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:03:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:03:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:03:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:03:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:03:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:03:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:03:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:03:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:03:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:03:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:03:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:03:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:03:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:03:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:03:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:03:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:03:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:03:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:03:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:04:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:04:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:04:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:04:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:04:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:04:14][DEBUG]: PORT = 3306
+[2015-05-19 17:04:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:04:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:04:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:04:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:04:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:04:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:04:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:04:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:04:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:04:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:04:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:04:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:04:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:04:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:04:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:04:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:04:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:04:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:04:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:04:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:04:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:04:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:04:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:04:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:04:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:04:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:04:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:04:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:04:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:04:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:04:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:04:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:05:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:05:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:05:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:05:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:05:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:05:14][DEBUG]: PORT = 3306
+[2015-05-19 17:05:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:05:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:05:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:05:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:05:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:05:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:05:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:05:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:05:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:05:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:05:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:05:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:05:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:05:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:05:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:05:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:05:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:05:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:05:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:05:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:05:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:05:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:05:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:05:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:05:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:05:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:05:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:05:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:05:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:05:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:05:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:05:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:06:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:06:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:06:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:06:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:06:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:06:14][DEBUG]: PORT = 3306
+[2015-05-19 17:06:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:06:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:06:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:06:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:06:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:06:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:06:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:06:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:06:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:06:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:06:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:06:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:06:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:06:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:06:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:06:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:06:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:06:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:06:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:06:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:06:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:06:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:06:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:06:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:06:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:06:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:06:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:06:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:06:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:06:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:06:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:06:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:07:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:07:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:07:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:07:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:07:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:07:14][DEBUG]: PORT = 3306
+[2015-05-19 17:07:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:07:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:07:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:07:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:07:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:07:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:07:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:07:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:07:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:07:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:07:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:07:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:07:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:07:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:07:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:07:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:07:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:07:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:07:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:07:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:07:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:07:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:07:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:07:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:07:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:07:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:07:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:07:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:07:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:07:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:07:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:07:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:08:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:08:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:08:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:08:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:08:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:08:14][DEBUG]: PORT = 3306
+[2015-05-19 17:08:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:08:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:08:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:08:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:08:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:08:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:08:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:08:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:08:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:08:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:08:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:08:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:08:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:08:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:08:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:08:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:08:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:08:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:08:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:08:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:08:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:08:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:08:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:08:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:08:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:08:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:08:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:08:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:08:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:08:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:08:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:08:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:09:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:09:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:09:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:09:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:09:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:09:14][DEBUG]: PORT = 3306
+[2015-05-19 17:09:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:09:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:09:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:09:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:09:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:09:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:09:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:09:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:09:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:09:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:09:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:09:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:09:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:09:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:09:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:09:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:09:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:09:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:09:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:09:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:09:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:09:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:09:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:09:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:09:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:09:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:09:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:09:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:09:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:09:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:09:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:09:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:10:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:10:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:10:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:10:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:10:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:10:14][DEBUG]: PORT = 3306
+[2015-05-19 17:10:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:10:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:10:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:10:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:10:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:10:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:10:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:10:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:10:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:10:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:10:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:10:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:10:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:10:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:10:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:10:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:10:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:10:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:10:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:10:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:10:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:10:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:10:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:10:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:10:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:10:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:10:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:10:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:10:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:10:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:10:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:10:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:11:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:11:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:11:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:11:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:11:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:11:14][DEBUG]: PORT = 3306
+[2015-05-19 17:11:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:11:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:11:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:11:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:11:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:11:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:11:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:11:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:11:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:11:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:11:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:11:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:11:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:11:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:11:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:11:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:11:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:11:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:11:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:11:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:11:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:11:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:11:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:11:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:11:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:11:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:11:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:11:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:11:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:11:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:11:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:11:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:12:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:12:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:12:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:12:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:12:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:12:14][DEBUG]: PORT = 3306
+[2015-05-19 17:12:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:12:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:12:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:12:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:12:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:12:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:12:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:12:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:12:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:12:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:12:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:12:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:12:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:12:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:12:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:12:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:12:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:12:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:12:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:12:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:12:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:12:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:12:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:12:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:12:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:12:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:12:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:12:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:12:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:12:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:12:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:12:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:13:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:13:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:13:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:13:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:13:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:13:14][DEBUG]: PORT = 3306
+[2015-05-19 17:13:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:13:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:13:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:13:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:13:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:13:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:13:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:13:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:13:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:13:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:13:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:13:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:13:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:13:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:13:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:13:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:13:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:13:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:13:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:13:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:13:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:13:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:13:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:13:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:13:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:13:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:13:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:13:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:13:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:13:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:13:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:13:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:14:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:14:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:14:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:14:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:14:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:14:14][DEBUG]: PORT = 3306
+[2015-05-19 17:14:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:14:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:14:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:14:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:14:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:14:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:14:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:14:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:14:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:14:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:14:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:14:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:14:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:14:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:14:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:14:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:14:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:14:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:14:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:14:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:14:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:14:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:14:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:14:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:14:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:14:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:14:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:14:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:14:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:14:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:14:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:14:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:15:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:15:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:15:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:15:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:15:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:15:14][DEBUG]: PORT = 3306
+[2015-05-19 17:15:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:15:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:15:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:15:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:15:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:15:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:15:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:15:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:15:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:15:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:15:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:15:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:15:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:15:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:15:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:15:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:15:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:15:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:15:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:15:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:15:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:15:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:15:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:15:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:15:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:15:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:15:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:15:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:15:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:15:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:15:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:15:14][DEBUG]: Thermostat: Thermostat process terminated
+[2015-05-19 17:16:14][INFO]: 
+--------- Loading Mydombox Server configuration ---------
+[2015-05-19 17:16:14][DEBUG]: LOG_FILE_PATH = log
+[2015-05-19 17:16:14][DEBUG]: LOG_LEVEL = DEBUG_SQL
+[2015-05-19 17:16:14][DEBUG]: MYSQL = 1
+[2015-05-19 17:16:14][DEBUG]: HOSTNAME = localhost
+[2015-05-19 17:16:14][DEBUG]: PORT = 3306
+[2015-05-19 17:16:14][DEBUG]: LOGIN = mydombox
+[2015-05-19 17:16:14][DEBUG]: PASSWORD = mydomboxpwd
+[2015-05-19 17:16:14][DEBUG]: DATABASE = mydombox
+[2015-05-19 17:16:14][DEBUG]: MODULE_RFXTRX433 = 0
+[2015-05-19 17:16:14][DEBUG]: PORT_RFXTRX433 = /dev/ttyUSB1
+[2015-05-19 17:16:14][DEBUG]: MODULE_ENOUSB300 = 0
+[2015-05-19 17:16:14][DEBUG]: PORT_ENOUSB300 = /dev/tty.usbserial-FTXGRVK8
+[2015-05-19 17:16:14][DEBUG]: MODULE_SOAP = 1
+[2015-05-19 17:16:14][DEBUG]: PORT_SOAP = 8888
+[2015-05-19 17:16:14][DEBUG]: MODULE_RPIDOM = 0
+[2015-05-19 17:16:14][DEBUG]: PORT_RPIDOM = /dev/ttyAMA0
+[2015-05-19 17:16:14][DEBUG]: RPIDOM_TELE1_TYPE = 3
+[2015-05-19 17:16:14][DEBUG]: RPIDOM_TELE2_TYPE = 0
+[2015-05-19 17:16:14][DEBUG]: RPIDOM_1WIRE = 1
+[2015-05-19 17:16:14][DEBUG]: MDB_CLOUD = 1
+[2015-05-19 17:16:14][DEBUG]: MDB_KEY = 
+[2015-05-19 17:16:14][DEBUG]: MDB_ID = 
+[2015-05-19 17:16:14][DEBUG]: MDB_X_ISS_Key = aa08f68bbe7740779aab2e34ec236971
+[2015-05-19 17:16:14][DEBUG]: MDB_X_OAPI_Key = 28FOP1901d0di3r8indCa2iNTnJoGCr9
+[2015-05-19 17:16:14][DEBUG]: MDB_DATASOURCE = a4b3cc24b88642b28706b0e7e6316a89
+[2015-05-19 17:16:14][DEBUG]: --------------------------------------------------------
+
+[2015-05-19 17:16:14][DEBUG_SQL]: SELECT dc_id,sch_action FROM scheduler WHERE ((sch_day= 2) OR (sch_day=0)) AND ( CURRENT_TIME <= sch_time) AND (sch_time < TIME(ADDTIME(NOW(),'00:01:00')));
+[2015-05-19 17:16:14][DEBUG]: Thermostat: Starting looking for thermostat
+[2015-05-19 17:16:14][DEBUG_SQL]: SELECT th_id FROM thermostat
+[2015-05-19 17:16:14][DEBUG_SQL]: SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = 0 LIMIT 1;
+[2015-05-19 17:16:14][DEBUG]: Thermostat_Calc: Working with th_id=0 ,recept_id = 6 , on/off : off , mode: auto , Manual tp_set= 21.00 캜, Scenario=2
+[2015-05-19 17:16:14][DEBUG]: Thermostat 0 is off
+[2015-05-19 17:16:14][DEBUG]: [Encode Message] Starting Encoding Thermostat Message for dc_id: 6, tp_consigne: 0.00 , tp_current: 0.00 , demand: no demand
+[2015-05-19 17:16:14][DEBUG_SQL]: SELECT packettype,subtype,id1,id2 FROM devices WHERE dc_id=6 LIMIT 1;
+[2015-05-19 17:16:14][DEBUG]: [Encode Message] Encoding Message for device: 6, Packettype: 40, subtype: 00, id1: AA, id2: BB 
+[2015-05-19 17:16:14][DEBUG]: Message sent: 09 40 00 00 AA BB 00 00 02 09 00 00 11 6B 85
+[2015-05-19 17:16:14][DEBUG]: Thermostat: Thermostat process terminated

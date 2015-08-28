@@ -1,0 +1,9 @@
+#!/bin/sh
+
+useradd --no-create-home mydombox
+usermod -L mydombox
+adduser mydombox dialout
+
+mkdir -p /var/log/mydombox
+chown -R mydombox: /var/log/mydombox
+
