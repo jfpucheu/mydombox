@@ -6,4 +6,4 @@ rm -Rf /etc/mydombox/
 
 userdel -f mydombox
 
-udevadm control --reload-rules
+udevadm trigger

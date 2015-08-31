@@ -15,7 +15,7 @@ service avahi-daemon restart
 
 update-rc.d mydombox defaults
 
-udevadm control --reload-rules
+udevadm trigger
 
 service mydombox start
 
