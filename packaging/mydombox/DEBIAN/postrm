@@ -5,3 +5,5 @@ rm -Rf /var/www/mydombox-mobile/
 rm -Rf /etc/mydombox/
 
 userdel -f mydombox
+
+udevadm control --reload-rules
