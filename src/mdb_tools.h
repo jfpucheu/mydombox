@@ -2,6 +2,8 @@
 #ifndef __MDB_TOOLS_H__
 #define __MDB_TOOLS_H__
 
+#include <stdbool.h>
+
 int whichday();
 
 unsigned char stringtohex(char *hexstr);
