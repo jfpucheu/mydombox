@@ -61,7 +61,7 @@ log_INFO("Learn Mode: %d",RECORD);
 	mysql_close(conn);
 
 
-if (file_exists(PORT_RFXTRX433)){
+if ( file_exists(PORT_RFXTRX433) ){
     // On crée un thread
     pthread_t thread_rfxtrx433;
     // Permet d'exécuter le fonction thread_rfxtrx433 en parallèle
@@ -71,7 +71,7 @@ if (file_exists(PORT_RFXTRX433)){
 
 sleep(5);
 
-if (file_exists(PORT_ENOUSB300)){
+if ( file_exists(PORT_ENOUSB300) ){
     // On crée un thread
     pthread_t thread_enusb300;
     // Permet d'exécuter le fonction thread_enusb300 en parallèle

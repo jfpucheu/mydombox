@@ -111,7 +111,7 @@ return d;
 }
 
 
-bool file_exists(char * filename)
+bool file_exists(unsigned char *filename)
 {
     if (FILE * file = fopen(filename, "r"))
     {
