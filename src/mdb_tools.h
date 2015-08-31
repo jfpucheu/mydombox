@@ -14,6 +14,6 @@ float decode_temperature( char *temperaturehigh, char *temperaturelow);
 
 struct device device_by_id(unsigned char id1,unsigned char id2,unsigned char id3,unsigned char id4, unsigned char unitcode, unsigned char groupcode, unsigned char housecode);
 
-bool file_exists(const char * filename)
+bool file_exists(char * filename)
 
 # endif /* __MDB_TOOLS_H__ */

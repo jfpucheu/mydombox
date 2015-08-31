@@ -111,7 +111,7 @@ return d;
 }
 
 
-bool file_exists(const char * filename)
+bool file_exists(char * filename)
 {
     if (FILE * file = fopen(filename, "r"))
     {
