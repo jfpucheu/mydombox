@@ -114,7 +114,8 @@ return d;
 
 bool file_exists(unsigned char *filename)
 {
-    if (FILE *file = fopen(filename, "r"))
+	FILE *file;
+    if ( file = fopen(filename, "r"))
     {
         fclose(file);
         return true;
