@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <stdbool.h>
 #include <my_global.h> /* Mysql lib */
 #include <mysql.h> 	/* Mysql lib */
 

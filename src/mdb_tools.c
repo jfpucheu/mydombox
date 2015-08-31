@@ -8,6 +8,7 @@
 #include <time.h>
 #include <stdarg.h>
 #include <string.h>
+#include <stdbool.h>
 
 #include "mdb_log.h"
 #include "mdb_mysql.h"
