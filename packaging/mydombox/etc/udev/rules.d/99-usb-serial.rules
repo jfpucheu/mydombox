@@ -1,0 +1,2 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="FTXGRVK8", SYMLINK+="EnOceanUSB300"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="05VS5FV0", SYMLINK+="RFXtrx443"

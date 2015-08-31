@@ -20,16 +20,17 @@
 #include "mdb_thermostat.h"
 #include "mdb_soapserver.h"
 #include "mdb_scheduler.h"
+#include "mdb_tools.h"
 
 
 MYSQL *conn;
 MYSQL_RES *result;
 
-extern 	int 	MODULE_RFXTRX433;
-extern 	int 	MODULE_ENOUSB300;
 extern 	int 	MODULE_RPIDOM;
 extern 	int 	MODULE_SOAP;
 extern	char 	LOG_LEVEL[16];
+extern 	char 	PORT_RFXTRX433[32];
+extern 	char 	PORT_ENOUSB300[32];
 
 int 	RECORD = 0;
 
@@ -60,22 +61,22 @@ log_INFO("Learn Mode: %d",RECORD);
 	mysql_close(conn);
 
 
-if ( MODULE_RFXTRX433 == 1){
+if (file_exists(PORT_RFXTRX433)){
     // On crée un thread
     pthread_t thread_rfxtrx433;
     // Permet d'exécuter le fonction thread_rfxtrx433 en parallèle
     pthread_create(&thread_rfxtrx433, NULL, rfxtrx433, NULL);
-	log_INFO("Module RFXTRX433 Started");
+	log_INFO("Module RFXTRX433 Detected & Started");
 }
 
 sleep(5);
 
-if ( MODULE_ENOUSB300 == 1){
+if (file_exists(PORT_ENOUSB300)){
     // On crée un thread
     pthread_t thread_enusb300;
     // Permet d'exécuter le fonction thread_enusb300 en parallèle
     pthread_create(&thread_enusb300, NULL, enusb300, NULL);
-    log_INFO("Module USB300 Started");
+    log_INFO("Module USB300 Detected & Started");
 }
     
     

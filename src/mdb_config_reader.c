@@ -16,8 +16,6 @@ int 	PORT;
 char 	LOGIN[16]= "";
 char 	PASSWORD[16] = "";
 char 	DATABASE[16] = "";
-int 	MODULE_RFXTRX433;
-int 	MODULE_ENOUSB300;
 int 	MODULE_SOAP;
 char 	PORT_RFXTRX433[32]="";
 char 	PORT_ENOUSB300[32]="";
@@ -85,14 +83,8 @@ i++;
     else if (!strcmp(name,"DATABASE")){
                 strcpy(DATABASE,value);
     }
-	else if (!strcmp(name,"MODULE_RFXTRX433")){
-                MODULE_RFXTRX433 = atoi(value);
-    }
     else if (!strcmp(name,"PORT_RFXTRX433")){
                 strcpy(PORT_RFXTRX433,value);
-    }
-    else if (!strcmp(name,"MODULE_ENOUSB300")){
-        MODULE_ENOUSB300 = atoi(value);
     }
     else if (!strcmp(name,"PORT_ENOUSB300")){
         strcpy(PORT_ENOUSB300,value);
@@ -194,9 +186,7 @@ nb_lignes++;
         log_DEBUG("LOGIN = %s",         LOGIN);
         log_DEBUG("PASSWORD = %s",      PASSWORD);
         log_DEBUG("DATABASE = %s", 		DATABASE);
-        log_DEBUG("MODULE_RFXTRX433 = %d",MODULE_RFXTRX433);
         log_DEBUG("PORT_RFXTRX433 = %s",PORT_RFXTRX433);
-        log_DEBUG("MODULE_ENOUSB300 = %d",MODULE_ENOUSB300);
         log_DEBUG("PORT_ENOUSB300 = %s",PORT_ENOUSB300);
         log_DEBUG("MODULE_SOAP = %d",   MODULE_SOAP);
 		log_DEBUG("PORT_SOAP = %d",		PORT_SOAP);

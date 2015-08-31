@@ -110,3 +110,13 @@ struct device device_by_id(unsigned char id1,unsigned char id2,unsigned char id3
 return d;
 }
 
+
+bool file_exists(const char * filename)
+{
+    if (FILE * file = fopen(filename, "r"))
+    {
+        fclose(file);
+        return true;
+    }
+    return false;
+}
