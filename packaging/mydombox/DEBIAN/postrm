@@ -1,9 +1,25 @@
 #!/bin/sh
+# postrm script for mydombox
 
-rm -Rf /var/log/mydombox
-rm -Rf /var/www/mydombox-mobile/
-rm -Rf /etc/mydombox/
+set -e
 
-userdel -f mydombox
+case "$1" in
+    purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 
-udevadm trigger
+	rm -Rf /var/log/mydombox/
+	rm -Rf /var/www/mydombox-mobile/
+	rm -Rf /etc/mydombox/
+	rm -f /etc/init.d/mydombox
+
+	userdel -f mydombox
+	udevadm trigger
+	
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

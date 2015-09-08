@@ -6,4 +6,3 @@ adduser mydombox dialout
 
 mkdir -p /var/log/mydombox
 chown -R mydombox: /var/log/mydombox
-
