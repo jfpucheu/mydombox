@@ -6,13 +6,14 @@ set -e
 case "$1" in
     purge|remove|failed-upgrade|abort-install|abort-upgrade|disappear)
 
+	rm -Rf /var/log/mydombox
 	userdel -f mydombox
 	udevadm trigger
     ;;
 
     upgrade)
 
-        echo "Nothing to do on upgrade"
+        echo "postrm: Nothing to do on upgrade"
     ;;
 
     *)
