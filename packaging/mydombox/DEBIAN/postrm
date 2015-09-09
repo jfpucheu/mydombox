@@ -4,16 +4,10 @@
 set -e
 
 case "$1" in
-    purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-
-	rm -Rf /var/log/mydombox/
-	rm -Rf /var/www/mydombox-mobile/
-	rm -Rf /etc/mydombox/
-	rm -f /etc/init.d/mydombox
+    purge|remove|failed-upgrade|abort-install|abort-upgrade|disappear)
 
 	userdel -f mydombox
 	udevadm trigger
-	
     ;;
 
     *)
