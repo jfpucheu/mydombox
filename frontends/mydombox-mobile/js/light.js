@@ -17,7 +17,7 @@ function light_display(dc_id){
 						switch(value.packettype)
 						{
 						case '11':
-							$("#light_mode").val(value.mode).slider('refresh');
+							$("#light_mode").val(value.mode).flipswitch('refresh');
 							$("div#light_swich").show();
 							$("div#light_mode").hide();
 							$("div#light_speed").hide();

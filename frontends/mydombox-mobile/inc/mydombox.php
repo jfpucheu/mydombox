@@ -52,8 +52,8 @@ class mydombox extends SoapClient {
                                     'initDeviceResponse' => 'initDeviceResponse',
                                    );
 
-	public function mydombox($wsdl = "../inc/mydombox-2.0.wsdl", $options = array("location" => "http://192.168.64.15:8888/")) {
-	//public function mydombox($wsdl = "../inc/mydombox-2.0.wsdl", $options = array("location" => "http://localhost:8888/")) {
+	//public function mydombox($wsdl = "../inc/mydombox-2.0.wsdl", $options = array("location" => "http://192.168.64.15:8888/")) {
+	public function mydombox($wsdl = "../inc/mydombox-2.0.wsdl", $options = array("location" => "http://localhost:8888/")) {
     //public function mydombox($wsdl = "../inc/mydombox-2.0.wsdl", $options = array("location" => "http://localhost:8088/mockmydombox")) {
 	foreach(self::$classmap as $key => $value) {
       if(!isset($options['classmap'][$key])) {

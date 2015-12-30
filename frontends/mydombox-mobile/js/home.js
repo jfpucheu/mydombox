@@ -86,9 +86,9 @@ function icones_list(selector,action){
 }
 
 function liste_type_52(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/weather52.png"/> \
+		var listelement = '	 <li> \
+							<a href="#" id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/weather52.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data1 +' &ordm </p> \
 							<p class="ui-li-aside2">'+Math.round(value.home_data2)+'% </p> \
@@ -100,9 +100,9 @@ function liste_type_55(selector, value){
 
 	value.home_data2=value.home_data2 / 10 ;
 	
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/weather55.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/weather55.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data2 +' mm</p>\
 							</a></li> '; 
@@ -110,9 +110,9 @@ function liste_type_55(selector, value){
 }
 
 function liste_type_56(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/weather56.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/weather56.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+Math.round(value.home_data2)+' km/H </p> \
 							<p class="ui-li-aside2">'+Math.round(value.home_data1)+' &ordm </p> \
@@ -121,9 +121,9 @@ function liste_type_56(selector, value){
 }
 
 function liste_type_11(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_light.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_light.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -131,9 +131,9 @@ function liste_type_11(selector, value){
 }
 
 function liste_type_14(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_chroma.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_chroma.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -141,18 +141,18 @@ function liste_type_14(selector, value){
 }
 
 function liste_type_1A(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-motor-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_volet.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-motor-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_volet.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							</a></li> ';
 	return listelement;
 }
 
 function liste_type_5A(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-energy-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_elec.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-energy-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_elec.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ Math.round(value.home_data1) +' W</p>\
 							</a></li> '; 
@@ -160,9 +160,9 @@ function liste_type_5A(selector, value){
 }
 
 function liste_type_40(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-temperature-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_thermometre.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-temperature-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_thermometre.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data1 +' &ordm</p>\
 							</a></li> ';
@@ -173,17 +173,17 @@ function liste_type_ERDF(selector, value){
 	switch(value.subtype)
 	{
 	case '01':
-		var listelement = '	<li> \
-									<a href="#" data-role="button" id="bt-energy-edf-dialog"  dc_id='+ value.dc_id+'> \
-									<img src="css/images/mdb_elec.png"/> \
+		var listelement = '	 <li> \
+									<a href="#"   id="bt-energy-edf-dialog"  dc_id='+ value.dc_id+'> \
+									<img src="css/images/mdb_elec.png" class="ui-li-thumb"> \
 									<h2>'+ value.dc_name +'</h2> \
 									<p class="ui-li-aside">'+ Math.round(value.home_data1) +' W</p>\
 									</a></li> '; 														
 	break;
 	case '03':
-		var listelement = '	<li> \
-									<a href="#" data-role="button" id="bt-energy-edf-dialog"  dc_id='+ value.dc_id+'> \
-									<img src="css/images/mdb_elec.png"/> \
+		var listelement = '	 <li> \
+									<a href="#"   id="bt-energy-edf-dialog"  dc_id='+ value.dc_id+'> \
+									<img src="css/images/mdb_elec.png" class="ui-li-thumb"> \
 									<h2>'+ value.dc_name +'</h2> \
 									<p class="ui-li-aside">'+Math.round(value.home_data1)+','+Math.round(value.home_data2)+','+Math.round(value.home_data3)+' W</p>\
 									</a></li> '; 																
@@ -196,9 +196,9 @@ function liste_type_ERDF(selector, value){
 }
 
 function liste_type_1W48(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-temperature-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_thermometre.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-temperature-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_thermometre.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data1 +' &ordm</p>\
 							</a></li> ';
@@ -206,9 +206,9 @@ function liste_type_1W48(selector, value){
 }
 
 function liste_type_WP(selector, value){
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_light.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_light.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -218,18 +218,18 @@ function liste_type_WP(selector, value){
 function liste_type_dore(selector, value){
 	if (value.device_mode == 'open')
 	{
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-state-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_dore_open.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-state-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_dore_open.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
 	}
 	else if (value.device_mode == 'closed')
 	{
-		var listelement = '	<li> \
-							<a href="#" data-role="button" id="bt-state-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_dore_close.png"/> \
+		var listelement = '	 <li> \
+							<a href="#"   id="bt-state-dialog"  dc_id='+ value.dc_id+'> \
+							<img src="css/images/mdb_dore_close.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -244,11 +244,11 @@ function thermostat_list(selector){
 	
 	if(selector == '#thermostat_list')
 	{		
-			thlist += '<li> \
-							<a href="#" data-role="button" id="bt-thermostat-new"> \
-							<img src="css/images/toolbar/mdb_nav_plus.png"/> \
-							<h3> New Thermostat</h3> \
-							</a></li> '; 	
+			thlist += ' <li> \
+						<a href="#"   id="bt-thermostat-new"> \
+						<img src="css/images/toolbar/mdb_nav_plus.png" class="ui-li-thumb"> \
+						<h2>New Thermostat</h2> \
+						</a></li> '; 	
 	}
 
 	var action = "list";
@@ -264,9 +264,9 @@ function thermostat_list(selector){
 						{
 							if (value.th_mode== 'auto')
 							{
-												thlist += '	<li> \
-																<a data-role="button" id="bt-thermostat" th_id='+ value.th_id+'> \
-																<img src="css/images/mdb_thermostat.png"/> \
+												thlist += '	 <li> \
+																<a   id="bt-thermostat" th_id='+ value.th_id+'> \
+																<img src="css/images/mdb_thermostat.png" class="ui-li-thumb"> \
 																<h2>'+ value.th_name +'</h2> \
 																<p class="ui-li-aside">'+ value.tp_prog +' &ordm;</p> \
 																<p class="ui-li-aside2">A</p> \
@@ -274,9 +274,9 @@ function thermostat_list(selector){
 							}
 							else if (value.th_mode== 'manual')
 							{
-												thlist += '	<li> \
-																<a data-role="button" id="bt-thermostat" th_id='+ value.th_id+'> \
-																<img src="css/images/mdb_thermostat.png"/> \
+												thlist += '	 <li> \
+																<a   id="bt-thermostat" th_id='+ value.th_id+'> \
+																<img src="css/images/mdb_thermostat.png" class="ui-li-thumb"> \
 																<h2>'+ value.th_name +'</h2> \
 																<p class="ui-li-aside">'+ value.tp_set +' &ordm;</p> \
 																<p class="ui-li-aside2">M</p> \

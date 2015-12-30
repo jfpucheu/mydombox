@@ -41,12 +41,12 @@ function thermostat_display(th_id){
 						$("#sensor_list").val(value.sensor_id).attr('selected','selected').selectmenu('refresh');
 						$("#recept_list").val(value.recept_id).attr('selected','selected').selectmenu('refresh');
 						$("#th_name").val(value.th_name);
-						$("#th_use").val(value.th_use).slider('refresh');
-						$("#th_mode").val(value.th_mode).slider('refresh');
+						$("#th_use").val(value.th_use).flipswitch('refresh');
+						$("#th_mode").val(value.th_mode).flipswitch('refresh');
 						$("#tp_set").val(value.tp_set).slider('refresh');
 						$("#select-scenario").val(value.sc_id).selectmenu('refresh');
-						//$("#select-scenario").val(value.sc_id).attr('selected','selected').selectmenu('refresh');
-						//$("#select-scenario").val(value.sc_id).prop('selected',true).selectmenu('refresh');
+						$("#select-scenario").val(value.sc_id).attr('selected','selected').selectmenu('refresh');
+						$("#select-scenario").val(value.sc_id).prop('selected',true).selectmenu('refresh');
 					});
 					
 					if($("#th_mode").val()=="auto")
@@ -261,7 +261,7 @@ $(document).on('pageinit', '#index', function(){
 			  localStorage.th_id=th_id;         
 		}
 		// Change page
-		$.mobile.changePage("#thermostat-edit",{transition: 'pop'});
+		$( "body" ).pagecontainer( "change","#thermostat-edit",{transition: 'pop'});
 	});   
 });
 
@@ -273,7 +273,7 @@ $(document).on('pageinit', '#thermostat', function(){
 			  localStorage.th_id=th_id;         
 		}
 		// Change page
-		$.mobile.changePage("#thermostat-edit",{transition: 'pop'});
+		$( "body" ).pagecontainer( "change","#thermostat-edit",{transition: 'pop'});
 	});  
 
 	$(document).on('click', '#bt-thermostat-new', function(){    
@@ -311,7 +311,7 @@ $(document).on('pageinit', '#index', function(){
               localStorage.dc_id=dc_id;         
         }
         // Change page
-        $.mobile.changePage("#temperature-dialog",{transition: 'pop', role: 'dialog'});
+        $( "body" ).pagecontainer( "change","#temperature-dialog",{transition: 'pop', role: 'dialog'});
     });   
 });
 
@@ -329,7 +329,7 @@ $(document).on('pageinit', '#thermostat-edit', function(){
         // store some data
 
         // Change page
-        $.mobile.changePage("#scenario",{transition: 'pop',role: 'dialog'});
+        $( "body" ).pagecontainer( "change","#scenario",{transition: 'pop',role: 'dialog'});
     });   
 });
 

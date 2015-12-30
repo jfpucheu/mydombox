@@ -1,0 +1,9 @@
+Package: mydombox-display
+Version: 1.0-0
+Section: base
+Priority: optional
+Architecture: armhf
+Depends: mydombox
+Maintainer: Mr PUCHEU <jfpucheu@gmail.com>
+Description: Mydombox est un logiciel simple d'utilisation permettant de transformer n'importe quelle machine linux en une box domotique complète.
+Homepage: http://mydombox.com

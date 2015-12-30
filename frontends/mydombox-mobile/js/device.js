@@ -72,7 +72,7 @@ function device_record(mode){
 		url: "fct/fct_device.php",
 			data: dataString, 
 				success: function(data){  
-					$('#record_mode').val(data).slider('refresh');
+					$('#record_mode').val(data).flipswitch('refresh');
 				},
 		});	
 };
@@ -290,8 +290,8 @@ function device_display(dc_id){
 						$("#groupcode").val(value.groupcode);
 						$("#housecode").val(value.housecode);
 						$("#unitcode").val(value.unitcode);
-						$("#com").val(value.com).slider('refresh');
-						$("#cloud").val(value.iss_status).slider('refresh');	
+						$("#com").val(value.com).flipswitch('refresh');
+						$("#cloud").val(value.iss_status).flipswitch('refresh');	
 						$("#cloud_id").val(value.iss_stream);						
 							//if ( $("#cloud").val() == 1){
 							//	$("#div_cloud_name").show();

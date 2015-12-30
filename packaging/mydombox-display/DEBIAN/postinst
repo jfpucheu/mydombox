@@ -1,0 +1,21 @@
+#!/bin/sh
+
+DATABASE_EXIST=$(mysql -u root  -e "show databases;" | grep "^mydombox" | wc -l)
+
+if [ $DATABASE_EXIST -eq 0 ]
+then
+	mysql -u root  < /etc/mydombox/database/Create_mydombox_0-5-0.sql
+fi
+
+mysql -u root  < /etc/mydombox/database/Populate_mydombox_0-5-0.sql
+mysql -u root  -e "grant all privileges on mydombox.* to mydombox@localhost identified by 'mydomboxpwd';"
+
+sed -i '/#host-name=foo/a host-name=mydombox' /etc/avahi/avahi-daemon.conf
+service avahi-daemon restart
+
+update-rc.d mydombox defaults
+
+udevadm trigger
+
+service mydombox start
+

@@ -1,0 +1,28 @@
+#!/bin/sh
+# preinst script for mydombox
+
+set -e
+
+case "$1" in
+   	install)
+
+		useradd --no-create-home mydombox
+		usermod -L mydombox
+		adduser mydombox dialout
+	
+		mkdir -p /var/log/mydombox
+		chown -R mydombox: /var/log/mydombox
+    ;;
+
+    upgrade|abort-upgrade)
+
+    	echo "preinst: Nothing to do on upgrade"
+    ;;
+
+    *)
+		echo "preinst called with unknown argument \`$1'" >&2
+		exit 1
+    ;;
+esac
+
+exit 0

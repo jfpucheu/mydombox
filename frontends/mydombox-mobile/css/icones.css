@@ -1,16 +1,18 @@
+
+.ui-listview > .ui-li-has-thumb > .ui-btn,
+.ui-listview > .ui-li-static.ui-li-has-thumb {
+	min-height: 3.625em;
+	padding-left: 4.0em;
+}
+
 /* A bit custom styling */
 .icones-page {
     /*background: #e1e1e1;  fond page*/
     background: #ededed;
 }
 
-.icones-page .ui-title, .icones-page .ui-li-aside {
-    /*font-family: 'Open Sans', sans-serif;
-    font-weight: 400;*/
-}
-
 /* style bouton*/
-.icones-page .ui-listview .ui-li.ui-btn {
+.icones-page .ui-listview li .ui-btn {
     background-image: none;
 	background: #ededed;
 
@@ -18,10 +20,10 @@
 /* 320 à 460px 3 colomnes*/
 @media all and (min-width: 320px){
     .icones-page .ui-content {
-		padding: 5px;
+		padding: 0px;
     }
 	
-    .icones-page .ui-listview .ui-li.ui-btn {
+    .icones-page .ui-listview li  {
 		float: left;
         width: 30.3333%; /* 33.3333% incl. 2 x 1.2% margin */
         height: 105px;
@@ -29,131 +31,128 @@
         border-width: 0; /* The 1px border would break the layout so we set it on .ui-btn-inner instead. */
     } 
 	
-	.icones-page .ui-listview .ui-li.ui-btn-inner {
-        border: inherit;
-        border-width: 2px;
-		border-color: white;
-        margin: -2px;
+    .icones-page .ui-listview li > .ui-btn {
+			-webkit-box-sizing: border-box; /* include padding and border in height so we can set it to 100% */
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			height: 100%; 
+	        border-width: 2px;
+			border-color: white;
+	        margin: -2px     
     }
-	
-    .icones-page .ui-listview .ui-btn-inner,
-    .icones-page .ui-listview .ui-btn-text,
-    .icones-page .ui-listview .ui-link-inherit,
-    .icones-page .ui-listview .ui-li-thumb {
-        width: 100%;
-        height: 100%;
-        display: block;
-        overflow: hidden;
-    }
-    .icones-page .ui-listview .ui-link-inherit {
-        padding: 0 !important;
-        position: relative;
-    }	
-    
-	 /* Inherit the border-radius from the UL that has class .ui-corner-all in case of an inset listview. */
-    .icones-page .ui-listview .ui-li,
-    .icones-page .ui-listview .ui-btn-text,
-    .icones-page .ui-listview .ui-link-inherit,
-    .icones-page .ui-listview .ui-li-thumb {
-        -webkit-border-radius: inherit;
-        border-radius: inherit;
-    }
-	
-    .icones-page .ui-listview .ui-li-thumb {
-            position: absolute;
-            margin: auto;
-            padding-top: 5px;
-            top: 5px;
-            left: 0;
-            right: 0;
-        height: auto; /* To keep aspect ratio. */
-        max-width: 60%;
-        max-height: none;
-        text-align: center;
-		z-index: -1;
-    }
-    
-    /* Hide the icon */
-    .icones-page .ui-listview .ui-icon {
-        display: none;
-    }
-    /* Make text wrap. */
-    .icones-page .ui-listview .ui-li-heading,
-    .icones-page .ui-listview .ui-li-desc {
-        white-space: normal;
-        overflow: visible;
+    .icones-page .ui-listview li.ui-li-has-thumb .ui-li-thumb {
         position: absolute;
-        left: 0;
-        right: 0;
-    }
-    /* Text position */
-    .icones-page .ui-listview .ui-li-heading {
-        margin: 0;
-        padding: 0px;
-        bottom: 5px;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-		font-size : 80%;
-
-    }
-    .icones-page .ui-listview .ui-li-desc {
-        margin: 0;
-        padding: 20 20px;
-        min-height: 50%;
-        bottom: 70px;
-        line-height: 1.5;
-    }
-	.icones-page .ui-listview .ui-li-desc.ui-li-aside {
-        padding: 2px 10px ;
-        width: auto;
-        min-height: 0;
-        top: 0;
-        left: auto;
-        bottom: auto;
-        /* Custom styling. */
-        background: #88B54F;
-        -webkit-border-top-right-radius: inherit;
-        border-top-right-radius: inherit;
-        -webkit-border-bottom-left-radius: inherit;
-        border-bottom-left-radius: inherit;
-        -webkit-border-bottom-right-radius: 0;
-        border-bottom-right-radius: 0;
-		font-family: 'Open Sans', sans-serif;
-		font-size : 60%;
-		color: rgba(0,0,0,0);
-    }	
-    	.icones-page .ui-listview .ui-li-desc.ui-li-aside2 {
-        padding: 2px 10px;
-        width: auto;
-        min-height: 0;
-        top: 0;
-        right: auto;
-        left: auto;
-        bottom: auto;
-        /* Custom styling. */
-        color: rgba(0,0,0,0);
-        background: blue;
-        background: rgba(168,0,168,0.85);/* couleur coin gauche*/
-        
-        -webkit-border-top-right-radius: 0;
-        border-top-right-radius: 0;
-        -webkit-border-bottom-right-radius: inherit;
-        border-bottom-right-radius: inherit;
-        -webkit-border-bottom-right-radius: inherit;
-        border-bottom-right-radius: inherit;
+        margin: auto;
+        padding-top: 5px;
+         top: 5px;
+         left: 0;
+         right: 0;
+		 height: auto; /* To keep aspect ratio. */
+		 max-width: 50%;
+		 max-height: none;
 		
-		font-family: 'Open Sans', sans-serif;
-		font-size : 60%;
-    }	
-}
+    }
+	/* Make all list items and anchors inherit the border-radius from the UL. */
+	    .icones-page .ui-listview li,
+	    .icones-page .ui-listview li .ui-btn,
+	    .icones-page .ui-listview .ui-li-thumb {
+	        -webkit-border-radius: inherit;
+	        border-radius: inherit;
+	    }
+	    /* Hide the icon */
+	    .icones-page .ui-listview .ui-btn-icon-right:after {
+	        display: none;
+	    }
+	    /* Make text wrap. */
+	    .icones-page .ui-listview h2,
+	    .icones-page .ui-listview p {
+	        white-space: normal;
+	        overflow: visible;
+	        position: absolute;
+	        left: 0;
+	        right: 0;
+	    }
+	    /* Text position */
+	    .icones-page .ui-listview h2 {
+	        margin: 0;
+	        padding: 0px;
+	        bottom: 5px;
+	        text-align: center;
+	        font-family: 'Open Sans', sans-serif;
+	        font-weight: 400;
+			font-size : 80%;
+	    }
+	    .icones-page .ui-listview p {
+	        margin: 0;
+	        padding: 20 20px;
+	        min-height: 50%;
+	        bottom: 70px;
+	        line-height: 1.5;
+	    }
 
+	    /* ui-li-aside has class .ui-li-desc as well so we have to override some things. */
+	    .icones-page .ui-listview .ui-li-aside {
+	        padding: 2px 10px ;
+	        width: auto;
+	        min-height: 0;
+	        top: 0;
+	        left: auto;
+	        bottom: auto;
+	        /* Custom styling. */
+	        background: #88B54F;
+	        -webkit-border-top-right-radius: inherit;
+	        border-top-right-radius: inherit;
+	        -webkit-border-bottom-left-radius: inherit;
+	        border-bottom-left-radius: inherit;
+	        -webkit-border-bottom-right-radius: 0;
+	        border-bottom-right-radius: 0;
+			font-family: 'Open Sans', sans-serif;
+			font-size : 60%;
+			color: rgba(0,0,0,0);
+	    }
+		.icones-page .ui-listview .ui-li-aside2 {
+	    	padding: 2px 10px;
+	    	width: auto;
+	    	min-height: 0;
+	    	top: 0;
+	    	right: auto;
+	    	bottom: auto;
+	    	/* Custom styling. */
+	    	background: blue;
+	   	 	background: rgba(168,0,168,0.85);/* couleur coin gauche*/
+	    	-webkit-border-top-right-radius: 0;
+	    	border-top-right-radius: 0;
+	    	-webkit-border-bottom-right-radius: inherit;
+	    	border-bottom-right-radius: inherit;
+	    	-webkit-border-bottom-right-radius: inherit;
+	    	border-bottom-right-radius: inherit;
+			font-family: 'Open Sans', sans-serif;
+			font-size : 60%;
+			color: rgba(0,0,0,0);
+		}
+
+	    /* Images mask the hover bg color so we give desktop users feedback by applying the focus style on hover as well. */
+	    .icones-page .ui-listview li > .ui-btn:hover {
+	        -moz-box-shadow: 0px 0px 12px #33ccff;
+	        -webkit-box-shadow: 0px 0px 12px #33ccff;
+	        box-shadow: 0px 0px 12px #33ccff;
+	    }
+	    /* Animate focus and hover style, and resizing. */
+	    .icones-page .ui-listview li,
+	    .icones-page .ui-listview .ui-btn {
+	        -webkit-transition: all 500ms ease;
+	        -moz-transition: all 500ms ease;
+	        -o-transition: all 500ms ease;
+	        -ms-transition: all 500ms ease;
+	        transition: all 500ms ease;
+	    }
+}
 
 /* 480 à 768px 4 colomnes*/
 @media all and (min-width: 480px){
     .icones-page .ui-content {
         padding: 5px;
-		/*background: red;*/
+		/* background: red; */
     }
     /* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
     By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
@@ -163,9 +162,9 @@
     }
     /* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
     but we stick to percentage values for demo purposes. */
-    .icones-page .ui-listview .ui-li.ui-btn {
+    .icones-page .ui-listview li {
         width: 23%;
-        height: 130px;
+        height: 110px;
         margin: 10px 1%;
     }
 }
@@ -175,7 +174,7 @@
 @media all and (min-width: 768px){
     .icones-page .ui-content {
         padding: 10px;
-		/*background: blue;*/
+		/* background: blue; */
     }
     /* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
     By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
@@ -185,9 +184,9 @@
     }
     /* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
     but we stick to percentage values for demo purposes. */
-    .icones-page .ui-listview .ui-li.ui-btn {
+    .icones-page .ui-listview li {
         width: 18.0%;
-        height: 140px;
+        height: 120px;
         margin: 10px 1%;
     }
 }
@@ -196,7 +195,7 @@
 @media all and (min-width: 980px){
     .icones-page .ui-content {
         padding: 10px;
-		/*background: yellow;/*
+		/* background: yellow; */
     }
     /* Set a max-width for the last breakpoint to prevent too much stretching on large screens.
     By setting the max-width equal to the breakpoint width minus padding we keep square tiles. */
@@ -206,10 +205,9 @@
     }
     /* Because of the 1000px max-width the width will always be 230px (and margin left/right 10px),
     but we stick to percentage values for demo purposes. */
-    .icones-page .ui-listview .ui-li.ui-btn {
+    .icones-page .ui-listview li {
         width: 14.0%;
-        height: 140px;
+        height: 130px;
         margin: 10px 1%;
     }
 }
-
