@@ -68,7 +68,7 @@ RfxDevice GetRfxDevice(char* data){
     unsigned char		unitcode = "";
     
     char request[256]= "";
-    
+	
     switch (packettype)
     {
         case 0x11:
@@ -100,7 +100,8 @@ RfxDevice GetRfxDevice(char* data){
                 		WHERE int_id=%d AND id1='%02hhX'AND id2='%02hhX'AND id3=''AND id4='' AND unitcode='';",1,id1,id2);
             break;
         default:
-            log_DEBUG("[Rfcxom] PacketType: Not Supported");
+            log_DEBUG("[Rfxcom][GetRfxDevice]: PacketType:'%02hhX' Not Supported",packettype);
+			return device;
             break;
     }
     
@@ -141,7 +142,7 @@ bool addRfxDevice(char* data){
     unsigned char		id4 = "";
     unsigned char		unitcode = "";
 
-    char request[256]= "";
+    char request[300]= "";
     
     switch (packettype)
     {
@@ -177,13 +178,14 @@ bool addRfxDevice(char* data){
                      packettype,subtype,id1,id2,id3,id4,unitcode);
             break;
         default:
-            log_DEBUG("[Rfxcom] PacketType: Not Supported");
+            log_DEBUG("[Rfxcom] PacketType: '%02hhX' Not Supported",packettype);
+			return 0;
             break;
     }
     
     log_DEBUG("[Rfxcom] Record Mode : %d", RECORD);
     if (RECORD == 1) {
-        log_INFO("[Rfxcom] Recording new device type : %02hhX",packettype);
+        log_INFO("[Rfxcom][addRfxDevice]: Recording new device type : '%02hhX'",packettype);
         mysql_insert(request);
     }
     return 0;

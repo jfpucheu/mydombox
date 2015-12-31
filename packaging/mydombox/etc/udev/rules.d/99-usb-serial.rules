@@ -1,3 +1,3 @@
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{manufacturer}=="EnOcean GmbH",ATTRS{product}=="EnOcean USB 300 DB", SYMLINK+="EnOceanUSB300"
-SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{manufacturer}=="RFXCOM", ATTRS{product}=="RFXtrx443", SYMLINK+="RFXtrx443"
-SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{manufacturer}=="RFXCOM", ATTRS{product}=="RFXtrx433", SYMLINK+="RFXtrx443"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{manufacturer}=="RFXCOM", ATTRS{product}=="RFXtrx443", SYMLINK+="RFXtrx433"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{manufacturer}=="RFXCOM", ATTRS{product}=="RFXtrx433", SYMLINK+="RFXtrx433"
