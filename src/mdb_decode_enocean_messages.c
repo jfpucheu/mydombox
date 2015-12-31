@@ -167,7 +167,7 @@ bool addEnoceanDevice(char* data)
     if (RECORD == 1) {
         log_INFO("[EnOcean] Recording new device type : %02hhX",rorg);
         mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,int_id,id1,id2,id3,id4,com) \
-                     SELECT MAX(dc_id)+1,NOW(),'%02hhX',4,'%02hhX','%02hhX','%02hhX','%02hhX','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
+                     SELECT IFNULL(MAX(dc_id),0)+1,NOW(),'%02hhX',4,'%02hhX','%02hhX','%02hhX','%02hhX','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
                      rorg,id1,id2,id3,id4);
     }
     return 0;

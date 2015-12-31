@@ -152,7 +152,7 @@ bool addRfxDevice(char* data){
             id4 = data[7];
             unitcode = data[8];
             sprintf(request,"INSERT IGNORE INTO devices (dc_id,last_update,int_id,packettype,subtype,id1,id2,id3,id4,unitcode,com) \
-                     SELECT MAX(dc_id)+1,NOW(),1,'%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
+                     SELECT IFNULL(MAX(dc_id),0)+1,NOW(),1,'%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
                      packettype,subtype,id1,id2,id3,id4,unitcode);
             break;
         case 0x14:
@@ -162,7 +162,7 @@ bool addRfxDevice(char* data){
             id3 = data[6];
             unitcode = data[7];
             sprintf(request,"INSERT IGNORE INTO devices (dc_id,last_update,int_id,packettype,subtype,id1,id2,id3,id4,unitcode,com) \
-                     SELECT MAX(dc_id)+1,NOW(),1,'%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','','%02hhX','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
+                     SELECT IFNULL(MAX(dc_id),0)+1,NOW(),1,'%02hhX','%02hhX','%02hhX','%02hhX','%02hhX','','%02hhX','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
                      packettype,subtype,id1,id2,id3,unitcode);
             break;
         case 0x40:
@@ -173,7 +173,7 @@ bool addRfxDevice(char* data){
             id1 = data[4];
             id2 = data[5];
             sprintf(request,"INSERT IGNORE INTO devices (dc_id,last_update,int_id,packettype,subtype,id1,id2,id3,id4,unitcode,com) \
-                     SELECT MAX(dc_id)+1,NOW(),1,'%02hhX','%02hhX','%02hhX','%02hhX','','','','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
+                     SELECT IFNULL(MAX(dc_id),0)+1,NOW(),1,'%02hhX','%02hhX','%02hhX','%02hhX','','','','tx' FROM devices ON DUPLICATE KEY UPDATE last_update=NOW();",\
                      packettype,subtype,id1,id2,id3,id4,unitcode);
             break;
         default:
@@ -1491,7 +1491,7 @@ void message_EDF1(char message[20][18]){
 		// MYSQL INSERTION
 	if ( DB_MYSQL == 1){
 
-        mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,subtype,int_id,address,com,home_data1) SELECT MAX(dc_id)+1,NOW(),'ERDF','01','2','%s','tx',%d FROM devices ON DUPLICATE KEY UPDATE last_update=NOW(),home_data1=%d;\
+        mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,subtype,int_id,address,com,home_data1) SELECT IFNULL(MAX(dc_id),0)+1,NOW(),'ERDF','01','2','%s','tx',%d FROM devices ON DUPLICATE KEY UPDATE last_update=NOW(),home_data1=%d;\
                     INSERT INTO energy_edf (dc_id,datetime,optarif,isousc,hchp,hchc,ptec,iinst,imax,papp,hphc,motdetat,adps) VALUES ((select dc_id from devices where address='%s' LIMIT 1),NOW(),'%s',%d,%d,%d,'%s',%d,%d,%d,'%s','%s',%d);\
                      ",ADCO,IINST,IINST,ADCO,OPTARIF,ISOUSC,HCHP,HCHC,PTEC,IINST,IMAX,PAPP,HHPHC,MOTDETAT,ADPS);
 					
@@ -1532,7 +1532,7 @@ void message_EDF3(char message[20][18]){
 		// MYSQL INSERTION
 	if ( DB_MYSQL == 1){
 		
-        mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,subtype,int_id,address,com,home_data1,home_data2,home_data3) SELECT MAX(dc_id)+1,NOW(),'ERDF','03','2','%s','tx',%d,%d,%d FROM devices ON DUPLICATE KEY UPDATE last_update=NOW(),home_data1=%d,home_data2=%d,home_data3=%d;\
+        mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,subtype,int_id,address,com,home_data1,home_data2,home_data3) SELECT IFNULL(MAX(dc_id),0)+1,NOW(),'ERDF','03','2','%s','tx',%d,%d,%d FROM devices ON DUPLICATE KEY UPDATE last_update=NOW(),home_data1=%d,home_data2=%d,home_data3=%d;\
                     INSERT INTO energy_edf (dc_id,datetime,optarif,isousc,hchp,hchc,ptec,iinst1,iinst2,iinst3,imax1,imax2,imax3,pmax,papp,hphc,motdetat,ppot,adir1,adir2,adir3) VALUES ((select dc_id from devices where address='%s' LIMIT 1),NOW(),'%s',%d,%d,%d,'%s',%d,%d,%d,%d,%d,%d,%d,%d,'%s','%s','%s',%d,%d,%d);\
             ",ADCO,IINST1,IINST2,IINST3,IINST1,IINST2,IINST3,ADCO,OPTARIF,ISOUSC,HCHP,HCHC,PTEC,IINST1,IINST2,IINST3,IMAX1,IMAX2,IMAX3,PMAX,PAPP,HHPHC,MOTDETAT,PPOT,ADIR1,ADIR2,ADIR3);
 					
@@ -1594,7 +1594,7 @@ void message_1W28(char address[16] ,char message[256]){
 	// MYSQL INSERTION
 	if ( DB_MYSQL == 1){
 				
-		mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,subtype,int_id,address,com,home_data1) SELECT MAX(dc_id)+1,NOW(),'1W28','01',2,'%s','tx', %.2f FROM devices ON DUPLICATE KEY UPDATE last_update=NOW(),home_data1=%.2f;\
+		mysql_insert("INSERT IGNORE INTO devices (dc_id,last_update,packettype,subtype,int_id,address,com,home_data1) SELECT IFNULL(MAX(dc_id),0)+1,NOW(),'1W28','01',2,'%s','tx', %.2f FROM devices ON DUPLICATE KEY UPDATE last_update=NOW(),home_data1=%.2f;\
 					INSERT INTO temperature (dc_id,datetime,temperature) VALUES ((select dc_id from devices where address='%s' LIMIT 1),NOW(),%.2f);\
 					",address,temperature,temperature,address,temperature);
 	}	

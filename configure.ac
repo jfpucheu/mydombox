@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT(mydombox, 0.5.2, jfpucheu@gmail.com)
+AC_INIT(mydombox, 0.5-3-dev, jfpucheu@gmail.com)
 AC_CANONICAL_HOST
 AC_CANONICAL_SYSTEM
 AM_INIT_AUTOMAKE
