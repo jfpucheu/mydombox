@@ -145,6 +145,7 @@ function liste_type_1A(selector, value){
 							<a href="#"   id="bt-motor-dialog"  dc_id='+ value.dc_id+'> \
 							<img src="css/images/mdb_volet.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
+							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
 	return listelement;
 }

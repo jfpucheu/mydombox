@@ -195,7 +195,7 @@ bool addRfxDevice(char* data){
 
 void message_0X00(){
 
-   	log_DEBUG("Message de type: Interface Control");
+   	log_DEBUG("Message de type: Interface Control");	
 	log_DEBUG("Not Suported yet");
 }
 
@@ -225,6 +225,12 @@ void message_0X01(char message[255]){
 	// Subtype for log
 	if ( subtype == 0x00){
 		sprintf( subtype_text,"Response on a mode command");
+	}
+	else if (subtype == 0x01){
+		sprintf( subtype_text,"Unknown RTS remote");
+	}
+	else if (subtype == 0x02){
+		sprintf( subtype_text,"No extended hardware present");
 	}
 	else if (subtype == 0xFF){
 		sprintf( subtype_text,"Wrong command received from the application");
@@ -377,8 +383,42 @@ void message_0X01(char message[255]){
 
 void message_0X02(){
 
-   	log_DEBUG("Message de type: Receiver/Transmitter Message");
-	log_DEBUG("Not Suported yet");
+	unsigned char		packettype = message[1];
+	unsigned char		subtype	= message[2];
+	unsigned char		seqnbr = message[3];
+	char subtype_text[100];
+	char cmnd_text[100];
+
+    // Subtype for log
+    if ( subtype == 0x00){
+        sprintf( subtype_text,"error, receiver did not lock msg not used");
+    }
+    else if (subtype == 0x01){
+        sprintf( subtype_text,"transmitter response");
+    }
+    else{
+        sprintf( subtype_text,"Not supported");
+    }
+	
+    switch ( message[4] ) {
+        case 0x00:
+            sprintf( cmnd_text,"ACK, transmit OK");
+            break;
+        case 0x01:
+            sprintf( cmnd_text,"ACK, but transmit started after 3 seconds delay anyway with RF receive data");
+            break;
+        case 0x02:
+            sprintf( cmnd_text,"NAK, transmitter did not lock on the requested transmit frequency");
+            break;
+        case 0x03:
+            sprintf( cmnd_text,"NAK, AC address zero in id1-id4 not allowed");
+            break;
+        default:
+            sprintf( cmnd_text,"Not Supported");
+            break;
+    }
+
+    log_DEBUG("\n\n Packetype: 0x02 Receiver/Transmitter Message \n Subtype: %s \n Seqnbr: %d \n Message: %s \n", subtype_text,seqnbr,cmnd_text);
 }
 
 void message_0X03(){
@@ -885,10 +925,10 @@ void message_0X1A(char message[255]){
                 sprintf( cmnd_text,"up + down >5 seconds");
                 break;
             case 0x0D:
-                sprintf( cmnd_text,"Erase this RFY remote from the RFXtrx");
+                sprintf( cmnd_text,"Erase this RFY remote");
                 break;
             case 0x0E:
-                sprintf( cmnd_text,"Erase all RFY remotes from the RFXtrx");
+                sprintf( cmnd_text,"Erase all RFY remotes");
                 break;
             default:
                 sprintf( cmnd_text,"Not Supported");

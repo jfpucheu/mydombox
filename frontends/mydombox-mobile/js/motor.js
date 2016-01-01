@@ -10,7 +10,7 @@ function motor_display(dc_id){
 			dataType: 'json',
 				success: function(data){
 					$.each(data, function(index, value) {
-						$("#device_light_name span").html(value.name);
+						$("#device_motor_name span").html(value.name);
 						$("#dc_id").val(value.dc_id);		
 						switch(value.packettype)
 						{								

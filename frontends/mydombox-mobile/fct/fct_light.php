@@ -70,23 +70,9 @@ function LI_UPDATE(){
 	}
 
 	if ($response->State ==  $mode) {
-		if($mode == 'on') { 
-			$order = "UPDATE state INNER JOIN devices USING (dc_id) SET state.device_mode='on', state.dim_level='0F' WHERE dc_id=$dc_id;";
-			} 
-		else { 
-			$order = "UPDATE state INNER JOIN devices USING (dc_id) SET state.device_mode='off', state.dim_level='00' WHERE dc_id=$dc_id;";
-			}
-	
-		$result = mysql_query($order);
-		if($result) {
-			echo 0;
-		} else {
-			echo 2;
-		}
-	}
-	else
-	{
-	echo 1;
+		echo 0;
+	} else {
+		echo 1;
 	}
 	
 
