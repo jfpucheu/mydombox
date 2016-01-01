@@ -94,25 +94,25 @@ $(document).on('pagebeforeshow', '#light-dialog', function(){
 // Confirm device on Popup confirm device click
 $(document).ready(function(){
 	$("#lighting5_On").on('click', function (){
-		light_update("On");
+		light_update("on");
 	});
 	$("#lighting5_Off").on('click', function (){
-		light_update("Off");
+		light_update("off");
 	});
 	$("#lighting5_Mode").on('click', function (){
-		light_update("On");
+		light_update("on");
 	});
 	$("#lighting5_Light_down").on('click', function (){
-		light_update("Dim");
+		light_update("dim");
 	});	
 	$("#lighting5_Light_up").on('click', function (){
-		light_update("Bright");
+		light_update("bright");
 	});	
 	$("#lighting5_Speed_down").on('click', function (){
-		light_update("Color-");
+		light_update("color-");
 	});	
 	$("#lighting5_Speed_up").on('click', function (){
-		light_update("Color+");
+		light_update("color+");
 	});	
 	
 	//$('#colorpicker').farbtastic('#color');

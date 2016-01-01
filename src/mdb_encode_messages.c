@@ -180,34 +180,34 @@ int encode_lighting_message(int dc_id, char* state, int dim)
 		message[6]= id3;
 		message[7]= unitcode;
 
-		if (strcmp(state, "Off") == 0)
+		if (strcmp(state, "off") == 0)
 		{
 			message[8]= 0x00;
 		}
-		else if ( strcmp(state, "On") == 0)
+		else if ( strcmp(state, "on") == 0)
 		{
 			message[8]= 0x01;
 		}
-		else if ( strcmp(state, "Bright") == 0)
+		else if ( strcmp(state, "bright") == 0)
 		{
 			message[8]= 0x02;
 		}		
-		else if ( strcmp(state, "Dim") == 0)
+		else if ( strcmp(state, "dim") == 0)
 		{
 			message[8]= 0x03;
 		}
-		else if ( strcmp(state, "Color+") == 0)
+		else if ( strcmp(state, "color+") == 0)
 		{
 			message[8]= 0x04;
 		}
-		else if ( strcmp(state, "Color-") == 0)
+		else if ( strcmp(state, "color-") == 0)
 		{
 			message[8]= 0x05;
 		}
 		else
 		{
 			message[8]= stringtohex(state);
-			sprintf( state,"Color : %02hhX", message[8] );
+			sprintf( state,"color : %02hhX", message[8] );
 		}
 		message[9]= 0x00;
 		
@@ -260,7 +260,7 @@ int encode_lighting_message(int dc_id, char* state, int dim)
 		{
 			message[8]= 0x03;
 		}		
-		else if ( strcmp(state, "Program") == 0)
+		else if ( strcmp(state, "program") == 0)
 		{
 			message[8]= 0x07;
 		}
@@ -467,7 +467,7 @@ int encode_init_message(int dc_id, char* order)
 		
 		if ( packettype == 0x1A)
 		{
-		encode_lighting_message(dc_id, "Program", 0 );	
+		encode_lighting_message(dc_id, "program", 0 );	
 		}
 	
 		/* ---------------------------------------

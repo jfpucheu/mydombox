@@ -376,9 +376,13 @@ void message_0X01(char message[255]){
 		"ATI = %d \n "\
 		"Visonic = %d \n",(msg5 & 0x01 ? 1 : 0),(msg5 & 0x02 ? 1 : 0),(msg5 & 0x04 ? 1 : 0),(msg5 & 0x08 ? 1 : 0),(msg5 & 0x10 ? 1 : 0),(msg5 & 0x20 ? 1 : 0),(msg5 & 0x40 ? 1 : 0),(msg5 & 0x80 ? 1 : 0));
 
-		
-	log_INFO("\n\n Packetype: Interface Message \n Subtype: %s \n Seqnbr: %d \n Cmnd: %s  \n Receiver-Transceiver type: %s \n Firmware Version: %d  \n Protocols Enamble/Disable: \n\n %s %s %s \n", subtype_text,seqnbr,cmnd_text,receivertype_text,msg2,message3_text,message4_text,message5_text);
-	
+		// Subtype for log
+		if ( subtype == 0x00){
+			log_INFO("\n\n Packetype: Interface Message \n Subtype: %s \n Seqnbr: %d \n Cmnd: %s  \n Receiver-Transceiver type: %s \n Firmware Version: %d  \n Protocols Enamble/Disable: \n\n %s %s %s \n", subtype_text,seqnbr,cmnd_text,receivertype_text,msg2,message3_text,message4_text,message5_text);
+		}
+		else{
+			log_INFO("\n\n Packetype: Interface Message \n Subtype: %s \n", subtype_text);
+		}
 }
 
 void message_0X02(char message[255]){
