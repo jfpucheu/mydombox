@@ -148,7 +148,7 @@ int read_rfxtrx(void)
 					}
 					break;
 				case 0x02:
-					message_0X02();
+					message_0X02(buffer);
 					break;
 				case 0x03:
 					message_0X03();

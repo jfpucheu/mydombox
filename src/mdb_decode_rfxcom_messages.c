@@ -381,7 +381,7 @@ void message_0X01(char message[255]){
 	
 }
 
-void message_0X02(){
+void message_0X02(char message[255]){
 
 	unsigned char		packettype = message[1];
 	unsigned char		subtype	= message[2];
