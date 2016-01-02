@@ -1,19 +1,2 @@
 #!/bin/sh
-# prerm script for mydombox
-
-set -e
-
-case "$1" in
-    purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-
-	service mydombox stop
-	update-rc.d mydombox remove	
-    ;;
-
-    *)
-        echo "prerm called with unknown argument \`$1'" >&2
-        exit 1
-    ;;
-esac
-
-exit 0
+# prerm script for mydombox-display

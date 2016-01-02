@@ -3,7 +3,7 @@ Version: 1.0-0
 Section: base
 Priority: optional
 Architecture: armhf
-Depends: mydombox
+Depends: mydombox, chromium, x11-xserver-utils, unclutter
 Maintainer: Mr PUCHEU <jfpucheu@gmail.com>
-Description: Mydombox est un logiciel simple d'utilisation permettant de transformer n'importe quelle machine linux en une box domotique complète.
+Description: Mydombox display permet d'avoir un homescreen mydombox sur sa tv via le port hdmi du raspberry.
 Homepage: http://mydombox.com
