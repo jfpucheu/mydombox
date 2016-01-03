@@ -61,12 +61,12 @@
 		
 	<script type="text/javascript" src="js/home.js"></script>
 	<script type="text/javascript" src="js/temperature.js"></script>
-	<script type="text/javascript" src="js/light.js"></script>
-	<script type="text/javascript" src="js/motor.js"></script>
+	<script type="text/javascript" src="js/light-motor.js"></script>
 	<script type="text/javascript" src="js/energy.js"></script>
 	<script type="text/javascript" src="js/weather.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/scenario.js"></script>
+	<script type="text/javascript" src="js/sheduler.js"></script>
 	
 	<script type="application/javascript" src="lib/fastclick/fastclick.js"></script>
 	<script type="text/javascript" src="lib/farbtastic/farbtastic.js"></script>
@@ -738,16 +738,17 @@
 ***************************************************************************************************
 -->
 
-<!-- Start of page: #light-dialog -->
-<div data-role="page" id="light-dialog">
+<!-- Start of page: #light-motor-dialog -->
+<div data-role="page" id="light-motor-dialog">
 
 	<div data-role="header" data-theme="a" class="ui-corner-top">
-		<h1 id="device_light_name"><span></span></h1>
+		<h1 id="light-motor-name"><span></span></h1>
 	</div>
 
 	<div data-role="content">
 
 		<input type="hidden" id="dc_id" value="">
+		<input type="hidden" id="packettype" value="">
 		
 		<div id="light_swich" style="display:none;">
 			<label for="light_mode" style="display: inline;">Light On / OFF: &nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -773,47 +774,58 @@
 			<a href="#" id="lighting5_Light_up" data-role="button">Light +</a>
 		</div>
 		
-		<div id="colorpicker" align="center"></div>
-			
-	</div>
-</div>
-
-<!-- Start of page: #motor-dialog -->
-<div data-role="page" id="motor-dialog">
-
-	<div data-role="header" data-theme="a" class="ui-corner-top">
-		<h1 id="device_motor_name"><span></span></h1>
-	</div>
-
-	<div data-role="content">
-	
-		<input type="hidden" id="dc_id" value="">
-		
-		<div id="command" data-role="controlgroup" data-type="horizontal" align="center">
+		<div id="motor_control" data-role="controlgroup" data-type="horizontal" align="center" style="display:none;">
 			<a href="#" id="RFY_up" data-role="button" data-icon="arrow-u">Up</a>
 			<a href="#" id="RFY_stop" data-role="button" data-icon="delete">Stop</a>
 			<a href="#" id="RFY_down" data-role="button"data-icon="arrow-d">Down</a>
 		</div>
-		<div id="programmation">
-			<input id="open_popup_programmation" type="submit" data-theme="b" value="Programmation">
-		</div>
 		
-			<ul id="program_list" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="d"></ul>
-				
+		<div id="colorpicker" align="center"></div>
+			
+		<ul data-role="listview" id="program_list" data-autodividers="true" data-inset="true"></ul>
 	</div>
-</div>
-
-<!-- Start of page: #open_popup_programmation -->
-<div data-role="page" id="open_popup_programmation">
-
-	<div data-role="header" data-theme="a" class="ui-corner-top">
-		<h1 id="device_motor_name"><span></span></h1>
-	</div>
-
-	<div data-role="content">
 	
+	<!-- popup popup_programmation-->
+	<div data-role="popup" id="popup_programmation" data-overlay-theme="a" data-theme="c" data-dismissible="false">
+		<div data-role="header" data-theme="a" class="ui-corner-top">
+			<h1>Edit Periode </h1>
+		</div>
+		<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+		
+		<div data-role="content">
+			<input type="hidden" id="sch_id">
+			
+			<div id="day_select">
+				<select name="sch_day" id="sch_day" >
+					<option value="-1" disabled="disabled">Day</option>
+					<option value="0">All</option>
+					<option value="1">Lundi</option>
+					<option value="2">Mardi</option>
+					<option value="3">Mercredi</option>
+					<option value="4">Jeudi</option>
+					<option value="5">Vendredi</option>
+					<option value="6">Samedi</option>
+					<option value="7">Dimanche</option>
+				</select>
+			</div>
 
+			<div class="input-time-text" data-inline="true">
+					<label for="sch_time">Time</label>
+					<input type="time" id="sch_time" data-inline="true" />
+			</div>
+			
+			<div id="action_select">
+				<select name="action" id="sch_action" >
+				</select>
+			</div>
+				
+			<div>
+			<a href="#" id="delete_action" data-role="button" data-inline="true" data-rel="back">Delete</a>  
+			<a href="#" id="update_action" data-role="button" data-inline="true" data-rel="back">Submit</a>  
+			</div>
+		</div>
 	</div>
+	<!-- End Of Popup scenario edition-->
 </div>
 
 <!-- Start of page: #temperature-dialog -->

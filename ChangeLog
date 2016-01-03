@@ -46,7 +46,32 @@
 	- Adding Weekly thermostat
 	- Correction TP auto display for thermostat
 	- MakeFile Written
-	
-	
+    - EnOcean Support Added
+    - Graph added
+    - Auto reload of pages added
+    - MakeFile added
+    - .deb packaging added
+ 
+[0.5.1]
+* Evolutions:	
+    - Debian Packaging script corrected
+    - Auto detect USB devices
+    
+[0.5.2]
+* Evolutions:	
+	- Upgrade to Jquery Mobile 1.4.5 to solve IOS9 issues
+
+[0.5.3]
+* Evolutions:	
+    - correction interface command RFXCOM
+    - correction bug device 0
+    - correction auto detection for device RFXTRX433 / ENOCEAN USB300
+    - update status for motor on homescreen
+    - correct name of popup for windores ....
+
+[0.5.4]
+* Evolutions:	
+    - scheduler function implemented
+    - merge motor and light code
+    
 * Not Corrected:
-	- Graphes not implemented

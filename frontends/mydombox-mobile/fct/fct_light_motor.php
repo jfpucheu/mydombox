@@ -11,24 +11,24 @@ else      $mode="";
 switch($action)
 {
     case 'display';
-		LI_DISPLAY();
+		LM_DISPLAY();
 		break;
     case 'update';
-		LI_UPDATE();
+		LM_UPDATE();
 		break;	
     case 'program';
-		LI_PROGRAM();
+		LM_PROGRAM();
 		break;				
 }
 
 
 /*
- * Funstion: LI_DISPLAY
+ * Funstion: LM_DISPLAY
  * variables: dc_id
- * comment: Display Lighting Device as Json
+ * comment: Display Light-motor Device as Json
  * End:
  */
-function LI_DISPLAY(){
+function LM_DISPLAY(){
 
 	global $dc_id;
 
@@ -44,12 +44,12 @@ function LI_DISPLAY(){
 }
 
 /*
- * Funstion: LI_UPDATE
+ * Funstion: LM_UPDATE
  * variables: dc_id,mode
- * comment: Change light state
+ * comment: Change light motor state
  * End:
  */
-function LI_UPDATE(){
+function LM_UPDATE(){
 
 	global $mode,$dc_id;
 
@@ -78,25 +78,4 @@ function LI_UPDATE(){
 
 }
 
-/*
- * Funstion: LI_Program
- * variables: dc_id
- * comment: Display Light Program as json
- * End:
- */
-function LI_PROGRAM(){
-	
-	global $dc_id;
-
-	$order = "SELECT sch_id,sch_day,sch_time,sch_action FROM scheduler WHERE dc_id='$dc_id' ORDER BY sch_time;";
-
-	$result = mysql_query($order);
-
-	$jsonData = array();
-
-	while ($array = mysql_fetch_array($result)) {
-		$jsonData[] = $array;
-	}
-	echo json_encode($jsonData);
-}
 ?>

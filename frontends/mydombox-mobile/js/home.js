@@ -122,7 +122,7 @@ function liste_type_56(selector, value){
 
 function liste_type_11(selector, value){
 		var listelement = '	 <li> \
-							<a href="#"   id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
+							<a href="#"   id="bt-lm-dialog"  dc_id='+ value.dc_id+'> \
 							<img src="css/images/mdb_light.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
@@ -132,7 +132,7 @@ function liste_type_11(selector, value){
 
 function liste_type_14(selector, value){
 		var listelement = '	 <li> \
-							<a href="#"   id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
+							<a href="#"   id="bt-lm-dialog"  dc_id='+ value.dc_id+'> \
 							<img src="css/images/mdb_chroma.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
@@ -142,7 +142,7 @@ function liste_type_14(selector, value){
 
 function liste_type_1A(selector, value){
 		var listelement = '	 <li> \
-							<a href="#"   id="bt-motor-dialog"  dc_id='+ value.dc_id+'> \
+							<a href="#"   id="bt-lm-dialog"  dc_id='+ value.dc_id+'> \
 							<img src="css/images/mdb_volet.png" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
