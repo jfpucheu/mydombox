@@ -172,7 +172,7 @@ function TH_LIST_DEVICES(){
  */
 function TH_NEW(){
 		
-	$order = "INSERT INTO thermostat (th_id,sensor_id,recept_id,th_name,th_use,th_mode,tp_set,sc_id,home_screen) SELECT (SELECT IFNULL(MAX(_id),0)+1 FROM thermostat) as th_id,0,0,'New Thermostat','off','manual',18,0,'1';";
+	$order = "INSERT INTO thermostat (th_id,sensor_id,recept_id,th_name,th_use,th_mode,tp_set,sc_id,home_screen) SELECT (SELECT IFNULL(MAX(th_id),0)+1 FROM thermostat) as th_id,0,0,'New Thermostat','off','manual',18,0,'1';";
 	
 	$result = mysql_query($order);
 	

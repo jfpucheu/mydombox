@@ -105,7 +105,7 @@ function liste_type_55(selector, value){
 	
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/weather55.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data2 +' mm</p>\
 							</a></li> '; 
@@ -115,7 +115,7 @@ function liste_type_55(selector, value){
 function liste_type_56(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/weather56.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+Math.round(value.home_data2)+' km/H </p> \
 							<p class="ui-li-aside2">'+Math.round(value.home_data1)+' &ordm </p> \
