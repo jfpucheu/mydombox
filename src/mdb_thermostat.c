@@ -60,8 +60,7 @@ float last_tp( int th_id )
 
 	if ((strcmp(packettype,"40") == 0) || (strcmp(packettype,"52") == 0) || (strcmp(packettype,"1W28") == 0)){
 		result = mysql_select(conn,"SELECT last_update, home_data1 from devices INNER JOIN thermostat ON devices.dc_id = thermostat.sensor_id WHERE th_id = %d LIMIT 1;", th_id);
-	}
-	else{
+	}else{
 		log_ERROR("Packet type not supported for thermostat");
 		mysql_free_result(result);
 		mysql_close(conn);
@@ -177,7 +176,7 @@ void thermostat_calc(th_id)
             	if ( packettype == 0x40 ){
 				    encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
                 } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
-                    encode_lighting_message(recept_id, "off", O);
+                    encode_lighting_message(recept_id, "off", 0);
                 }
 			}
 		}
@@ -202,7 +201,7 @@ void thermostat_calc(th_id)
             	if ( packettype == 0x40 ){
 				    encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
                 } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
-                    encode_lighting_message(recept_id, "off", O);
+                    encode_lighting_message(recept_id, "off", 0);
                 }
 			}
 		}
