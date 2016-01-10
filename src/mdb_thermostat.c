@@ -217,7 +217,7 @@ void thermostat_calc(th_id)
     	if ( packettype == 0x40 ){
 		    encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
         } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
-            encode_lighting_message(recept_id, "off", O);
+            encode_lighting_message(recept_id, "off", 0);
         }
 
 	}
