@@ -132,7 +132,6 @@ void thermostat_calc(th_id)
 	
 	/*Recherche des parametres du thermostat*/	
 	conn = mysql_connection();
-//	result = mysql_select(conn,"SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = %d LIMIT 1;", th_id);
     result = mysql_select(conn,"SELECT recept_id,th_use,th_mode,tp_set,sc_id,packettype,subtype  FROM thermostat LEFT JOIN devices ON thermostat.recept_id=devices.dc_id WHERE th_id = %d LIMIT 1;", th_id);
  
 	int num_fields = mysql_num_fields(result);
@@ -238,7 +237,7 @@ void thermostat()
 	
 	/*Recherche des parametres du thermostat*/	
 	conn = mysql_connection();
-	result = mysql_select(conn,"SELECT th_id FROM thermostat");
+	result = mysql_select(conn,"SELECT th_id FROM thermostat WHERE sensor_id <> 0 AND recept_id <> 0;");
 	
 	int num_fields = mysql_num_fields(result);
         
