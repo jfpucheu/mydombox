@@ -128,11 +128,14 @@ void thermostat_calc(th_id)
 	int sc_id;
 	float tp_consigne;
 	float tp_current;
+    unsigned char packettype;
+    unsigned char subtype;
 	
 	/*Recherche des parametres du thermostat*/	
 	conn = mysql_connection();
-	result = mysql_select(conn,"SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = %d LIMIT 1;", th_id);
-    
+//	result = mysql_select(conn,"SELECT recept_id,th_use,th_mode,tp_set,sc_id FROM thermostat WHERE th_id = %d LIMIT 1;", th_id);
+    result = mysql_select(conn,"SELECT recept_id,th_use,th_mode,tp_set,sc_id,packettype,subtype  FROM thermostat LEFT JOIN devices ON thermostat.recept_id=devices.dc_id WHERE th_id = %d LIMIT 1;", th_id);
+ 
 	int num_fields = mysql_num_fields(result);
         
         while (row = mysql_fetch_row(result)){
@@ -141,6 +144,9 @@ void thermostat_calc(th_id)
 			strcpy(th_mode, row[2]);
 			tp_set = atof(row[3]);
 			sc_id = atoi(row[4]);
+			packettype = stringtohex(row[5]);
+			subtype = stringtohex(row[6]);
+            
         };
 		
     mysql_free_result(result);
@@ -158,11 +164,21 @@ void thermostat_calc(th_id)
 			
 			 if (tp_consigne > tp_current){
 				log_DEBUG("Thermostat_Calc:Send Message ON");
-				encode_thermostat_message(recept_id,tp_consigne,tp_current, "demand");
+                
+            	if ( packettype == 0x40 ){
+				    encode_thermostat_message(recept_id,tp_consigne,tp_current, "demand");
+                } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
+                    encode_lighting_message(recept_id, "on", 100);
+                }
 			}
 			else{
 				log_DEBUG("Thermostat_Calc:Send Message OFF");
-				encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
+                
+            	if ( packettype == 0x40 ){
+				    encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
+                } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
+                    encode_lighting_message(recept_id, "off", O);
+                }
 			}
 		}
 		else if (!strcmp(th_mode,"auto")){
@@ -173,11 +189,21 @@ void thermostat_calc(th_id)
 			
 			 if (tp_consigne > tp_current){
 				log_DEBUG("Thermostat_Calc:Send Message ON");
-            	encode_thermostat_message(recept_id,tp_consigne,tp_current, "demand");
+                
+            	if ( packettype == 0x40 ){
+				    encode_thermostat_message(recept_id,tp_consigne,tp_current, "demand");
+                } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
+                    encode_lighting_message(recept_id, "on", 100);
+                }
 			}
 			else{                                               
 				log_DEBUG("Thermostat_Calc:Send Message OFF");
-                encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
+
+            	if ( packettype == 0x40 ){
+				    encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
+                } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
+                    encode_lighting_message(recept_id, "off", O);
+                }
 			}
 		}
 		else{
@@ -188,7 +214,13 @@ void thermostat_calc(th_id)
 		log_DEBUG("Thermostat %d is off",th_id);
 		tp_consigne = 0;
 		tp_current = 0;
-        encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
+
+    	if ( packettype == 0x40 ){
+		    encode_thermostat_message(recept_id,tp_consigne,tp_current, "no demand");
+        } else if ( packettype == 0x11 || packettype == 0x14 || packettype == 0x1A ){
+            encode_lighting_message(recept_id, "off", O);
+        }
+
 	}
 	else{
 		log_ERROR("Thermostat_Calc: Thermostat Status Error");

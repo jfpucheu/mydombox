@@ -34,7 +34,7 @@ switch($action)
  */
 function HOME_SCREEN(){
 
-	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3,device_mode FROM devices LEFT JOIN state USING (dc_id) WHERE deleted=0 AND home_screen=1 AND com='tx' AND new=0;"; 
+	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3,device_mode,dc_logo FROM devices LEFT JOIN state USING (dc_id) WHERE deleted=0 AND home_screen=1 AND com='tx' AND new=0;"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();
@@ -53,7 +53,7 @@ function HOME_SCREEN(){
  */
 function TEMPERATURE_SCREEN(){
 
-	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3 FROM devices WHERE deleted=0 AND com='tx' AND new=0 AND int_id IN (1,4) AND packettype IN ('40','52','1W28','A5');"; 
+	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3,dc_logo FROM devices WHERE deleted=0 AND com='tx' AND new=0 AND int_id IN (1,4) AND packettype IN ('40','52','1W28','A5');"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();
@@ -72,7 +72,7 @@ function TEMPERATURE_SCREEN(){
  */
 function LIGHT_SCREEN(){
 
-	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,device_mode FROM devices LEFT JOIN state USING (dc_id) WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('11','14','WP');"; 
+	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,device_mode,dc_logo FROM devices LEFT JOIN state USING (dc_id) WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('11','14','WP');"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();
@@ -91,7 +91,7 @@ function LIGHT_SCREEN(){
  */
 function ENERGY_SCREEN(){
 
-	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3 FROM devices WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('5A','ERDF');"; 
+	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3,dc_logo FROM devices WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('5A','ERDF');"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();
@@ -110,7 +110,7 @@ function ENERGY_SCREEN(){
  */
 function WEATHER_SCREEN(){
 
-	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3 FROM devices WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('52','55','56');"; 
+	$order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,home_data1,home_data2,home_data3,dc_logo FROM devices WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('52','55','56');"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();
@@ -129,7 +129,7 @@ function WEATHER_SCREEN(){
  */
 function WINDORE_SCREEN(){
 
-	$order = $order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,device_mode FROM devices LEFT JOIN state USING (dc_id) WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('D5','1A');"; 
+	$order = $order = "SELECT dc_id,dc_name,last_update,int_id,packettype,subtype,device_mode,dc_logo FROM devices LEFT JOIN state USING (dc_id) WHERE deleted=0 AND com='tx' AND new=0 AND packettype IN ('D5','1A');"; 
 
 	$result = mysql_query($order);
 	$jsonData = array();

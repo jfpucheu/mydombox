@@ -292,7 +292,9 @@ function device_display(dc_id){
 						$("#unitcode").val(value.unitcode);
 						$("#com").val(value.com).flipswitch('refresh');
 						$("#cloud").val(value.iss_status).flipswitch('refresh');	
-						$("#cloud_id").val(value.iss_stream);						
+						$("#cloud_id").val(value.iss_stream);
+                        //$("#select-custom-18").val(value.dc_logo).selectmenu('refresh');	
+                        $("#dc_device_logo").val(value.dc_logo).selectmenu('refresh', true);						
 							//if ( $("#cloud").val() == 1){
 							//	$("#div_cloud_name").show();
 							//}else{
@@ -315,6 +317,7 @@ function device_update(){
 	var dc_id = $("#dc_id").val();
 	var type_id= $("#device_type option:selected").val();
 	var dc_name = $("#dc_name").val();
+    var dc_logo= $("#dc_device_logo option:selected").val();
 	var address = $("#address").val();
 	var id1 = $("#id1").val();
 	var id2 = $("#id2").val();
@@ -329,7 +332,7 @@ function device_update(){
 	var cloud = $("#cloud").val();
 	var cloud_id = $("#cloud_id").val();
 	
-	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_id='+ dc_id +'&dc_name='+ dc_name +'&address='+ address+ '&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com+'&cloud='+ cloud+'&cloud_id='+ cloud_id;
+	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_id='+ dc_id +'&dc_name='+ dc_name +'&dc_logo='+ dc_logo +'&address='+ address+ '&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com+'&cloud='+ cloud+'&cloud_id='+ cloud_id;
 
 	$.ajax({
 		type: "POST",
@@ -548,6 +551,19 @@ $(document).ready(function(){
 	$("#delete-device").on('click', function (){
 		device_delete();
 	});
+});
+
+$(document).on("pagecreate", function(){    
+    var opts = $("#dc_device_logo option");
+    $( "#dc_device_logo-listbox-popup" ).on( "popupafteropen", function( event, ui ) {
+        $("#dc_device_logo-menu li").each(function(index){
+            if ($(this).find("img").length == 0){
+                var imageURL = opts.eq(index).data("image");
+                var imgElem = '<img src=' + imageURL + ' width="32px" height="32px" />';
+                $(this).find("a").prepend(imgElem);
+            }
+        });
+    });
 });
 
 //affichages Du cloud Name

@@ -160,7 +160,7 @@ function thermostat_devices_list(){
 	
 	var action = "list-devices";
 	var dataString =  'action='+ action;
-
+    
 	$('#sensor_list option').remove();
 	$('#sensor_list').append($("<option></option>").attr("value","no").text("-- No Device Selected --"));
 
@@ -174,9 +174,9 @@ function thermostat_devices_list(){
 			dataType: 'json',
 				success: function(data){
 					$.each(data, function(index, value) {
-						if(value.com == 'tx'){
+						if(value.com == 'tx' && (value.packettype == '40' || value.packettype == '50' || value.packettype == '51' || value.packettype == '52' || value.packettype == '1W28')){
 							$('#sensor_list').append($("<option></option>").attr("value",value.dc_id).text(value.dc_name)); 
-						}else if(value.com == 'rx'){
+						}else if( value.packettype == '40' || value.packettype == '11'){
 							$('#recept_list').append($("<option></option>").attr("value",value.dc_id).text(value.dc_name)); 						
 						}
 						
@@ -184,6 +184,7 @@ function thermostat_devices_list(){
 				}
 			});
 };
+
 
 //Fonction affichage temperature
 function temperature_display(dc_id){

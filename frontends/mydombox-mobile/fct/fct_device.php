@@ -35,6 +35,8 @@ if(isset($_POST["cloud"]))      $cloud=$_POST["cloud"];
 else      $cloud="";
 if(isset($_POST["cloud_id"]))      $cloud_id=$_POST["cloud_id"];
 else      $cloud_id="";
+if(isset($_POST["dc_logo"]))      $dc_logo=$_POST["dc_logo"];
+else     $dc_logo="";
 
 switch($action)
 {
@@ -212,6 +214,7 @@ function DC_UPDATE(){
 	global $cloud;
 	global $cloud_id;
 	global $dc_id;
+    global $dc_logo;
 	
 /*
 	$order = "UPDATE devices SET
@@ -246,7 +249,8 @@ function DC_UPDATE(){
 		housecode='$housecode',
 		com='$com',
 		iss_status='$cloud',
-		iss_stream='$cloud_id'
+		iss_stream='$cloud_id',
+        dc_logo='$dc_logo'
 		WHERE
 		dc_id='$dc_id'";
 
@@ -281,7 +285,7 @@ function DC_NEW(){
 	global $type_id;
 	
 	$order = "INSERT INTO devices (dc_id,packettype,subtype,type,int_id,dc_name,last_update,address,id1,id2,id3,id4,unitcode,groupcode,housecode,new) 
-	SELECT (SELECT MAX(dc_id)+1 FROM devices)as dc_id,
+	SELECT (SELECT IFNULL(MAX(dc_id),0)+1 FROM devices)as dc_id,
 	(SELECT packettype FROM type WHERE type_id = '$type_id'),
 	(SELECT subtype FROM type WHERE type_id = '$type_id'),
 	(SELECT type FROM type WHERE type_id = '$type_id'),

@@ -16,7 +16,10 @@ function icones_list(selector,action){
 					{					
 						homelist += thermostat_list(selector); // add thermostat before devices
 					}
-					$.each(data, function(index, value) {			
+					$.each(data, function(index, value) {
+                            if(! value.dc_logo){
+                                value.dc_logo="mdb_nologo.png";
+                            };	
 							switch(value.int_id)
 							{
 							case '1':
@@ -88,7 +91,7 @@ function icones_list(selector,action){
 function liste_type_52(selector, value){
 		var listelement = '	 <li> \
 							<a href="#" id="bt-weather-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/weather52.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data1 +' &ordm </p> \
 							<p class="ui-li-aside2">'+Math.round(value.home_data2)+'% </p> \
@@ -123,7 +126,7 @@ function liste_type_56(selector, value){
 function liste_type_11(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-lm-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_light.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -133,7 +136,7 @@ function liste_type_11(selector, value){
 function liste_type_14(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-lm-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_chroma.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -143,7 +146,7 @@ function liste_type_14(selector, value){
 function liste_type_1A(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-lm-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_volet.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -153,7 +156,7 @@ function liste_type_1A(selector, value){
 function liste_type_5A(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-energy-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_elec.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ Math.round(value.home_data1) +' W</p>\
 							</a></li> '; 
@@ -163,7 +166,7 @@ function liste_type_5A(selector, value){
 function liste_type_40(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-temperature-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_thermometre.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data1 +' &ordm</p>\
 							</a></li> ';
@@ -176,7 +179,7 @@ function liste_type_ERDF(selector, value){
 	case '01':
 		var listelement = '	 <li> \
 									<a href="#"   id="bt-energy-edf-dialog"  dc_id='+ value.dc_id+'> \
-									<img src="css/images/mdb_elec.png" class="ui-li-thumb"> \
+									<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 									<h2>'+ value.dc_name +'</h2> \
 									<p class="ui-li-aside">'+ Math.round(value.home_data1) +' W</p>\
 									</a></li> '; 														
@@ -184,7 +187,7 @@ function liste_type_ERDF(selector, value){
 	case '03':
 		var listelement = '	 <li> \
 									<a href="#"   id="bt-energy-edf-dialog"  dc_id='+ value.dc_id+'> \
-									<img src="css/images/mdb_elec.png" class="ui-li-thumb"> \
+									<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 									<h2>'+ value.dc_name +'</h2> \
 									<p class="ui-li-aside">'+Math.round(value.home_data1)+','+Math.round(value.home_data2)+','+Math.round(value.home_data3)+' W</p>\
 									</a></li> '; 																
@@ -199,7 +202,7 @@ function liste_type_ERDF(selector, value){
 function liste_type_1W48(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-temperature-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_thermometre.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.home_data1 +' &ordm</p>\
 							</a></li> ';
@@ -209,7 +212,7 @@ function liste_type_1W48(selector, value){
 function liste_type_WP(selector, value){
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-light-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_light.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -221,7 +224,7 @@ function liste_type_dore(selector, value){
 	{
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-state-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_dore_open.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
@@ -230,7 +233,7 @@ function liste_type_dore(selector, value){
 	{
 		var listelement = '	 <li> \
 							<a href="#"   id="bt-state-dialog"  dc_id='+ value.dc_id+'> \
-							<img src="css/images/mdb_dore_close.png" class="ui-li-thumb"> \
+							<img src="css/images/'+ value.dc_logo +'" class="ui-li-thumb"> \
 							<h2>'+ value.dc_name +'</h2> \
 							<p class="ui-li-aside">'+ value.device_mode +'</p>\
 							</a></li> ';
