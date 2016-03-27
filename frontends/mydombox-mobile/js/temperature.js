@@ -1,7 +1,7 @@
 
 //Fonction Affichage des scenarios
 function thermostat_scenario_list(th_id){
-	
+
 	var action = "list";
 	var sc_id = $(this).attr("sc_id");
 	var dataString =  'action='+ action +'&th_id='+ th_id;
@@ -28,7 +28,7 @@ function thermostat_display(th_id){
 	var action="display";
 	var dataString = 'action='+ action+'&th_id='+ th_id;
 	
-	thermostat_scenario_list();
+	thermostat_scenario_list(th_id);
 	
 	$.ajax({
 		type: "POST",

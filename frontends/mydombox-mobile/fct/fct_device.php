@@ -25,6 +25,8 @@ if(isset($_POST["id4"]))      $id4=$_POST["id4"];
 else      $id4="";
 if(isset($_POST["com"]))      $com=$_POST["com"];
 else      $com="";
+if(isset($_POST["reverse"]))      $reverse=$_POST["reverse"];
+else      $reverse="";
 if(isset($_POST["unitcode"]))      $unitcode=$_POST["unitcode"];
 else      $unitcode="";
 if(isset($_POST["groupcode"]))      $groupcode=$_POST["groupcode"];
@@ -211,6 +213,7 @@ function DC_UPDATE(){
 	global $groupcode;
 	global $housecode;
 	global $com;
+    global $reverse;
 	global $cloud;
 	global $cloud_id;
 	global $dc_id;
@@ -248,6 +251,7 @@ function DC_UPDATE(){
 		groupcode='$groupcode',
 		housecode='$housecode',
 		com='$com',
+        reverse='$reverse',
 		iss_status='$cloud',
 		iss_stream='$cloud_id',
         dc_logo='$dc_logo'

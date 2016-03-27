@@ -116,6 +116,7 @@ if (int_id == 4 ){
 	$("div#div_groupcode").hide();
 	$("div#div_housecode").hide();
 	$("div#div_unitcode").hide();
+    $("div#div_reverse").hide();
 
 }
 else
@@ -130,6 +131,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").show();
 		$("div#div_unitcode").show();
+        $("div#div_reverse").hide();
     }
     else if(packettype == 11)
     {
@@ -141,6 +143,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
 		$("div#div_unitcode").show();
+        $("div#div_reverse").show();
     }
 	else if(packettype == 14 || packettype == '1A')
     {
@@ -152,6 +155,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
 		$("div#div_unitcode").show();
+        $("div#div_reverse").show();
     }
 	else if(packettype == 40 || ( packettype >= 50 && packettype <= 59) || packettype == '5A')
     {
@@ -163,6 +167,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
 		$("div#div_unitcode").hide();
+        $("div#div_reverse").hide();
     }
 	else if(packettype == 41)
     {
@@ -174,6 +179,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
 		$("div#div_unitcode").show();
+        $("div#div_reverse").hide();
     }
 	else if(packettype == '1W28' || packettype == 'ERDF')
     {
@@ -185,6 +191,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
 		$("div#div_unitcode").hide();
+        $("div#div_reverse").hide();
     }	
 	else if(packettype == 'WP')
     {
@@ -196,6 +203,7 @@ else
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
 		$("div#div_unitcode").show();
+        $("div#div_reverse").hide();
     }	
 	else {
 		$("div#div_address").hide();
@@ -205,7 +213,8 @@ else
 		$("div#div_id4").hide();
 		$("div#div_groupcode").hide();
 		$("div#div_housecode").hide();
-		$("div#div_unitcode").hide();		
+		$("div#div_unitcode").hide();
+        $("div#div_reverse").hide();		
 	}	
 }
 
@@ -291,6 +300,7 @@ function device_display(dc_id){
 						$("#housecode").val(value.housecode);
 						$("#unitcode").val(value.unitcode);
 						$("#com").val(value.com).flipswitch('refresh');
+                        $("#reverse").val(value.reverse).flipswitch('refresh');
 						$("#cloud").val(value.iss_status).flipswitch('refresh');	
 						$("#cloud_id").val(value.iss_stream);
                         //$("#select-custom-18").val(value.dc_logo).selectmenu('refresh');	
@@ -328,11 +338,12 @@ function device_update(){
 	var unitcode = $("#unitcode").val();
 	
 	var com = $("#com").val();
+    var reverse = $("#reverse").val();
 
 	var cloud = $("#cloud").val();
 	var cloud_id = $("#cloud_id").val();
 	
-	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_id='+ dc_id +'&dc_name='+ dc_name +'&dc_logo='+ dc_logo +'&address='+ address+ '&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com+'&cloud='+ cloud+'&cloud_id='+ cloud_id;
+	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_id='+ dc_id +'&dc_name='+ dc_name +'&dc_logo='+ dc_logo +'&address='+ address+ '&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com +'&reverse='+ reverse+'&cloud='+ cloud+'&cloud_id='+ cloud_id;
 
 	$.ajax({
 		type: "POST",
@@ -391,8 +402,9 @@ function device_new(){
 	var unitcode = $("#unitcode").val();
 	
 	var com = $("#com").val();
+    var reverse = $("#reverse").val();
 	
-	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_name='+ dc_name +'&address='+ address +'&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com;
+	var dataString = 'action='+ action+'&type_id='+ type_id +'&dc_name='+ dc_name +'&address='+ address +'&id1='+ id1+'&id2='+ id2+'&id3='+ id3+'&id4='+ id4+'&groupcode='+ groupcode+'&housecode='+ housecode+'&unitcode='+ unitcode+'&com='+ com+'&reverse='+ reverse;
 
 	$.ajax({
 		type: "POST",

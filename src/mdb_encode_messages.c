@@ -84,6 +84,7 @@ int encode_lighting_message(int dc_id, char* state, int dim)
                     id3 = stringtohex(row[4]);
                     id4 = stringtohex(row[5]);
                     unitcode = stringtohex(row[6]);
+                    inverse = atoi(row[0]);
                 };
         }
 		mysql_free_result(result);
