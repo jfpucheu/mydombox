@@ -57,6 +57,7 @@ int mysql_insert(const char * query, ...){
 		return 1;
 	}
 	mysql_close(conn);
+    mysql_library_end();
 	return 0;
 }
 
@@ -128,6 +129,7 @@ void mysql_printf_select(const char * query, ...){
     }
     mysql_free_result(result);
 	mysql_close(conn);
+    mysql_library_end();
 }
 
 
