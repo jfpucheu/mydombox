@@ -6,7 +6,9 @@ set -e
 case "$1" in
     purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 
-	service mydombox stop
+	systemctl stop mydombox
+    systemctl disable mydombox.service
+    
 	update-rc.d mydombox remove	
     ;;
 

@@ -2,6 +2,7 @@
 Description=Mydombox Service
 After=network.target
 After=mysql.service
+Wants=mysql.service
 
 [Service]
 

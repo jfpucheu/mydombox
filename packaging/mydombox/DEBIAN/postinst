@@ -30,11 +30,10 @@ mysql -u root  -e "grant all privileges on mydombox.* to mydombox@localhost iden
 sed -i '/#host-name=foo/a host-name=mydombox' /etc/avahi/avahi-daemon.conf
 service avahi-daemon restart
 
-update-rc.d mydombox defaults
-
 udevadm trigger
 
 systemctl daemon-reload
+systemctl enable mydombox.service
 systemctl start mydombox
 
 
