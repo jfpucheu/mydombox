@@ -34,5 +34,7 @@ update-rc.d mydombox defaults
 
 udevadm trigger
 
-service mydombox start
+systemctl daemon-reload
+systemctl start mydombox
+
 

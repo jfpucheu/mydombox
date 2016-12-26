@@ -9,3 +9,6 @@ User=mydombox
 Group=mydombox
 
 ExecStart=/usr/bin/mydombox /etc/mydombox/mydombox.conf
+
+[Install]
+WantedBy=multi-user.target
