@@ -145,5 +145,4 @@ use mydombox;
 #INSERT INTO database_version VALUES ('0.6.1',now(), 'Migation_mydombox_0-6-0_to_0-6-1.sql');
 
 #[0.6.2]
-ALTER TABLE devices ADD reverse TINYINT(2) NOT NULL DEFAULT 0 AFTER com;
 INSERT INTO database_version VALUES ('0.6.2',now(), 'Migation_mydombox_0-6-1_to_0-6-2.sql');
