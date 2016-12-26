@@ -1,9 +1,9 @@
 Package: mydombox
-Version: 0.6-1
+Version: 0.6-2
 Section: base
 Priority: optional
 Architecture: armhf
-Depends: mysql-server, apache2, php5, php5-mysql, avahi-daemon
+Depends: mysql-server, apache2, php5, php5-mysql, avahi-daemon, libcurl3-gnutls
 Maintainer: Mr PUCHEU <jfpucheu@gmail.com>
 Description: Mydombox est un logiciel simple d'utilisation permettant de transformer n'importe quelle machine linux en une box domotique complète.
 Homepage: http://mydombox.com

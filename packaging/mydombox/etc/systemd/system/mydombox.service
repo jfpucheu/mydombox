@@ -1,0 +1,11 @@
+[Unit]
+Description=Mydombox Service
+After=network.target
+After=mysql.service
+
+[Service]
+
+User=mydombox
+Group=mydombox
+
+ExecStart=/usr/bin/mydombox /etc/mydombox/mydombox.conf
