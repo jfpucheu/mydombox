@@ -17,6 +17,7 @@
 
 DROP DATABASE IF EXISTS `mydombox`;
 CREATE DATABASE `mydombox`;
+USE `mydombox`;
 
 --
 -- Table structure for table `database_version`
