@@ -341,7 +341,7 @@ CREATE TABLE `weather` (
   KEY `dc_id` (`dc_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO database_version VALUES ('0.6.1',now(), 'Creation_mydombox_0-6-1.sql');
+INSERT INTO database_version VALUES ('0.6.2',now(), 'Creation_mydombox_0-6-2.sql');
 
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
