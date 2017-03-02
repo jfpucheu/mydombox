@@ -165,7 +165,7 @@ void thermostat_calc(th_id)
             double diff = tp_consigne - tp_current;
             log_DEBUG("Thermostat_Calc: differrence= %f", diff);
 
-			 if (diff >= 0){
+			 if (diff > 0){
 				log_DEBUG("Thermostat_Calc:Send Message ON");
                 
             	if ( packettype == 0x40 ){
@@ -198,9 +198,12 @@ void thermostat_calc(th_id)
 			log_DEBUG("Thermostat_Calc: Thermostat %d is on in auto mode", th_id);
 			tp_consigne = scenario(sc_id);
 			tp_current = last_tp(th_id);
-			log_DEBUG("Thermostat_Calc: Consigne= %.2f last= %.2f",tp_consigne,tp_current);
+			log_DEBUG("Thermostat_Calc: Consigne= %f last= %f",tp_consigne,tp_current);
 			
-			 if (tp_consigne > tp_current){
+            double diff = tp_consigne - tp_current;
+            log_DEBUG("Thermostat_Calc: difference= %f", diff);
+
+			 if (diff > 0){
 				log_DEBUG("Thermostat_Calc:Send Message ON");
                 
             	if ( packettype == 0x40 ){
