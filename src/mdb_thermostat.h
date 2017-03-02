@@ -9,9 +9,9 @@
 #ifndef _mdb_thermostat_h
 #define _mdb_thermostat_h
 
-float last_tp( int th_id );
+double last_tp( int th_id );
 
-float scenario( int sc_id );
+double scenario( int sc_id );
 
 void thermostat_calc( int th_id);
 

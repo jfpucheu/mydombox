@@ -26,7 +26,7 @@
 //  LAST T° SENSOR VALUE FUNCTION / ok a tester
 // ----------------------------------------------------------------------------
 
-float last_tp( int th_id )
+double last_tp( int th_id )
 {
 	MYSQL *conn;
 	MYSQL_RES *result;
@@ -36,7 +36,7 @@ float last_tp( int th_id )
 	unsigned char subtype;
 	int row_id;
 	char row_datetime[16];
-	float last_th_tp;
+	double last_th_tp;
 	
 	/*Recherche du type de recepteur du thermostat*/	
 	conn = mysql_connection();
@@ -81,9 +81,9 @@ float last_tp( int th_id )
 	return last_th_tp;
 }
 
-float scenario( sc_id )
+double scenario( sc_id )
 {	
-	float consigne;	
+	double consigne;	
     int day = whichday();
 	
 	log_DEBUG("Scenario : day number in the week : %d",day);
@@ -123,10 +123,10 @@ void thermostat_calc(th_id)
 	char th_use[4];
 	char th_mode[10];
 	char tempo[4];
-	float tp_set;
+	double tp_set;
 	int sc_id;
-	float tp_consigne;
-	float tp_current;
+	double tp_consigne;
+	double tp_current;
     unsigned char packettype;
     unsigned char subtype;
     int reverse;
@@ -151,7 +151,7 @@ void thermostat_calc(th_id)
 		
     mysql_free_result(result);
 	mysql_close(conn);
-	log_DEBUG("Thermostat_Calc: Working with th_id=%d ,recept_id = %d , on/off : %s , mode: %s , Manual tp_set= %.2f °C, Scenario=%d",th_id,recept_id,th_use,th_mode,tp_set,sc_id);
+	log_DEBUG("Thermostat_Calc: Working with th_id=%d ,recept_id = %d , on/off : %s , mode: %s , Manual tp_set= %f C, Scenario=%d",th_id,recept_id,th_use,th_mode,tp_set,sc_id);
 	
 	/*Recherche du mode*/
 	
@@ -160,9 +160,12 @@ void thermostat_calc(th_id)
 			log_DEBUG("Thermostat_Calc: Thermostat %d is on in manual mode", th_id);
 			tp_consigne = tp_set;
 			tp_current = last_tp(th_id);
-			log_DEBUG("Thermostat_Calc: Consigne= %.2f last= %.2f",tp_consigne,tp_current);
+			log_DEBUG("Thermostat_Calc: Consigne= %f last= %f",tp_consigne,tp_current);
 			
-			 if (tp_consigne > tp_current){
+            double diff = tp_consigne - tp_current;
+            log_DEBUG("Thermostat_Calc: differrence= %f", diff);
+
+			 if (diff >= 0){
 				log_DEBUG("Thermostat_Calc:Send Message ON");
                 
             	if ( packettype == 0x40 ){
