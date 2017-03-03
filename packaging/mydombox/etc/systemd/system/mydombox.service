@@ -9,6 +9,8 @@ Wants=mysql.service
 User=mydombox
 Group=mydombox
 
+Restart=always
+
 ExecStart=/usr/bin/mydombox /etc/mydombox/mydombox.conf
 
 [Install]
