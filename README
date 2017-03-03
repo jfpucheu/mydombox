@@ -1,0 +1,50 @@
+Mydombox
+=========
+
+Mydombox is a domotique simple software writtenn C for Linux OS.
+
+Requirements
+------------
+
+Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+
+Installation
+--------------
+
+    sudo echo "deb http://download.mydombox.com/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/mydombox.list > /dev/null
+    wget -O - http://download.mydombox.com/depot.key | sudo apt-key add -
+    sudo apt-get update
+
+    sudo apt-get install mydombox
+
+Dependencies
+------------
+
+All these dependancies will be install during deployement
+
+    - mysql-server 
+    - apache2 
+    - php5
+    - avahi
+
+Sources Compilation
+----------------
+
+Install prerequist packages:
+
+   sudo apt-get install git make build-essential autoconf libmysqlclient-dev libcurl4-openssl-dev
+   git clone https://github.com/jfpucheu/mydombox.git
+   cd mydombox
+   ./configure  && make
+
+Binarie will be available in src/mydombox
+
+License
+-------
+
+GNU
+
+Author Information
+------------------
+
+jfpucheu@gmail.Com
